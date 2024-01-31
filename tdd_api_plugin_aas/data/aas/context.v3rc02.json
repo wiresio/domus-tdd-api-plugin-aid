@@ -1,0 +1,213 @@
+{
+  "@vocab": "https://admin-shell.io/aas/3/0/RC02/",
+  "aas": "https://admin-shell.io/aas/3/0/RC02/",
+  "xs": "http://www.w3.org/2001/XMLSchema#",
+  "conceptDescriptions": {
+    "@container": "@set",
+    "@id": "aas:AssetAdministrationShellEnvironment/conceptDescriptions"
+  },
+  "submodels": {
+    "@id": "aas:AssetAdministrationShell/submodels",
+    "@container": "@set"
+  },
+  "id": "@id",
+  "idShort": "aas:Referable/idShort",
+  "Instance": "aas:ModelingKind/Instance",
+  "Template": "aas:ModelingKind/Template",
+  "kind": {
+    "@id": "aas:HasKind/kind",
+    "@type": "@vocab"
+  },
+  "category": {
+    "@id": "aas:Referable/category"
+  },
+  "checksum": {
+    "@id": "aas:Referable/checksum"
+  },
+  "modelType": "@type",
+  "langStrings": {
+    "@id": "aas:LangStringSet/langStrings",
+    "@container": "@set"
+  },
+  "language": "aas:LangString/language",
+  "text": "aas:LangString/text",
+  "description": {
+    "@id": "aas:Referable/description",
+    "@container": "@set"
+  },
+  "displayName": {
+    "@id": "aas:Referable/displayName",
+    "@container": "@set"
+  },
+  "preferredName": {
+    "@id": "aas:DataSpecificationIEC61360/preferredName",
+    "@container": "@set"
+  },
+  "dataSpecifications": {
+    "@id": "aas:HasDataSpecification/dataSpecifications",
+    "@container": "@set"
+  },
+  "embeddedDataSpecifications": {
+    "@id": "aas:HasDataSpecification/embeddedDataSpecifications",
+    "@container": "@set"
+  },
+  "extensions": {
+    "@id": "aas:HasExtensions/extensions",
+    "@container": "@set"
+  },
+  "supplementalSemanticIds": {
+    "@id": "aas:HasSemantics/supplementalSemanticIds",
+    "@container": "@set"
+  },
+  "Blob": {
+    "@id": "aas:Blob",
+    "@context": {
+      "value": "aas:Blob/value",
+      "contentType": "aas:Blob/contentType"
+    }
+  },
+  "File": {
+    "@id": "aas:File",
+    "@context": {
+      "value": "aas:File/value",
+      "contentType": "aas:File/contentType"
+    }
+  },
+  "Property": {
+    "@id": "aas:Property",
+    "@context": {
+      "value": "aas:Property/value",
+      "valueId": {
+        "@id": "aas:Property/valueId",
+        "@type": "@id"
+      },
+      "valueType": {
+        "@id": "aas:Property/valueType",
+        "@type": "@id"
+      }
+    }
+  },
+  "MultiLanguageProperty": {
+    "@id": "aas:MultiLanguageProperty",
+    "@context": {
+      "value": {
+        "@context": {
+          "language": "@language",
+          "text": "@value"
+        },
+        "@id": "aas:MultiLanguageProperty/value"
+      },
+      "valueId": {
+        "@id": "aas:MultiLanguageProperty/valueId",
+        "@type": "@id"
+      }
+    }
+  },
+  "inoutputVariables": {
+    "@id": "aas:Operation/inoutputVariables",
+    "@container": "@set",
+    "@context": {
+      "value": "aas:OperationVariable/value"
+    }
+  },
+  "inputVariables": {
+    "@id": "aas:Operation/inputVariables",
+    "@container": "@set",
+    "@context": {
+      "value": "aas:OperationVariable/value"
+    }
+  },
+  "outputVariables": {
+    "@id": "aas:Operation/outputVariables",
+    "@container": "@set",
+    "@context": {
+      "value": "aas:OperationVariable/value"
+    }
+  },
+  "qualifiers": {
+    "@id": "aas:Qualifiable/qualifiers",
+    "@container": "@set",
+    "@context": {
+      "type": "aas:Qualifier/type",
+      "value": "aas:Qualifier/value",
+      "valueType": {
+        "@id": "aas:Qualifier/valueType",
+        "@type": "@id"
+      },
+      "valueId": {
+        "@id": "aas:Qualifier/valueId",
+        "@type": "@id"
+      }
+    }
+  },
+  "keys": {
+    "@id": "aas:Reference/keys",
+    "@container": "@set",
+    "@context": {
+      "type": {
+        "@context": {
+          "@vocab": "https://admin-shell.io/aas/3/0/RC02/KeyTypes/"
+        },
+        "@id": "aas:Key/type",
+        "@type": "@vocab"
+      },
+      "value": "aas:Key/value"
+    }
+  },
+  "Reference": {
+    "@id": "aas:Reference",
+    "@context": {
+      "type": {
+        "@context": {
+          "@vocab": "https://admin-shell.io/aas/3/0/RC02/ReferenceTypes/"
+        },
+        "@id": "aas:Reference/type",
+        "@type": "@vocab"
+      }
+    }
+  },
+  "semanticId": {
+    "@id": "aas:HasSemantics/semanticId",
+    "@type": "@id"
+  },
+  "SubmodelElementList": {
+    "@id": "aas:SubmodelElementList",
+    "@context": {
+      "value": {
+        "@id": "aas:SubmodelElementList/value",
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "orderRelevant": {
+        "@id": "aas:SubmodelElementList/orderRelevant"
+      },
+      "semanticIdListElement": {
+        "@id": "aas:SubmodelElementList/semanticIdListElement",
+        "@type": "@id"
+      },
+      "typeValueListElement": {
+        "@id": "aas:SubmodelElementList/typeValueListElement",
+        "@type": "@id"
+      },
+      "valueTypeListElement": {
+        "@id": "aas:SubmodelElementList/valueTypeListElement",
+        "@type": "@id"
+      }
+    }
+  },
+  "SubmodelElementCollection": {
+    "@id": "aas:SubmodelElementCollection",
+    "@context": {
+      "value": {
+        "@id": "aas:SubmodelElementCollection/value",
+        "@type": "@id",
+        "@container": "@set"
+      }
+    }
+  },
+  "submodelElements": {
+    "@id": "aas:Submodel/submodelElements",
+    "@type": "@id",
+    "@container": "@set"
+  }
+}

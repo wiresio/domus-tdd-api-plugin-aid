@@ -1,0 +1,15 @@
+{{ element }} <https://admin-shell.io/aas/3/0/RC02/Submodel/submodelElements> {{ submodelelement }}.
+{{ submodelelement }}  a aas:SubmodelElementCollection;
+  <https://admin-shell.io/aas/3/0/RC02/HasKind/kind> <https://admin-shell.io/aas/3/0/RC02/ModelingKind/Instance> ;
+  <https://admin-shell.io/aas/3/0/RC02/HasSemantics/semanticId> [
+    a aas:Reference ;
+    <https://admin-shell.io/aas/3/0/RC02/Reference/type> <https://admin-shell.io/aas/3/0/RC02/ReferenceTypes/GlobalReference> ;
+    <https://admin-shell.io/aas/3/0/RC02/Reference/keys> [
+        <https://admin-shell.io/aas/3/0/RC02/Key/type> <https://admin-shell.io/aas/3/0/RC02/KeyTypes/GlobalReference>;
+        <https://admin-shell.io/aas/3/0/RC02/Key/value> "{{ predicate }}"
+      ]
+    ].
+{{ submodelelement }}  <https://admin-shell.io/aas/3/0/RC02/SubmodelElementCollection/value> {{ value_node }}.
+{{ submodelelement }} <https://admin-shell.io/aas/3/0/RC02/Referable/idShort> "{{ id_short }}".
+{{ value_node }} <https://admin-shell.io/aas/3/0/RC02/Referable/idShort> "{{ id_short_value }}".
+{{ value_node }}  a aas:SubmodelElementCollection.
