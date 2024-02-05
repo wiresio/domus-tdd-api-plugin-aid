@@ -1,11 +1,11 @@
-<urn:spartdd:metadata> {
+<urn:tdd:metadata> {
     <urn:wot:context:W10=>
             <urn:wot:relation:context_content>
                     "[]" .
     
     <aas:urn:node:opcua:VentilationSystem>
-            <urn:spartdd:describes>         <urn:node:opcua:VentilationSystem> ;
-            <urn:spartdd:expressedIn>       <https://admin-shell.io/aas/3/0/RC01/> ;
+            <urn:tdd:describes>         <urn:node:opcua:VentilationSystem> ;
+            <urn:tdd:expressedIn>       <https://admin-shell.io/aas/3/0/RC01/> ;
             <urn:wot:relation:has_context>  <urn:wot:context:W10=> .
 }
 
@@ -149,10 +149,10 @@
                     ] .
 }
 
-<urn:spartdd:metadata> {
+<urn:tdd:metadata> {
     <aas:urn:node:opcua:VentilationSystem>
-            <urn:spartdd:describes>         <urn:node:opcua:VentilationSystem> ;
-            <urn:spartdd:expressedIn>       <https://admin-shell.io/aas/3/0/RC01/> ;
+            <urn:tdd:describes>         <urn:node:opcua:VentilationSystem> ;
+            <urn:tdd:expressedIn>       <https://admin-shell.io/aas/3/0/RC01/> ;
             <urn:wot:relation:has_context>  <urn:wot:context:W10=> .
     
     <urn:wot:context:W10=>

@@ -493,10 +493,10 @@
                     []  .
 }
 
-<urn:spartdd:metadata> {
+<urn:tdd:metadata> {
     <aas:urn:uuid:7c83cce5-7b1f-43b2-8397-e0371a823b35>
-            <urn:spartdd:describes>         <urn:uuid:7c83cce5-7b1f-43b2-8397-e0371a823b35> ;
-            <urn:spartdd:expressedIn>       <https://admin-shell.io/aas/3/0/RC02/> ;
+            <urn:tdd:describes>         <urn:uuid:7c83cce5-7b1f-43b2-8397-e0371a823b35> ;
+            <urn:tdd:expressedIn>       <https://admin-shell.io/aas/3/0/RC02/> ;
             <urn:wot:relation:has_context>  <urn:wot:context:W10=> .
     
     <urn:wot:context:W10=>
