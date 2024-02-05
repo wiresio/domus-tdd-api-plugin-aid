@@ -21,9 +21,10 @@ from tdd.context import convert_context_to_array, get_context
 from tdd.errors import IDMismatchError, JSONDecodeError, RDFValidationError
 from tdd.registration import delete_registration_information
 from tdd.utils import uri_to_base
+from tdd.config import CONFIG
 
 
-VERSION = "v3rc02"
+VERSION = CONFIG.get("AAS_VERSION", "v3rc02")
 BASES = {
     "v3rc01": "https://admin-shell.io/aas/3/0/RC01/",
     "v3rc02": "https://admin-shell.io/aas/3/0/RC02/",
