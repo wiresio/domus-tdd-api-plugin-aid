@@ -1,0 +1,13 @@
+{
+  "value": [
+    {
+      "language": "de",
+      "text": "Erster Zyklus"
+    },
+    {
+      "language": "sk",
+      "text": "Prv\u00FD cyklus"
+    }
+  ],
+  "modelType": "MultiLanguageProperty"
+}

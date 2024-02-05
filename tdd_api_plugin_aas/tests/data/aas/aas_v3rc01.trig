@@ -1,0 +1,161 @@
+<urn:spartdd:metadata> {
+    <urn:wot:context:W10=>
+            <urn:wot:relation:context_content>
+                    "[]" .
+    
+    <aas:urn:node:opcua:VentilationSystem>
+            <urn:spartdd:describes>         <urn:node:opcua:VentilationSystem> ;
+            <urn:spartdd:expressedIn>       <https://admin-shell.io/aas/3/0/RC01/> ;
+            <urn:wot:relation:has_context>  <urn:wot:context:W10=> .
+}
+
+<aas:urn:node:opcua:VentilationSystem> {
+    <urn:node:opcua:VentilationSystem>
+            a       <https://admin-shell.io/aas/3/0/RC01/Submodel> ;
+            <https://admin-shell.io/aas/3/0/RC01/AssetAdministrationShell/submodels>
+                    <urn:node:opcua:VentilationSystem> ;
+            <https://admin-shell.io/aas/3/0/RC01/HasKind/kind>
+                    <https://admin-shell.io/aas/3/0/RC01/ModelingKind/Instance> ;
+            <https://admin-shell.io/aas/3/0/RC01/HasSemantics/semanticId>
+                    [ <https://admin-shell.io/aas/3/0/RC01/Reference/keys>
+                              [ <https://admin-shell.io/aas/3/0/RC01/Key/idType>
+                                        <https://admin-shell.io/aas/3/0/RC01/KeyType/IRI> ;
+                                <https://admin-shell.io/aas/3/0/RC01/Key/type>
+                                        <https://admin-shell.io/aas/3/0/RC01/KeyElements/GlobalReference> ;
+                                <https://admin-shell.io/aas/3/0/RC01/Key/value>
+                                        "https://www.w3.org/2019/wot/td#Thing" ;
+                                <https://admin-shell.io/aas/3/0/RC01/index>
+                                        0 ;
+                                <https://admin-shell.io/aas/3/0/RC01/local>
+                                        true
+                              ]
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC01/Qualifiable/qualifiers>
+                    [ a       <https://admin-shell.io/aas/3/0/RC01/Qualifier> ;
+                      <https://admin-shell.io/aas/3/0/RC01/HasSemantics/semanticId>
+                              [ <https://admin-shell.io/aas/3/0/RC01/Reference/keys>
+                                        [ <https://admin-shell.io/aas/3/0/RC01/Key/idType>
+                                                  <https://admin-shell.io/aas/3/0/RC01/KeyType/IRI> ;
+                                          <https://admin-shell.io/aas/3/0/RC01/Key/type>
+                                                  <https://admin-shell.io/aas/3/0/RC01/KeyElements/GlobalReference> ;
+                                          <https://admin-shell.io/aas/3/0/RC01/Key/value>
+                                                  "https://www.w3.org/2019/wot/td#hasSecurityConfiguration" ;
+                                          <https://admin-shell.io/aas/3/0/RC01/index>
+                                                  0 ;
+                                          <https://admin-shell.io/aas/3/0/RC01/local>
+                                                  true
+                                        ]
+                              ] ;
+                      <https://admin-shell.io/aas/3/0/RC01/Qualifier/type>
+                              "security" ;
+                      <https://admin-shell.io/aas/3/0/RC01/Qualifier/value>
+                              "nosec_sc"
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC01/Qualifiable/qualifiers>
+                    [ a       <https://admin-shell.io/aas/3/0/RC01/Qualifier> ;
+                      <https://admin-shell.io/aas/3/0/RC01/HasSemantics/semanticId>
+                              [ <https://admin-shell.io/aas/3/0/RC01/Reference/keys>
+                                        [ <https://admin-shell.io/aas/3/0/RC01/Key/idType>
+                                                  <https://admin-shell.io/aas/3/0/RC01/KeyType/IRI> ;
+                                          <https://admin-shell.io/aas/3/0/RC01/Key/type>
+                                                  <https://admin-shell.io/aas/3/0/RC01/KeyElements/GlobalReference> ;
+                                          <https://admin-shell.io/aas/3/0/RC01/Key/value>
+                                                  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ;
+                                          <https://admin-shell.io/aas/3/0/RC01/index>
+                                                  0 ;
+                                          <https://admin-shell.io/aas/3/0/RC01/local>
+                                                  true
+                                        ]
+                              ] ;
+                      <https://admin-shell.io/aas/3/0/RC01/Qualifier/type>
+                              "@type" ;
+                      <https://admin-shell.io/aas/3/0/RC01/Qualifier/value>
+                              "Thing"
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC01/Submodel/submodelElements>
+                    [ a       <https://admin-shell.io/aas/3/0/RC01/SubmodelElementCollection> ;
+                      <https://admin-shell.io/aas/3/0/RC01/HasKind/kind>
+                              <https://admin-shell.io/aas/3/0/RC01/ModelingKind/Instance> ;
+                      <https://admin-shell.io/aas/3/0/RC01/HasSemantics/semanticId>
+                              [ <https://admin-shell.io/aas/3/0/RC01/Reference/keys>
+                                        [ <https://admin-shell.io/aas/3/0/RC01/Key/idType>
+                                                  <https://admin-shell.io/aas/3/0/RC01/KeyType/IRI> ;
+                                          <https://admin-shell.io/aas/3/0/RC01/Key/type>
+                                                  <https://admin-shell.io/aas/3/0/RC01/KeyElements/GlobalReference> ;
+                                          <https://admin-shell.io/aas/3/0/RC01/Key/value>
+                                                  "https://www.w3.org/2019/wot/td#definesSecurityScheme" ;
+                                          <https://admin-shell.io/aas/3/0/RC01/index>
+                                                  0 ;
+                                          <https://admin-shell.io/aas/3/0/RC01/local>
+                                                  true
+                                        ]
+                              ] ;
+                      <https://admin-shell.io/aas/3/0/RC01/Referable/category>
+                              "PARAMETER" ;
+                      <https://admin-shell.io/aas/3/0/RC01/Referable/description>
+                              "Set of named security configurations(definitions only). Not actually applied unless names are used in a security name-value pair."@en ;
+                      <https://admin-shell.io/aas/3/0/RC01/Referable/idShort>
+                              "securityDefinitions" ;
+                      <https://admin-shell.io/aas/3/0/RC01/SubmodelElementCollection/allowDuplicates>
+                              false ;
+                      <https://admin-shell.io/aas/3/0/RC01/SubmodelElementCollection/ordered>
+                              false ;
+                      <https://admin-shell.io/aas/3/0/RC01/SubmodelElementCollection/value>
+                              [ a       <https://admin-shell.io/aas/3/0/RC01/SubmodelElementCollection> ;
+                                <https://admin-shell.io/aas/3/0/RC01/HasKind/kind>
+                                        <https://admin-shell.io/aas/3/0/RC01/ModelingKind/Instance> ;
+                                <https://admin-shell.io/aas/3/0/RC01/HasSemantics/semanticId>
+                                        [ <https://admin-shell.io/aas/3/0/RC01/Reference/keys>
+                                                  [ <https://admin-shell.io/aas/3/0/RC01/Key/idType>
+                                                            <https://admin-shell.io/aas/3/0/RC01/KeyType/IRI> ;
+                                                    <https://admin-shell.io/aas/3/0/RC01/Key/type>
+                                                            <https://admin-shell.io/aas/3/0/RC01/KeyElements/GlobalReference> ;
+                                                    <https://admin-shell.io/aas/3/0/RC01/Key/value>
+                                                            "https://www.w3.org/2019/wot/security#NoSecurityScheme" ;
+                                                    <https://admin-shell.io/aas/3/0/RC01/index>
+                                                            0 ;
+                                                    <https://admin-shell.io/aas/3/0/RC01/local>
+                                                            true
+                                                  ]
+                                        ] ;
+                                <https://admin-shell.io/aas/3/0/RC01/Referable/category>
+                                        "PARAMETER" ;
+                                <https://admin-shell.io/aas/3/0/RC01/Referable/idShort>
+                                        "nosec_sc" ;
+                                <https://admin-shell.io/aas/3/0/RC01/SubmodelElementCollection/allowDuplicates>
+                                        false ;
+                                <https://admin-shell.io/aas/3/0/RC01/SubmodelElementCollection/ordered>
+                                        false ;
+                                <https://admin-shell.io/aas/3/0/RC01/qualifiers>
+                                        [ a       <https://admin-shell.io/aas/3/0/RC01/Qualifier> ;
+                                          <https://admin-shell.io/aas/3/0/RC01/HasSemantics/semanticId>
+                                                  [ <https://admin-shell.io/aas/3/0/RC01/Reference/keys>
+                                                            [ <https://admin-shell.io/aas/3/0/RC01/Key/idType>
+                                                                      <https://admin-shell.io/aas/3/0/RC01/KeyType/IRI> ;
+                                                              <https://admin-shell.io/aas/3/0/RC01/Key/type>
+                                                                      <https://admin-shell.io/aas/3/0/RC01/KeyElements/GlobalReference> ;
+                                                              <https://admin-shell.io/aas/3/0/RC01/index>
+                                                                      0 ;
+                                                              <https://admin-shell.io/aas/3/0/RC01/local>
+                                                                      true
+                                                            ]
+                                                  ] ;
+                                          <https://admin-shell.io/aas/3/0/RC01/Qualifier/type>
+                                                  "scheme" ;
+                                          <https://admin-shell.io/aas/3/0/RC01/Qualifier/value>
+                                                  "nosec"
+                                        ]
+                              ]
+                    ] .
+}
+
+<urn:spartdd:metadata> {
+    <aas:urn:node:opcua:VentilationSystem>
+            <urn:spartdd:describes>         <urn:node:opcua:VentilationSystem> ;
+            <urn:spartdd:expressedIn>       <https://admin-shell.io/aas/3/0/RC01/> ;
+            <urn:wot:relation:has_context>  <urn:wot:context:W10=> .
+    
+    <urn:wot:context:W10=>
+            <urn:wot:relation:context_content>
+                    "[]" .
+}

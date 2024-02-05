@@ -1,0 +1,505 @@
+<http://cc-api.org/graph> {
+    <http://cc-api.org/api/tables/disciplines/0>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Système de gestion" .
+    
+    <http://cc-api.org/api/tables/disciplines/20>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Infrastructure bâtiment" .
+    
+    <http://cc-api.org/api/tables/disciplines/50>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Gestion technique" .
+    
+    <http://cc-api.org/api/tables/disciplines/100>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Feu" .
+    
+    <http://cc-api.org/api/tables/disciplines/150>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Sécurité" .
+    
+    <http://cc-api.org/api/tables/disciplines/200>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Gestion Énergie" .
+    
+    <http://cc-api.org/api/tables/disciplines/250>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Notification" .
+    
+    <http://cc-api.org/api/tables/objecttypes/0>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Non affecté" .
+    
+    <http://cc-api.org/api/tables/objecttypes/100>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Carnet d'adresses" .
+    
+    <http://cc-api.org/api/tables/objecttypes/200>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "CTA" .
+    
+    <http://cc-api.org/api/tables/objecttypes/400>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Chaudière" .
+    
+    <http://cc-api.org/api/tables/objecttypes/500>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Brûleur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/600>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Caméra" .
+    
+    <http://cc-api.org/api/tables/objecttypes/700>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Changeover" .
+    
+    <http://cc-api.org/api/tables/objecttypes/800>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Canal" .
+    
+    <http://cc-api.org/api/tables/objecttypes/900>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Groupe froid" .
+    
+    <http://cc-api.org/api/tables/objecttypes/1000>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Logiciel client" .
+    
+    <http://cc-api.org/api/tables/objecttypes/1100>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Commande" .
+    
+    <http://cc-api.org/api/tables/objecttypes/1200>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Ordinateur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/1300>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Condenseur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/1400>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Configuration" .
+    
+    <http://cc-api.org/api/tables/objecttypes/1500>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Contact" .
+    
+    <http://cc-api.org/api/tables/objecttypes/1600>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Commande" .
+    
+    <http://cc-api.org/api/tables/objecttypes/1700>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Panneau configuration" .
+    
+    <http://cc-api.org/api/tables/objecttypes/1800>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Batterie froide" .
+    
+    <http://cc-api.org/api/tables/objecttypes/1900>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Groupe de refroidissement" .
+    
+    <http://cc-api.org/api/tables/objecttypes/2000>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Tour de refroidissement" .
+    
+    <http://cc-api.org/api/tables/objecttypes/2100>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Volet" .
+    
+    <http://cc-api.org/api/tables/objecttypes/2200>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Détecteur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/2300>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Appareil" .
+    
+    <http://cc-api.org/api/tables/objecttypes/2400>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Affichage" .
+    
+    <http://cc-api.org/api/tables/objecttypes/2500>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Eau Chauffage urbain" .
+    
+    <http://cc-api.org/api/tables/objecttypes/2600>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Document" .
+    
+    <http://cc-api.org/api/tables/objecttypes/2700>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Pilote" .
+    
+    <http://cc-api.org/api/tables/objecttypes/2800>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Demande d’effet" .
+    
+    <http://cc-api.org/api/tables/objecttypes/2900>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Batterie électrique" .
+    
+    <http://cc-api.org/api/tables/objecttypes/3000>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Récupération d’énergie" .
+    
+    <http://cc-api.org/api/tables/objecttypes/3100>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Évaporateur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/3200>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Ventilateur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/3300>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Filtre" .
+    
+    <http://cc-api.org/api/tables/objecttypes/3500>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Fonction de commande" .
+    
+    <http://cc-api.org/api/tables/objecttypes/3600>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Graphiques" .
+    
+    <http://cc-api.org/api/tables/objecttypes/3700>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Groupe" .
+    
+    <http://cc-api.org/api/tables/objecttypes/3800>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Échangeur de chaleur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/3900>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Batterie chaude" .
+    
+    <http://cc-api.org/api/tables/objecttypes/4000>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Groupe de chauffage" .
+    
+    <http://cc-api.org/api/tables/objecttypes/4100>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Sirène" .
+    
+    <http://cc-api.org/api/tables/objecttypes/4200>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Humidificateur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/4300>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Modèle d’incident" .
+    
+    <http://cc-api.org/api/tables/objecttypes/4400>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Entrée" .
+    
+    <http://cc-api.org/api/tables/objecttypes/4500>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Journalisation" .
+    
+    <http://cc-api.org/api/tables/objecttypes/4600>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Élément de bibliothèque" .
+    
+    <http://cc-api.org/api/tables/objecttypes/4700>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Macro" .
+    
+    <http://cc-api.org/api/tables/objecttypes/4800>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Manuel" .
+    
+    <http://cc-api.org/api/tables/objecttypes/4900>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Modèle de message" .
+    
+    <http://cc-api.org/api/tables/objecttypes/5000>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Module" .
+    
+    <http://cc-api.org/api/tables/objecttypes/5100>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Moteur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/5200>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Réseau" .
+    
+    <http://cc-api.org/api/tables/objecttypes/5300>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Élément de notification" .
+    
+    <http://cc-api.org/api/tables/objecttypes/5400>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Modèle de notification" .
+    
+    <http://cc-api.org/api/tables/objecttypes/5500>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Procédure d'exploitation" .
+    
+    <http://cc-api.org/api/tables/objecttypes/5600>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Sortie" .
+    
+    <http://cc-api.org/api/tables/objecttypes/5700>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Bloc d'alimentation" .
+    
+    <http://cc-api.org/api/tables/objecttypes/5800>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Préchauffage" .
+    
+    <http://cc-api.org/api/tables/objecttypes/5900>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Imprimante" .
+    
+    <http://cc-api.org/api/tables/objecttypes/6000>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Programme" .
+    
+    <http://cc-api.org/api/tables/objecttypes/6100>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Pompe" .
+    
+    <http://cc-api.org/api/tables/objecttypes/6200>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Rapport" .
+    
+    <http://cc-api.org/api/tables/objecttypes/6300>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Programme horaire" .
+    
+    <http://cc-api.org/api/tables/objecttypes/6400>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Scope" .
+    
+    <http://cc-api.org/api/tables/objecttypes/6500>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Groupe de sécurité" .
+    
+    <http://cc-api.org/api/tables/objecttypes/6600>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Profil de sécurité" .
+    
+    <http://cc-api.org/api/tables/objecttypes/6700>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Sonde" .
+    
+    <http://cc-api.org/api/tables/objecttypes/6800>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Séquence" .
+    
+    <http://cc-api.org/api/tables/objecttypes/6900>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Logiciel de serveur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/7000>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Consigne" .
+    
+    <http://cc-api.org/api/tables/objecttypes/7100>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Haut-parleur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/7200>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Stroboscope" .
+    
+    <http://cc-api.org/api/tables/objecttypes/7300>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Interrupteur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/7400>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Tendance" .
+    
+    <http://cc-api.org/api/tables/objecttypes/7500>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Ultraviolet" .
+    
+    <http://cc-api.org/api/tables/objecttypes/7600>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "UPS" .
+    
+    <http://cc-api.org/api/tables/objecttypes/7700>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Utilisateur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/7800>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Valeur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/7900>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Vanne" .
+    
+    <http://cc-api.org/api/tables/objecttypes/8000>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Afficher l’élément" .
+    
+    <http://cc-api.org/api/tables/objecttypes/8100>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Secteur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/8200>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Section" .
+    
+    <http://cc-api.org/api/tables/objecttypes/8300>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Zone" .
+    
+    <http://cc-api.org/api/tables/objecttypes/8400>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Porte" .
+    
+    <http://cc-api.org/api/tables/objecttypes/8500>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Ventilation" .
+    
+    <http://cc-api.org/api/tables/objecttypes/8600>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Production de chaleur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/8700>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Production de froid" .
+    
+    <http://cc-api.org/api/tables/objecttypes/8800>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Groupe de Chauffage / refroidissement" .
+    
+    <http://cc-api.org/api/tables/objecttypes/8900>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Échangeur froid" .
+    
+    <http://cc-api.org/api/tables/objecttypes/9000>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Moniteur" .
+    
+    <http://cc-api.org/api/tables/objecttypes/9100>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Éclairage" .
+    
+    <http://cc-api.org/api/tables/objecttypes/9200>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Stores" .
+    
+    <http://cc-api.org/api/tables/objecttypes/9300>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "E/S" .
+    
+    <http://cc-api.org/api/tables/objecttypes/9900>
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Autre" .
+}
+
+<aas:urn:uuid:7c83cce5-7b1f-43b2-8397-e0371a823b35> {
+    <urn:uuid:7c83cce5-7b1f-43b2-8397-e0371a823b35>
+            <https://admin-shell.io/aas/3/0/RC02/AssetAdministrationShell/submodels>
+                    <http://localhost:5000/urn:7c83cce5-7b1f-43b2-8397-e0371a823b35/something_random_b0c234ba> .
+    
+    <http://localhost:5000/urn:7c83cce5-7b1f-43b2-8397-e0371a823b35/something_random_b0c234ba>
+            a       <https://admin-shell.io/aas/3/0/RC02/Submodel> ;
+            <https://admin-shell.io/aas/3/0/RC02/HasDataSpecification/embeddedDataSpecifications>
+                    [ <https://admin-shell.io/aas/3/0/RC02/dataSpecification>
+                              [ <https://admin-shell.io/aas/3/0/RC02/Reference/keys>
+                                        [ <https://admin-shell.io/aas/3/0/RC02/Key/type>
+                                                  <https://admin-shell.io/aas/3/0/RC02/KeyTypes/GlobalReference> ;
+                                          <https://admin-shell.io/aas/3/0/RC02/Key/value>
+                                                  "something_random_27587fef"
+                                        ] ;
+                                <https://admin-shell.io/aas/3/0/RC02/type>
+                                        "GlobalReference"
+                              ] ;
+                      <https://admin-shell.io/aas/3/0/RC02/dataSpecificationContent>
+                              [ a       <https://admin-shell.io/aas/3/0/RC02/DataSpecificationIEC61360> ;
+                                <https://admin-shell.io/aas/3/0/RC02/DataSpecificationIEC61360/preferredName>
+                                        [ <https://admin-shell.io/aas/3/0/RC02/LangString/language>
+                                                  "en" ;
+                                          <https://admin-shell.io/aas/3/0/RC02/LangString/text>
+                                                  "something_random_0796a3b4"
+                                        ] ;
+                                <https://admin-shell.io/aas/3/0/RC02/value>
+                                        "something_random_09a283e0"
+                              ]
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC02/HasExtensions/extensions>
+                    [ <https://admin-shell.io/aas/3/0/RC02/name>
+                              "something_random_74cc9e9b" ;
+                      <https://admin-shell.io/aas/3/0/RC02/valueType>
+                              "xs:boolean"
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC02/HasKind/kind>
+                    <https://admin-shell.io/aas/3/0/RC02/ModelingKind/Instance> ;
+            <https://admin-shell.io/aas/3/0/RC02/HasSemantics/semanticId>
+                    [ <https://admin-shell.io/aas/3/0/RC02/Reference/keys>
+                              [ <https://admin-shell.io/aas/3/0/RC02/Key/type>
+                                        <https://admin-shell.io/aas/3/0/RC02/KeyTypes/GlobalReference> ;
+                                <https://admin-shell.io/aas/3/0/RC02/Key/value>
+                                        "something_random_920ea681"
+                              ] ;
+                      <https://admin-shell.io/aas/3/0/RC02/type>
+                              "GlobalReference"
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC02/HasSemantics/supplementalSemanticIds>
+                    [ <https://admin-shell.io/aas/3/0/RC02/Reference/keys>
+                              [ <https://admin-shell.io/aas/3/0/RC02/Key/type>
+                                        <https://admin-shell.io/aas/3/0/RC02/KeyTypes/GlobalReference> ;
+                                <https://admin-shell.io/aas/3/0/RC02/Key/value>
+                                        "something_random_c2c84a40"
+                              ] ;
+                      <https://admin-shell.io/aas/3/0/RC02/type>
+                              "GlobalReference"
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC02/Qualifiable/qualifiers>
+                    [ <https://admin-shell.io/aas/3/0/RC02/Qualifier/type>
+                              "something_random_cfd39ba4" ;
+                      <https://admin-shell.io/aas/3/0/RC02/Qualifier/valueType>
+                              <http://www.w3.org/2001/XMLSchema#boolean>
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC02/Referable/category>
+                    "something_random_6c273750" ;
+            <https://admin-shell.io/aas/3/0/RC02/Referable/checksum>
+                    "something_random_bb3da9d4" ;
+            <https://admin-shell.io/aas/3/0/RC02/Referable/description>
+                    [ <https://admin-shell.io/aas/3/0/RC02/LangString/language>
+                              "en" ;
+                      <https://admin-shell.io/aas/3/0/RC02/LangString/text>
+                              "something_random_0bcec5eb"
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC02/Referable/displayName>
+                    [ <https://admin-shell.io/aas/3/0/RC02/LangString/language>
+                              "en" ;
+                      <https://admin-shell.io/aas/3/0/RC02/LangString/text>
+                              "something_random_18705330"
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC02/Referable/idShort>
+                    "Z0" ;
+            <https://admin-shell.io/aas/3/0/RC02/Submodel/submodelElements>
+                    [ a       <https://admin-shell.io/aas/3/0/RC02/Blob> ;
+                      <https://admin-shell.io/aas/3/0/RC02/Blob/contentType>
+                              "application/something-random" ;
+                      <https://admin-shell.io/aas/3/0/RC02/Referable/idShort>
+                              "some_id_short_10b21b1b"
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC02/administration>
+                    []  .
+}
+
+<urn:spartdd:metadata> {
+    <aas:urn:uuid:7c83cce5-7b1f-43b2-8397-e0371a823b35>
+            <urn:spartdd:describes>         <urn:uuid:7c83cce5-7b1f-43b2-8397-e0371a823b35> ;
+            <urn:spartdd:expressedIn>       <https://admin-shell.io/aas/3/0/RC02/> ;
+            <urn:wot:relation:has_context>  <urn:wot:context:W10=> .
+    
+    <urn:wot:context:W10=>
+            <urn:wot:relation:context_content>
+                    "[]" .
+}

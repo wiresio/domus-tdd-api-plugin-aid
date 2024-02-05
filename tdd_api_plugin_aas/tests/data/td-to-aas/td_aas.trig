@@ -1,0 +1,139 @@
+<aas:urn:illuminance:sensor> {
+    <urn:illuminance:sensor>
+            a       <https://admin-shell.io/aas/3/0/RC02/Submodel> ;
+            <https://admin-shell.io/aas/3/0/RC02/HasKind/kind>
+                    <https://admin-shell.io/aas/3/0/RC02/ModelingKind/Instance> ;
+            <https://admin-shell.io/aas/3/0/RC02/HasSemantics/semanticId>
+                    [ a       <https://admin-shell.io/aas/3/0/RC02/Reference> ;
+                      <https://admin-shell.io/aas/3/0/RC02/Reference/keys>
+                              [ <https://admin-shell.io/aas/3/0/RC02/Key/type>
+                                        <https://admin-shell.io/aas/3/0/RC02/KeyTypes/GlobalReference> ;
+                                <https://admin-shell.io/aas/3/0/RC02/Key/value>
+                                        "https://www.w3.org/2019/wot/td#Thing"
+                              ] ;
+                      <https://admin-shell.io/aas/3/0/RC02/Reference/type>
+                              <https://admin-shell.io/aas/3/0/RC02/ReferenceTypes/GlobalReference>
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC02/Qualifiable/qualifiers>
+                    [ a       <https://admin-shell.io/aas/3/0/RC02/Qualifier> ;
+                      <https://admin-shell.io/aas/3/0/RC02/HasSemantics/semanticId>
+                              [ a       <https://admin-shell.io/aas/3/0/RC02/Reference> ;
+                                <https://admin-shell.io/aas/3/0/RC02/Reference/keys>
+                                        [ <https://admin-shell.io/aas/3/0/RC02/Key/type>
+                                                  <https://admin-shell.io/aas/3/0/RC02/KeyTypes/GlobalReference> ;
+                                          <https://admin-shell.io/aas/3/0/RC02/Key/value>
+                                                  "https://www.w3.org/2021/wot/discovery#hasRegistrationInformation"
+                                        ] ;
+                                <https://admin-shell.io/aas/3/0/RC02/Reference/type>
+                                        <https://admin-shell.io/aas/3/0/RC02/ReferenceTypes/GlobalReference>
+                              ] ;
+                      <https://admin-shell.io/aas/3/0/RC02/Qualifier/type>
+                              "A qualifier (this field is mandatory)" ;
+                      <https://admin-shell.io/aas/3/0/RC02/Qualifier/value>
+                              "http://rdlib.net/.well-known/genid/rdflib/Na162e26cd3864c549d18bc509e8b7cee" ;
+                      <https://admin-shell.io/aas/3/0/RC02/Qualifier/valueType>
+                              <http://www.w3.org/2001/XMLSchema#string>
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC02/Qualifiable/qualifiers>
+                    [ a       <https://admin-shell.io/aas/3/0/RC02/Qualifier> ;
+                      <https://admin-shell.io/aas/3/0/RC02/HasSemantics/semanticId>
+                              [ a       <https://admin-shell.io/aas/3/0/RC02/Reference> ;
+                                <https://admin-shell.io/aas/3/0/RC02/Reference/keys>
+                                        [ <https://admin-shell.io/aas/3/0/RC02/Key/type>
+                                                  <https://admin-shell.io/aas/3/0/RC02/KeyTypes/GlobalReference> ;
+                                          <https://admin-shell.io/aas/3/0/RC02/Key/value>
+                                                  "https://www.w3.org/2019/wot/td#definesSecurityScheme"
+                                        ] ;
+                                <https://admin-shell.io/aas/3/0/RC02/Reference/type>
+                                        <https://admin-shell.io/aas/3/0/RC02/ReferenceTypes/GlobalReference>
+                              ] ;
+                      <https://admin-shell.io/aas/3/0/RC02/Qualifier/type>
+                              "A qualifier (this field is mandatory)" ;
+                      <https://admin-shell.io/aas/3/0/RC02/Qualifier/value>
+                              "http://rdlib.net/.well-known/genid/rdflib/Nb2981145c680402d83b7208dc9186027" ;
+                      <https://admin-shell.io/aas/3/0/RC02/Qualifier/valueType>
+                              <http://www.w3.org/2001/XMLSchema#string>
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC02/Qualifiable/qualifiers>
+                    [ a       <https://admin-shell.io/aas/3/0/RC02/Qualifier> ;
+                      <https://admin-shell.io/aas/3/0/RC02/HasSemantics/semanticId>
+                              [ a       <https://admin-shell.io/aas/3/0/RC02/Reference> ;
+                                <https://admin-shell.io/aas/3/0/RC02/Reference/keys>
+                                        [ <https://admin-shell.io/aas/3/0/RC02/Key/type>
+                                                  <https://admin-shell.io/aas/3/0/RC02/KeyTypes/GlobalReference> ;
+                                          <https://admin-shell.io/aas/3/0/RC02/Key/value>
+                                                  "https://www.w3.org/2019/wot/td#hasSecurityConfiguration"
+                                        ] ;
+                                <https://admin-shell.io/aas/3/0/RC02/Reference/type>
+                                        <https://admin-shell.io/aas/3/0/RC02/ReferenceTypes/GlobalReference>
+                              ] ;
+                      <https://admin-shell.io/aas/3/0/RC02/Qualifier/type>
+                              "A qualifier (this field is mandatory)" ;
+                      <https://admin-shell.io/aas/3/0/RC02/Qualifier/value>
+                              "http://localhost:5000/urn:illuminance:sensor/nosec_sc" ;
+                      <https://admin-shell.io/aas/3/0/RC02/Qualifier/valueType>
+                              <http://www.w3.org/2001/XMLSchema#anyURI>
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC02/Qualifiable/qualifiers>
+                    [ a       <https://admin-shell.io/aas/3/0/RC02/Qualifier> ;
+                      <https://admin-shell.io/aas/3/0/RC02/HasSemantics/semanticId>
+                              [ a       <https://admin-shell.io/aas/3/0/RC02/Reference> ;
+                                <https://admin-shell.io/aas/3/0/RC02/Reference/keys>
+                                        [ <https://admin-shell.io/aas/3/0/RC02/Key/type>
+                                                  <https://admin-shell.io/aas/3/0/RC02/KeyTypes/GlobalReference> ;
+                                          <https://admin-shell.io/aas/3/0/RC02/Key/value>
+                                                  "https://www.w3.org/2019/wot/td#title"
+                                        ] ;
+                                <https://admin-shell.io/aas/3/0/RC02/Reference/type>
+                                        <https://admin-shell.io/aas/3/0/RC02/ReferenceTypes/GlobalReference>
+                              ] ;
+                      <https://admin-shell.io/aas/3/0/RC02/Qualifier/type>
+                              "A qualifier (this field is mandatory)" ;
+                      <https://admin-shell.io/aas/3/0/RC02/Qualifier/value>
+                              "MyIlluminanceSensor" ;
+                      <https://admin-shell.io/aas/3/0/RC02/Qualifier/valueType>
+                              <http://www.w3.org/2001/XMLSchema#string>
+                    ] ;
+            <https://admin-shell.io/aas/3/0/RC02/Referable/idShort>
+                    "sensor" .
+}
+
+<urn:spartdd:metadata> {
+    <urn:wot:context:WyJodHRwczovL3d3dy53My5vcmcvMjAyMi93b3QvdGQvdjEuMSIsICJodHRwczovL3czYy5naXRodWIuaW8vd290LWRpc2NvdmVyeS9jb250ZXh0L2Rpc2NvdmVyeS1jb250ZXh0Lmpzb25sZCJd>
+            <urn:wot:relation:context_content>
+                    "[\"https://www.w3.org/2022/wot/td/v1.1\", \"https://w3c.github.io/wot-discovery/context/discovery-context.jsonld\"]" .
+    
+    <urn:wot:context:W3siQHZvY2FiIjogImh0dHBzOi8vYWRtaW4tc2hlbGwuaW8vYWFzLzMvMC9SQzAyLyIsICJhYXMiOiAiaHR0cHM6Ly9hZG1pbi1zaGVsbC5pby9hYXMvMy8wL1JDMDIvIiwgInhzIjogImh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIyIsICJjb25jZXB0RGVzY3JpcHRpb25zIjogeyJAY29udGFpbmVyIjogIkBzZXQiLCAiQGlkIjogImFhczpBc3NldEFkbWluaXN0cmF0aW9uU2hlbGxFbnZpcm9ubWVudC9jb25jZXB0RGVzY3JpcHRpb25zIn0sICJzdWJtb2RlbHMiOiB7IkBpZCI6ICJhYXM6QXNzZXRBZG1pbmlzdHJhdGlvblNoZWxsL3N1Ym1vZGVscyIsICJAY29udGFpbmVyIjogIkBzZXQifSwgImlkIjogIkBpZCIsICJpZFNob3J0IjogImFhczpSZWZlcmFibGUvaWRTaG9ydCIsICJJbnN0YW5jZSI6ICJhYXM6TW9kZWxpbmdLaW5kL0luc3RhbmNlIiwgIlRlbXBsYXRlIjogImFhczpNb2RlbGluZ0tpbmQvVGVtcGxhdGUiLCAia2luZCI6IHsiQGlkIjogImFhczpIYXNLaW5kL2tpbmQiLCAiQHR5cGUiOiAiQHZvY2FiIn0sICJjYXRlZ29yeSI6IHsiQGlkIjogImFhczpSZWZlcmFibGUvY2F0ZWdvcnkifSwgImNoZWNrc3VtIjogeyJAaWQiOiAiYWFzOlJlZmVyYWJsZS9jaGVja3N1bSJ9LCAibW9kZWxUeXBlIjogIkB0eXBlIiwgImxhbmdTdHJpbmdzIjogeyJAaWQiOiAiYWFzOkxhbmdTdHJpbmdTZXQvbGFuZ1N0cmluZ3MiLCAiQGNvbnRhaW5lciI6ICJAc2V0In0sICJsYW5ndWFnZSI6ICJhYXM6TGFuZ1N0cmluZy9sYW5ndWFnZSIsICJ0ZXh0IjogImFhczpMYW5nU3RyaW5nL3RleHQiLCAiZGVzY3JpcHRpb24iOiB7IkBpZCI6ICJhYXM6UmVmZXJhYmxlL2Rlc2NyaXB0aW9uIiwgIkBjb250YWluZXIiOiAiQHNldCJ9LCAiZGlzcGxheU5hbWUiOiB7IkBpZCI6ICJhYXM6UmVmZXJhYmxlL2Rpc3BsYXlOYW1lIiwgIkBjb250YWluZXIiOiAiQHNldCJ9LCAicHJlZmVycmVkTmFtZSI6IHsiQGlkIjogImFhczpEYXRhU3BlY2lmaWNhdGlvbklFQzYxMzYwL3ByZWZlcnJlZE5hbWUiLCAiQGNvbnRhaW5lciI6ICJAc2V0In0sICJkYXRhU3BlY2lmaWNhdGlvbnMiOiB7IkBpZCI6ICJhYXM6SGFzRGF0YVNwZWNpZmljYXRpb24vZGF0YVNwZWNpZmljYXRpb25zIiwgIkBjb250YWluZXIiOiAiQHNldCJ9LCAiZW1iZWRkZWREYXRhU3BlY2lmaWNhdGlvbnMiOiB7IkBpZCI6ICJhYXM6SGFzRGF0YVNwZWNpZmljYXRpb24vZW1iZWRkZWREYXRhU3BlY2lmaWNhdGlvbnMiLCAiQGNvbnRhaW5lciI6ICJAc2V0In0sICJleHRlbnNpb25zIjogeyJAaWQiOiAiYWFzOkhhc0V4dGVuc2lvbnMvZXh0ZW5zaW9ucyIsICJAY29udGFpbmVyIjogIkBzZXQifSwgInN1cHBsZW1lbnRhbFNlbWFudGljSWRzIjogeyJAaWQiOiAiYWFzOkhhc1NlbWFudGljcy9zdXBwbGVtZW50YWxTZW1hbnRpY0lkcyIsICJAY29udGFpbmVyIjogIkBzZXQifSwgIkJsb2IiOiB7IkBpZCI6ICJhYXM6QmxvYiIsICJAY29udGV4dCI6IHsidmFsdWUiOiAiYWFzOkJsb2IvdmFsdWUiLCAiY29udGVudFR5cGUiOiAiYWFzOkJsb2IvY29udGVudFR5cGUifX0sICJGaWxlIjogeyJAaWQiOiAiYWFzOkZpbGUiLCAiQGNvbnRleHQiOiB7InZhbHVlIjogImFhczpGaWxlL3ZhbHVlIiwgImNvbnRlbnRUeXBlIjogImFhczpGaWxlL2NvbnRlbnRUeXBlIn19LCAiUHJvcGVydHkiOiB7IkBpZCI6ICJhYXM6UHJvcGVydHkiLCAiQGNvbnRleHQiOiB7InZhbHVlIjogImFhczpQcm9wZXJ0eS92YWx1ZSIsICJ2YWx1ZUlkIjogeyJAaWQiOiAiYWFzOlByb3BlcnR5L3ZhbHVlSWQiLCAiQHR5cGUiOiAiQGlkIn0sICJ2YWx1ZVR5cGUiOiB7IkBpZCI6ICJhYXM6UHJvcGVydHkvdmFsdWVUeXBlIiwgIkB0eXBlIjogIkBpZCJ9fX0sICJNdWx0aUxhbmd1YWdlUHJvcGVydHkiOiB7IkBpZCI6ICJhYXM6TXVsdGlMYW5ndWFnZVByb3BlcnR5IiwgIkBjb250ZXh0IjogeyJ2YWx1ZSI6ICJhYXM6TXVsdGlMYW5ndWFnZVByb3BlcnR5L3ZhbHVlIiwgInZhbHVlSWQiOiB7IkBpZCI6ICJhYXM6TXVsdGlMYW5ndWFnZVByb3BlcnR5L3ZhbHVlSWQiLCAiQHR5cGUiOiAiQGlkIn19fSwgImlub3V0cHV0VmFyaWFibGVzIjogeyJAaWQiOiAiYWFzOk9wZXJhdGlvbi9pbm91dHB1dFZhcmlhYmxlcyIsICJAY29udGFpbmVyIjogIkBzZXQiLCAiQGNvbnRleHQiOiB7InZhbHVlIjogImFhczpPcGVyYXRpb25WYXJpYWJsZS92YWx1ZSJ9fSwgImlucHV0VmFyaWFibGVzIjogeyJAaWQiOiAiYWFzOk9wZXJhdGlvbi9pbnB1dFZhcmlhYmxlcyIsICJAY29udGFpbmVyIjogIkBzZXQiLCAiQGNvbnRleHQiOiB7InZhbHVlIjogImFhczpPcGVyYXRpb25WYXJpYWJsZS92YWx1ZSJ9fSwgIm91dHB1dFZhcmlhYmxlcyI6IHsiQGlkIjogImFhczpPcGVyYXRpb24vb3V0cHV0VmFyaWFibGVzIiwgIkBjb250YWluZXIiOiAiQHNldCIsICJAY29udGV4dCI6IHsidmFsdWUiOiAiYWFzOk9wZXJhdGlvblZhcmlhYmxlL3ZhbHVlIn19LCAicXVhbGlmaWVycyI6IHsiQGlkIjogImFhczpRdWFsaWZpYWJsZS9xdWFsaWZpZXJzIiwgIkBjb250YWluZXIiOiAiQHNldCIsICJAY29udGV4dCI6IHsidHlwZSI6ICJhYXM6UXVhbGlmaWVyL3R5cGUiLCAidmFsdWUiOiAiYWFzOlF1YWxpZmllci92YWx1ZSIsICJ2YWx1ZVR5cGUiOiB7IkBpZCI6ICJhYXM6UXVhbGlmaWVyL3ZhbHVlVHlwZSIsICJAdHlwZSI6ICJAaWQifSwgInZhbHVlSWQiOiB7IkBpZCI6ICJhYXM6UXVhbGlmaWVyL3ZhbHVlSWQiLCAiQHR5cGUiOiAiQGlkIn19fSwgImtleXMiOiB7IkBpZCI6ICJhYXM6UmVmZXJlbmNlL2tleXMiLCAiQGNvbnRhaW5lciI6ICJAc2V0IiwgIkBjb250ZXh0IjogeyJ0eXBlIjogeyJAY29udGV4dCI6IHsiQHZvY2FiIjogImh0dHBzOi8vYWRtaW4tc2hlbGwuaW8vYWFzLzMvMC9SQzAyL0tleVR5cGVzLyJ9LCAiQGlkIjogImFhczpLZXkvdHlwZSIsICJAdHlwZSI6ICJAdm9jYWIifSwgInZhbHVlIjogImFhczpLZXkvdmFsdWUifX0sICJSZWZlcmVuY2UiOiB7IkBpZCI6ICJhYXM6UmVmZXJlbmNlIiwgIkBjb250ZXh0IjogeyJ0eXBlIjogeyJAY29udGV4dCI6IHsiQHZvY2FiIjogImh0dHBzOi8vYWRtaW4tc2hlbGwuaW8vYWFzLzMvMC9SQzAyL1JlZmVyZW5jZVR5cGVzLyJ9LCAiQGlkIjogImFhczpSZWZlcmVuY2UvdHlwZSIsICJAdHlwZSI6ICJAdm9jYWIifX19LCAic2VtYW50aWNJZCI6IHsiQGlkIjogImFhczpIYXNTZW1hbnRpY3Mvc2VtYW50aWNJZCIsICJAdHlwZSI6ICJAaWQifSwgIlN1Ym1vZGVsRWxlbWVudExpc3QiOiB7IkBpZCI6ICJhYXM6U3VibW9kZWxFbGVtZW50TGlzdCIsICJAY29udGV4dCI6IHsidmFsdWUiOiB7IkBpZCI6ICJhYXM6U3VibW9kZWxFbGVtZW50TGlzdC92YWx1ZSIsICJAdHlwZSI6ICJAaWQiLCAiQGNvbnRhaW5lciI6ICJAc2V0In0sICJvcmRlclJlbGV2YW50IjogeyJAaWQiOiAiYWFzOlN1Ym1vZGVsRWxlbWVudExpc3Qvb3JkZXJSZWxldmFudCJ9LCAic2VtYW50aWNJZExpc3RFbGVtZW50IjogeyJAaWQiOiAiYWFzOlN1Ym1vZGVsRWxlbWVudExpc3Qvc2VtYW50aWNJZExpc3RFbGVtZW50IiwgIkB0eXBlIjogIkBpZCJ9LCAidHlwZVZhbHVlTGlzdEVsZW1lbnQiOiB7IkBpZCI6ICJhYXM6U3VibW9kZWxFbGVtZW50TGlzdC90eXBlVmFsdWVMaXN0RWxlbWVudCIsICJAdHlwZSI6ICJAaWQifSwgInZhbHVlVHlwZUxpc3RFbGVtZW50IjogeyJAaWQiOiAiYWFzOlN1Ym1vZGVsRWxlbWVudExpc3QvdmFsdWVUeXBlTGlzdEVsZW1lbnQiLCAiQHR5cGUiOiAiQGlkIn19fSwgIlN1Ym1vZGVsRWxlbWVudENvbGxlY3Rpb24iOiB7IkBpZCI6ICJhYXM6U3VibW9kZWxFbGVtZW50Q29sbGVjdGlvbiIsICJAY29udGV4dCI6IHsidmFsdWUiOiB7IkBpZCI6ICJhYXM6U3VibW9kZWxFbGVtZW50Q29sbGVjdGlvbi92YWx1ZSIsICJAdHlwZSI6ICJAaWQiLCAiQGNvbnRhaW5lciI6ICJAc2V0In19fSwgInN1Ym1vZGVsRWxlbWVudHMiOiB7IkBpZCI6ICJhYXM6U3VibW9kZWwvc3VibW9kZWxFbGVtZW50cyIsICJAdHlwZSI6ICJAaWQiLCAiQGNvbnRhaW5lciI6ICJAc2V0In19XQ==>
+            <urn:wot:relation:context_content>
+                    "[{\"@vocab\": \"https://admin-shell.io/aas/3/0/RC02/\", \"aas\": \"https://admin-shell.io/aas/3/0/RC02/\", \"xs\": \"http://www.w3.org/2001/XMLSchema#\", \"conceptDescriptions\": {\"@container\": \"@set\", \"@id\": \"aas:AssetAdministrationShellEnvironment/conceptDescriptions\"}, \"submodels\": {\"@id\": \"aas:AssetAdministrationShell/submodels\", \"@container\": \"@set\"}, \"id\": \"@id\", \"idShort\": \"aas:Referable/idShort\", \"Instance\": \"aas:ModelingKind/Instance\", \"Template\": \"aas:ModelingKind/Template\", \"kind\": {\"@id\": \"aas:HasKind/kind\", \"@type\": \"@vocab\"}, \"category\": {\"@id\": \"aas:Referable/category\"}, \"checksum\": {\"@id\": \"aas:Referable/checksum\"}, \"modelType\": \"@type\", \"langStrings\": {\"@id\": \"aas:LangStringSet/langStrings\", \"@container\": \"@set\"}, \"language\": \"aas:LangString/language\", \"text\": \"aas:LangString/text\", \"description\": {\"@id\": \"aas:Referable/description\", \"@container\": \"@set\"}, \"displayName\": {\"@id\": \"aas:Referable/displayName\", \"@container\": \"@set\"}, \"preferredName\": {\"@id\": \"aas:DataSpecificationIEC61360/preferredName\", \"@container\": \"@set\"}, \"dataSpecifications\": {\"@id\": \"aas:HasDataSpecification/dataSpecifications\", \"@container\": \"@set\"}, \"embeddedDataSpecifications\": {\"@id\": \"aas:HasDataSpecification/embeddedDataSpecifications\", \"@container\": \"@set\"}, \"extensions\": {\"@id\": \"aas:HasExtensions/extensions\", \"@container\": \"@set\"}, \"supplementalSemanticIds\": {\"@id\": \"aas:HasSemantics/supplementalSemanticIds\", \"@container\": \"@set\"}, \"Blob\": {\"@id\": \"aas:Blob\", \"@context\": {\"value\": \"aas:Blob/value\", \"contentType\": \"aas:Blob/contentType\"}}, \"File\": {\"@id\": \"aas:File\", \"@context\": {\"value\": \"aas:File/value\", \"contentType\": \"aas:File/contentType\"}}, \"Property\": {\"@id\": \"aas:Property\", \"@context\": {\"value\": \"aas:Property/value\", \"valueId\": {\"@id\": \"aas:Property/valueId\", \"@type\": \"@id\"}, \"valueType\": {\"@id\": \"aas:Property/valueType\", \"@type\": \"@id\"}}}, \"MultiLanguageProperty\": {\"@id\": \"aas:MultiLanguageProperty\", \"@context\": {\"value\": \"aas:MultiLanguageProperty/value\", \"valueId\": {\"@id\": \"aas:MultiLanguageProperty/valueId\", \"@type\": \"@id\"}}}, \"inoutputVariables\": {\"@id\": \"aas:Operation/inoutputVariables\", \"@container\": \"@set\", \"@context\": {\"value\": \"aas:OperationVariable/value\"}}, \"inputVariables\": {\"@id\": \"aas:Operation/inputVariables\", \"@container\": \"@set\", \"@context\": {\"value\": \"aas:OperationVariable/value\"}}, \"outputVariables\": {\"@id\": \"aas:Operation/outputVariables\", \"@container\": \"@set\", \"@context\": {\"value\": \"aas:OperationVariable/value\"}}, \"qualifiers\": {\"@id\": \"aas:Qualifiable/qualifiers\", \"@container\": \"@set\", \"@context\": {\"type\": \"aas:Qualifier/type\", \"value\": \"aas:Qualifier/value\", \"valueType\": {\"@id\": \"aas:Qualifier/valueType\", \"@type\": \"@id\"}, \"valueId\": {\"@id\": \"aas:Qualifier/valueId\", \"@type\": \"@id\"}}}, \"keys\": {\"@id\": \"aas:Reference/keys\", \"@container\": \"@set\", \"@context\": {\"type\": {\"@context\": {\"@vocab\": \"https://admin-shell.io/aas/3/0/RC02/KeyTypes/\"}, \"@id\": \"aas:Key/type\", \"@type\": \"@vocab\"}, \"value\": \"aas:Key/value\"}}, \"Reference\": {\"@id\": \"aas:Reference\", \"@context\": {\"type\": {\"@context\": {\"@vocab\": \"https://admin-shell.io/aas/3/0/RC02/ReferenceTypes/\"}, \"@id\": \"aas:Reference/type\", \"@type\": \"@vocab\"}}}, \"semanticId\": {\"@id\": \"aas:HasSemantics/semanticId\", \"@type\": \"@id\"}, \"SubmodelElementList\": {\"@id\": \"aas:SubmodelElementList\", \"@context\": {\"value\": {\"@id\": \"aas:SubmodelElementList/value\", \"@type\": \"@id\", \"@container\": \"@set\"}, \"orderRelevant\": {\"@id\": \"aas:SubmodelElementList/orderRelevant\"}, \"semanticIdListElement\": {\"@id\": \"aas:SubmodelElementList/semanticIdListElement\", \"@type\": \"@id\"}, \"typeValueListElement\": {\"@id\": \"aas:SubmodelElementList/typeValueListElement\", \"@type\": \"@id\"}, \"valueTypeListElement\": {\"@id\": \"aas:SubmodelElementList/valueTypeListElement\", \"@type\": \"@id\"}}}, \"SubmodelElementCollection\": {\"@id\": \"aas:SubmodelElementCollection\", \"@context\": {\"value\": {\"@id\": \"aas:SubmodelElementCollection/value\", \"@type\": \"@id\", \"@container\": \"@set\"}}}, \"submodelElements\": {\"@id\": \"aas:Submodel/submodelElements\", \"@type\": \"@id\", \"@container\": \"@set\"}}]" .
+    
+    <td:urn:illuminance:sensor>
+            <urn:spartdd:describes>         <urn:illuminance:sensor> ;
+            <urn:spartdd:expressedIn>       <https://www.w3.org/2019/wot/td> ;
+            <urn:wot:relation:has_context>  <urn:wot:context:WyJodHRwczovL3d3dy53My5vcmcvMjAyMi93b3QvdGQvdjEuMSIsICJodHRwczovL3czYy5naXRodWIuaW8vd290LWRpc2NvdmVyeS9jb250ZXh0L2Rpc2NvdmVyeS1jb250ZXh0Lmpzb25sZCJd> .
+    
+    <aas:urn:illuminance:sensor>
+            <urn:spartdd:describes>         <urn:illuminance:sensor> ;
+            <urn:spartdd:expressedIn>       <https://admin-shell.io/aas/3/0/RC02/> ;
+            <urn:wot:relation:has_context>  <urn:wot:context:W3siQHZvY2FiIjogImh0dHBzOi8vYWRtaW4tc2hlbGwuaW8vYWFzLzMvMC9SQzAyLyIsICJhYXMiOiAiaHR0cHM6Ly9hZG1pbi1zaGVsbC5pby9hYXMvMy8wL1JDMDIvIiwgInhzIjogImh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIyIsICJjb25jZXB0RGVzY3JpcHRpb25zIjogeyJAY29udGFpbmVyIjogIkBzZXQiLCAiQGlkIjogImFhczpBc3NldEFkbWluaXN0cmF0aW9uU2hlbGxFbnZpcm9ubWVudC9jb25jZXB0RGVzY3JpcHRpb25zIn0sICJzdWJtb2RlbHMiOiB7IkBpZCI6ICJhYXM6QXNzZXRBZG1pbmlzdHJhdGlvblNoZWxsL3N1Ym1vZGVscyIsICJAY29udGFpbmVyIjogIkBzZXQifSwgImlkIjogIkBpZCIsICJpZFNob3J0IjogImFhczpSZWZlcmFibGUvaWRTaG9ydCIsICJJbnN0YW5jZSI6ICJhYXM6TW9kZWxpbmdLaW5kL0luc3RhbmNlIiwgIlRlbXBsYXRlIjogImFhczpNb2RlbGluZ0tpbmQvVGVtcGxhdGUiLCAia2luZCI6IHsiQGlkIjogImFhczpIYXNLaW5kL2tpbmQiLCAiQHR5cGUiOiAiQHZvY2FiIn0sICJjYXRlZ29yeSI6IHsiQGlkIjogImFhczpSZWZlcmFibGUvY2F0ZWdvcnkifSwgImNoZWNrc3VtIjogeyJAaWQiOiAiYWFzOlJlZmVyYWJsZS9jaGVja3N1bSJ9LCAibW9kZWxUeXBlIjogIkB0eXBlIiwgImxhbmdTdHJpbmdzIjogeyJAaWQiOiAiYWFzOkxhbmdTdHJpbmdTZXQvbGFuZ1N0cmluZ3MiLCAiQGNvbnRhaW5lciI6ICJAc2V0In0sICJsYW5ndWFnZSI6ICJhYXM6TGFuZ1N0cmluZy9sYW5ndWFnZSIsICJ0ZXh0IjogImFhczpMYW5nU3RyaW5nL3RleHQiLCAiZGVzY3JpcHRpb24iOiB7IkBpZCI6ICJhYXM6UmVmZXJhYmxlL2Rlc2NyaXB0aW9uIiwgIkBjb250YWluZXIiOiAiQHNldCJ9LCAiZGlzcGxheU5hbWUiOiB7IkBpZCI6ICJhYXM6UmVmZXJhYmxlL2Rpc3BsYXlOYW1lIiwgIkBjb250YWluZXIiOiAiQHNldCJ9LCAicHJlZmVycmVkTmFtZSI6IHsiQGlkIjogImFhczpEYXRhU3BlY2lmaWNhdGlvbklFQzYxMzYwL3ByZWZlcnJlZE5hbWUiLCAiQGNvbnRhaW5lciI6ICJAc2V0In0sICJkYXRhU3BlY2lmaWNhdGlvbnMiOiB7IkBpZCI6ICJhYXM6SGFzRGF0YVNwZWNpZmljYXRpb24vZGF0YVNwZWNpZmljYXRpb25zIiwgIkBjb250YWluZXIiOiAiQHNldCJ9LCAiZW1iZWRkZWREYXRhU3BlY2lmaWNhdGlvbnMiOiB7IkBpZCI6ICJhYXM6SGFzRGF0YVNwZWNpZmljYXRpb24vZW1iZWRkZWREYXRhU3BlY2lmaWNhdGlvbnMiLCAiQGNvbnRhaW5lciI6ICJAc2V0In0sICJleHRlbnNpb25zIjogeyJAaWQiOiAiYWFzOkhhc0V4dGVuc2lvbnMvZXh0ZW5zaW9ucyIsICJAY29udGFpbmVyIjogIkBzZXQifSwgInN1cHBsZW1lbnRhbFNlbWFudGljSWRzIjogeyJAaWQiOiAiYWFzOkhhc1NlbWFudGljcy9zdXBwbGVtZW50YWxTZW1hbnRpY0lkcyIsICJAY29udGFpbmVyIjogIkBzZXQifSwgIkJsb2IiOiB7IkBpZCI6ICJhYXM6QmxvYiIsICJAY29udGV4dCI6IHsidmFsdWUiOiAiYWFzOkJsb2IvdmFsdWUiLCAiY29udGVudFR5cGUiOiAiYWFzOkJsb2IvY29udGVudFR5cGUifX0sICJGaWxlIjogeyJAaWQiOiAiYWFzOkZpbGUiLCAiQGNvbnRleHQiOiB7InZhbHVlIjogImFhczpGaWxlL3ZhbHVlIiwgImNvbnRlbnRUeXBlIjogImFhczpGaWxlL2NvbnRlbnRUeXBlIn19LCAiUHJvcGVydHkiOiB7IkBpZCI6ICJhYXM6UHJvcGVydHkiLCAiQGNvbnRleHQiOiB7InZhbHVlIjogImFhczpQcm9wZXJ0eS92YWx1ZSIsICJ2YWx1ZUlkIjogeyJAaWQiOiAiYWFzOlByb3BlcnR5L3ZhbHVlSWQiLCAiQHR5cGUiOiAiQGlkIn0sICJ2YWx1ZVR5cGUiOiB7IkBpZCI6ICJhYXM6UHJvcGVydHkvdmFsdWVUeXBlIiwgIkB0eXBlIjogIkBpZCJ9fX0sICJNdWx0aUxhbmd1YWdlUHJvcGVydHkiOiB7IkBpZCI6ICJhYXM6TXVsdGlMYW5ndWFnZVByb3BlcnR5IiwgIkBjb250ZXh0IjogeyJ2YWx1ZSI6ICJhYXM6TXVsdGlMYW5ndWFnZVByb3BlcnR5L3ZhbHVlIiwgInZhbHVlSWQiOiB7IkBpZCI6ICJhYXM6TXVsdGlMYW5ndWFnZVByb3BlcnR5L3ZhbHVlSWQiLCAiQHR5cGUiOiAiQGlkIn19fSwgImlub3V0cHV0VmFyaWFibGVzIjogeyJAaWQiOiAiYWFzOk9wZXJhdGlvbi9pbm91dHB1dFZhcmlhYmxlcyIsICJAY29udGFpbmVyIjogIkBzZXQiLCAiQGNvbnRleHQiOiB7InZhbHVlIjogImFhczpPcGVyYXRpb25WYXJpYWJsZS92YWx1ZSJ9fSwgImlucHV0VmFyaWFibGVzIjogeyJAaWQiOiAiYWFzOk9wZXJhdGlvbi9pbnB1dFZhcmlhYmxlcyIsICJAY29udGFpbmVyIjogIkBzZXQiLCAiQGNvbnRleHQiOiB7InZhbHVlIjogImFhczpPcGVyYXRpb25WYXJpYWJsZS92YWx1ZSJ9fSwgIm91dHB1dFZhcmlhYmxlcyI6IHsiQGlkIjogImFhczpPcGVyYXRpb24vb3V0cHV0VmFyaWFibGVzIiwgIkBjb250YWluZXIiOiAiQHNldCIsICJAY29udGV4dCI6IHsidmFsdWUiOiAiYWFzOk9wZXJhdGlvblZhcmlhYmxlL3ZhbHVlIn19LCAicXVhbGlmaWVycyI6IHsiQGlkIjogImFhczpRdWFsaWZpYWJsZS9xdWFsaWZpZXJzIiwgIkBjb250YWluZXIiOiAiQHNldCIsICJAY29udGV4dCI6IHsidHlwZSI6ICJhYXM6UXVhbGlmaWVyL3R5cGUiLCAidmFsdWUiOiAiYWFzOlF1YWxpZmllci92YWx1ZSIsICJ2YWx1ZVR5cGUiOiB7IkBpZCI6ICJhYXM6UXVhbGlmaWVyL3ZhbHVlVHlwZSIsICJAdHlwZSI6ICJAaWQifSwgInZhbHVlSWQiOiB7IkBpZCI6ICJhYXM6UXVhbGlmaWVyL3ZhbHVlSWQiLCAiQHR5cGUiOiAiQGlkIn19fSwgImtleXMiOiB7IkBpZCI6ICJhYXM6UmVmZXJlbmNlL2tleXMiLCAiQGNvbnRhaW5lciI6ICJAc2V0IiwgIkBjb250ZXh0IjogeyJ0eXBlIjogeyJAY29udGV4dCI6IHsiQHZvY2FiIjogImh0dHBzOi8vYWRtaW4tc2hlbGwuaW8vYWFzLzMvMC9SQzAyL0tleVR5cGVzLyJ9LCAiQGlkIjogImFhczpLZXkvdHlwZSIsICJAdHlwZSI6ICJAdm9jYWIifSwgInZhbHVlIjogImFhczpLZXkvdmFsdWUifX0sICJSZWZlcmVuY2UiOiB7IkBpZCI6ICJhYXM6UmVmZXJlbmNlIiwgIkBjb250ZXh0IjogeyJ0eXBlIjogeyJAY29udGV4dCI6IHsiQHZvY2FiIjogImh0dHBzOi8vYWRtaW4tc2hlbGwuaW8vYWFzLzMvMC9SQzAyL1JlZmVyZW5jZVR5cGVzLyJ9LCAiQGlkIjogImFhczpSZWZlcmVuY2UvdHlwZSIsICJAdHlwZSI6ICJAdm9jYWIifX19LCAic2VtYW50aWNJZCI6IHsiQGlkIjogImFhczpIYXNTZW1hbnRpY3Mvc2VtYW50aWNJZCIsICJAdHlwZSI6ICJAaWQifSwgIlN1Ym1vZGVsRWxlbWVudExpc3QiOiB7IkBpZCI6ICJhYXM6U3VibW9kZWxFbGVtZW50TGlzdCIsICJAY29udGV4dCI6IHsidmFsdWUiOiB7IkBpZCI6ICJhYXM6U3VibW9kZWxFbGVtZW50TGlzdC92YWx1ZSIsICJAdHlwZSI6ICJAaWQiLCAiQGNvbnRhaW5lciI6ICJAc2V0In0sICJvcmRlclJlbGV2YW50IjogeyJAaWQiOiAiYWFzOlN1Ym1vZGVsRWxlbWVudExpc3Qvb3JkZXJSZWxldmFudCJ9LCAic2VtYW50aWNJZExpc3RFbGVtZW50IjogeyJAaWQiOiAiYWFzOlN1Ym1vZGVsRWxlbWVudExpc3Qvc2VtYW50aWNJZExpc3RFbGVtZW50IiwgIkB0eXBlIjogIkBpZCJ9LCAidHlwZVZhbHVlTGlzdEVsZW1lbnQiOiB7IkBpZCI6ICJhYXM6U3VibW9kZWxFbGVtZW50TGlzdC90eXBlVmFsdWVMaXN0RWxlbWVudCIsICJAdHlwZSI6ICJAaWQifSwgInZhbHVlVHlwZUxpc3RFbGVtZW50IjogeyJAaWQiOiAiYWFzOlN1Ym1vZGVsRWxlbWVudExpc3QvdmFsdWVUeXBlTGlzdEVsZW1lbnQiLCAiQHR5cGUiOiAiQGlkIn19fSwgIlN1Ym1vZGVsRWxlbWVudENvbGxlY3Rpb24iOiB7IkBpZCI6ICJhYXM6U3VibW9kZWxFbGVtZW50Q29sbGVjdGlvbiIsICJAY29udGV4dCI6IHsidmFsdWUiOiB7IkBpZCI6ICJhYXM6U3VibW9kZWxFbGVtZW50Q29sbGVjdGlvbi92YWx1ZSIsICJAdHlwZSI6ICJAaWQiLCAiQGNvbnRhaW5lciI6ICJAc2V0In19fSwgInN1Ym1vZGVsRWxlbWVudHMiOiB7IkBpZCI6ICJhYXM6U3VibW9kZWwvc3VibW9kZWxFbGVtZW50cyIsICJAdHlwZSI6ICJAaWQiLCAiQGNvbnRhaW5lciI6ICJAc2V0In19XQ==> .
+}
+
+<td:urn:illuminance:sensor> {
+    <urn:illuminance:sensor>
+            a       <https://www.w3.org/2019/wot/td#Thing> ;
+            <https://www.w3.org/2019/wot/td#definesSecurityScheme>
+                    [ a       <https://www.w3.org/2019/wot/security#NoSecurityScheme> ;
+                      <https://www.w3.org/2019/wot/td#hasInstanceConfiguration>
+                              <http://localhost:5000/urn:illuminance:sensor/nosec_sc>
+                    ] ;
+            <https://www.w3.org/2019/wot/td#hasSecurityConfiguration>
+                    <http://localhost:5000/urn:illuminance:sensor/nosec_sc> ;
+            <https://www.w3.org/2019/wot/td#title>
+                    "MyIlluminanceSensor" ;
+            <https://www.w3.org/2021/wot/discovery#hasRegistrationInformation>
+                    [ <https://www.w3.org/2021/wot/discovery#dateCreated>
+                              "2022-11-10T12:45:29.479861+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                      <https://www.w3.org/2021/wot/discovery#dateModified>
+                              "2022-11-10T12:45:29.479861+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>
+                    ] .
+}

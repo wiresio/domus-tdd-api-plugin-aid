@@ -1,0 +1,134 @@
+{
+  "submodels": [
+    {
+      "semanticId": {
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "local": true,
+            "value": "https://www.w3.org/2019/wot/td#Thing",
+            "index": 0,
+            "idType": "IRI"
+          }
+        ]
+      },
+      "qualifiers": [
+        {
+          "semanticId": {
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "local": true,
+                "value": "https://www.w3.org/2019/wot/td#hasSecurityConfiguration",
+                "index": 0,
+                "idType": "IRI"
+              }
+            ]
+          },
+          "type": "security",
+          "value": "nosec_sc",
+          "modelType": {
+            "name": "Qualifier"
+          }
+        },
+        {
+          "semanticId": {
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "local": true,
+                "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                "index": 0,
+                "idType": "IRI"
+              }
+            ]
+          },
+          "type": "@type",
+          "value": "Thing",
+          "modelType": {
+            "name": "Qualifier"
+          }
+        }
+      ],
+      "identification": {
+        "idType": "IRI",
+        "id": "urn:node:opcua:VentilationSystem"
+      },
+      "modelType": {
+        "name": "Submodel"
+      },
+      "kind": "Instance",
+      "submodelElements": [
+        {
+          "ordered": false,
+          "allowDuplicates": false,
+          "semanticId": {
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "local": true,
+                "value": "https://www.w3.org/2019/wot/td#definesSecurityScheme",
+                "index": 0,
+                "idType": "IRI"
+              }
+            ]
+          },
+          "idShort": "securityDefinitions",
+          "category": "PARAMETER",
+          "modelType": {
+            "name": "SubmodelElementCollection"
+          },
+          "value": [
+            {
+              "ordered": false,
+              "allowDuplicates": false,
+              "semanticId": {
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "local": true,
+                    "value": "https://www.w3.org/2019/wot/security#NoSecurityScheme",
+                    "index": 0,
+                    "idType": "IRI"
+                  }
+                ]
+              },
+              "constraints": [
+                {
+                  "semanticId": {
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "local": true,
+                        "index": 0,
+                        "idType": "IRI"
+                      }
+                    ]
+                  },
+                  "type": "scheme",
+                  "value": "nosec",
+                  "modelType": {
+                    "name": "Qualifier"
+                  }
+                }
+              ],
+              "idShort": "nosec_sc",
+              "category": "PARAMETER",
+              "modelType": {
+                "name": "SubmodelElementCollection"
+              },
+              "kind": "Instance"
+            }
+          ],
+          "kind": "Instance",
+          "descriptions": [
+            {
+              "language": "en",
+              "text": "Set of named security configurations(definitions only). Not actually applied unless names are used in a security name-value pair."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

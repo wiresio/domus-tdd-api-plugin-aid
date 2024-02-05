@@ -1,0 +1,10 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    "https://www.w3.org/2022/wot/discovery"
+  ],
+  "title": "MyIlluminanceSensor",
+  "id": "urn:illuminance:sensor",
+  "securityDefinitions": { "nosec_sc": { "scheme": "nosec" } },
+  "security": ["nosec_sc"]
+}
