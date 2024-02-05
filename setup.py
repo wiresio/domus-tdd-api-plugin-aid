@@ -17,8 +17,11 @@ setup(
         ]
     },
     entry_points={
-        "tdd_api.plugins": [
+        "tdd_api.plugins.blueprints": [
             "aas=tdd_api_plugin_aas:blueprint",
+        ],
+        "tdd_api.plugins.transformers": [
+            "aas=tdd_api_plugin_aas.aas:td_to_aas",
         ],
     },
 )
