@@ -10,6 +10,12 @@ setup(
     install_requires=[
         "tdd-api",
     ],
+    extras_require={
+        'dev': [
+            'pytest',
+            'mock',
+        ]
+    },
     entry_points={
         "tdd_api.plugins": [
             "aas=tdd_api_plugin_aas:blueprint",
