@@ -20,7 +20,7 @@ from tdd_api_plugin_aas.aas import (
     validate_aas,
 )
 
-blueprint = Blueprint('tdd_api_plugin_aas', __name__, url_prefix="/aas")
+blueprint = Blueprint("tdd_api_plugin_aas", __name__, url_prefix="/aas")
 
 
 @blueprint.route("/<id>", methods=["DELETE"])
@@ -29,6 +29,7 @@ def delete_route_aas(id):
     if response.status_code in [200, 204]:
         update_collection_etag()
     return response
+
 
 @blueprint.route("/<id>", methods=["GET"])
 def describe_aas(id):
@@ -40,15 +41,15 @@ def describe_aas(id):
         description = json.dumps(description)
     return Response(description, content_type=mime_type_negociated)
 
+
 @blueprint.route("/<id>", methods=["PUT"])
 def create_aas(id):
     mimetype = request.content_type
-    check_schema = get_check_schema_from_url_params(request)
     if mimetype == "application/json":
         mimetype = "application/aas+json"
     if mimetype == "application/aas+json":
         json_ld_content = request.get_data()
-        content = validate_aas(json_ld_content, uri=id, check_schema=check_schema)
+        content = validate_aas(json_ld_content, uri=id)
         updated, uri = put_aas_json_in_sparql(content, uri=id)
     elif mimetype in POSSIBLE_MIMETYPES:
         rdf_content = request.get_data()
@@ -57,17 +58,19 @@ def create_aas(id):
         raise WrongMimeType(mimetype)
 
     update_collection_etag()
-    return Response(status=201 if not updated else 204, headers={"Location": uri})
+    return Response(
+        status=201 if not updated else 204, headers={"Location": uri}
+    )
+
 
 @blueprint.route("/", methods=["POST"])
 def create_anonymous_aas():
     mimetype = request.content_type
-    check_schema = get_check_schema_from_url_params(request)
     if mimetype == "application/json":
         mimetype = "application/aas+json"
     if mimetype == "application/aas+json":
         json_ld_content = request.get_data()
-        content = validate_aas(json_ld_content, check_schema=check_schema)
+        content = validate_aas(json_ld_content)
         updated, uri = put_aas_json_in_sparql(content, delete_if_exists=False)
     elif mimetype in POSSIBLE_MIMETYPES:
         content = request.get_data()
@@ -77,4 +80,6 @@ def create_anonymous_aas():
     else:
         raise WrongMimeType(mimetype)
     update_collection_etag()
-    return Response(status=201 if not updated else 204, headers={"Location": uri})
+    return Response(
+        status=201 if not updated else 204, headers={"Location": uri}
+    )
