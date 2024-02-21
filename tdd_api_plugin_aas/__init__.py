@@ -58,9 +58,7 @@ def create_aas(id):
         raise WrongMimeType(mimetype)
 
     update_collection_etag()
-    return Response(
-        status=201 if not updated else 204, headers={"Location": uri}
-    )
+    return Response(status=201 if not updated else 204, headers={"Location": uri})
 
 
 @blueprint.route("/", methods=["POST"])
@@ -74,12 +72,8 @@ def create_anonymous_aas():
         updated, uri = put_aas_json_in_sparql(content, delete_if_exists=False)
     elif mimetype in POSSIBLE_MIMETYPES:
         content = request.get_data()
-        updated, uri = put_aas_rdf_in_sparql(
-            content, mimetype, delete_if_exists=False
-        )
+        updated, uri = put_aas_rdf_in_sparql(content, mimetype, delete_if_exists=False)
     else:
         raise WrongMimeType(mimetype)
     update_collection_etag()
-    return Response(
-        status=201 if not updated else 204, headers={"Location": uri}
-    )
+    return Response(status=201 if not updated else 204, headers={"Location": uri})

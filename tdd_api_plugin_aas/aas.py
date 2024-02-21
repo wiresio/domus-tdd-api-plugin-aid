@@ -258,4 +258,3 @@ def td_to_aas(uri):
     return put_aas_rdf_in_sparql(
         aas_ntriples, "application/n-triples", uri=uri, delete_if_exists=False
     )
-

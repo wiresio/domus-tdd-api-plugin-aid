@@ -16,6 +16,7 @@ from tdd.tests.conftest import (
 AAS_VERSION: str = str(CONFIG.get("AAS_VERSION", "v3rc02"))
 DATA_PATH = Path("tdd_api_plugin_aas") / "tests" / "data"
 
+
 @pytest.fixture
 def mock_sparql_with_one_aas(httpx_mock):
     graph = SparqlGraph("aas/aas_v3rc02.trig", format="trig", data_path=DATA_PATH)

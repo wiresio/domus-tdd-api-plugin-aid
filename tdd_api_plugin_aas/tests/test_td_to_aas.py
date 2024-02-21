@@ -20,15 +20,18 @@ CONFIG["CHECK_SCHEMA"] = True
 CONFIG["PERIOD_CLEAR_EXPIRE_TD"] = 0
 CONFIG["OVERWRITE_DISCOVERY"] = True
 
+
 def remove_skolemized_blank_node_values(json_str):
     json_str = re.sub(r"https?\:\/\/rdf?lib[^\"]+", "", json_str)
     json_str = re.sub(r"\"idShort\": \"[^\"]+\"", '"idShort": ""', json_str)
     return json.loads(json_str)
 
+
 @pytest.fixture
 def mock_sparql_aas_and_td(httpx_mock):
     graph = SparqlGraph("td-to-aas/td_aas.trig", format="trig", data_path=DATA_PATH)
     httpx_mock.add_callback(graph.custom)
+
 
 @pytest.mark.skipif(AAS_VERSION == "v3rc01", reason=AAS_VERSION)
 def test_POST_td_v3rc02(test_client, mock_sparql_empty_endpoint):

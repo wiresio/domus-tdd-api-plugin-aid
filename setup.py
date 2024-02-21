@@ -11,9 +11,9 @@ setup(
         "tdd-api",
     ],
     extras_require={
-        'dev': [
-            'pytest',
-            'mock',
+        "dev": [
+            "pytest",
+            "mock",
         ]
     },
     entry_points={
