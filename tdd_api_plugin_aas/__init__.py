@@ -3,7 +3,6 @@ import json
 
 from tdd.common import (
     delete_id,
-    get_check_schema_from_url_params,
 )
 from tdd.utils import (
     POSSIBLE_MIMETYPES,

@@ -6,7 +6,7 @@ from rdflib import Graph
 from rdflib.compare import graph_diff
 
 from tdd.config import CONFIG
-from tdd.tests.conftest import (
+from tdd.tests.conftest import (  # noqa: F401,F811
     SparqlGraph,
     test_client,
     mock_sparql_empty_endpoint,
@@ -30,7 +30,7 @@ def mock_sparql_with_one_aas_rc01(httpx_mock):
 
 
 @pytest.mark.skipif(AAS_VERSION == "v3rc02", reason=AAS_VERSION)
-def test_GET_AAS_OK_rc01(test_client, mock_sparql_with_one_aas_rc01):
+def test_GET_AAS_OK_rc01(test_client, mock_sparql_with_one_aas_rc01):  # noqa: F811
     aas_id = "urn:node:opcua:VentilationSystem"
     with open(DATA_PATH / "aas" / "aas_v3rc01.json") as fp:
         already_present_aas = json.load(fp)
@@ -42,7 +42,7 @@ def test_GET_AAS_OK_rc01(test_client, mock_sparql_with_one_aas_rc01):
 
 
 @pytest.mark.skipif(AAS_VERSION == "v3rc01", reason=AAS_VERSION)
-def test_GET_AAS_OK(test_client, mock_sparql_with_one_aas):
+def test_GET_AAS_OK(test_client, mock_sparql_with_one_aas):  # noqa: F811
     aas_id = "urn:uuid:7c83cce5-7b1f-43b2-8397-e0371a823b35"
     with open(DATA_PATH / "aas" / "aas_v3rc02.json") as fp:
         already_present_aas = json.load(fp)
@@ -54,7 +54,9 @@ def test_GET_AAS_OK(test_client, mock_sparql_with_one_aas):
 
 
 @pytest.mark.skipif(AAS_VERSION == "v3rc01", reason=AAS_VERSION)
-def test_GET_aas_content_negociation(test_client, mock_sparql_with_one_aas):
+def test_GET_aas_content_negociation(
+    test_client, mock_sparql_with_one_aas  # noqa: F811
+):
     aas_id = "urn:uuid:7c83cce5-7b1f-43b2-8397-e0371a823b35"
     for mime_type, file_extension in [
         ("text/turtle", "ttl"),
@@ -77,7 +79,7 @@ def test_GET_aas_content_negociation(test_client, mock_sparql_with_one_aas):
 
 
 @pytest.mark.skipif(AAS_VERSION == "v3rc01", reason=AAS_VERSION)
-def test_PUT_aas_ok(test_client, mock_sparql_empty_endpoint):
+def test_PUT_aas_ok(test_client, mock_sparql_empty_endpoint):  # noqa: F811
     with open(DATA_PATH / "aas" / "aas_v3rc02.json") as fp:
         aas_id = "urn:uuid:ea720bcd-bdd8-4fe8-9445-2d1cf6bc47d0"
         put_response = test_client.put(
@@ -92,7 +94,7 @@ def test_PUT_aas_ok(test_client, mock_sparql_empty_endpoint):
 
 
 @pytest.mark.skipif(AAS_VERSION == "v3rc02", reason=AAS_VERSION)
-def test_PUT_aas_ok_rc01(test_client, mock_sparql_empty_endpoint):
+def test_PUT_aas_ok_rc01(test_client, mock_sparql_empty_endpoint):  # noqa: F811
     with open(DATA_PATH / "aas" / "aas_v3rc01.json") as fp:
         aas_id = "urn:uuid:ea720bcd-bdd8-4fe8-9445-2d1cf6bc47d0"
         put_response = test_client.put(
@@ -107,7 +109,7 @@ def test_PUT_aas_ok_rc01(test_client, mock_sparql_empty_endpoint):
 
 
 @pytest.mark.skipif(AAS_VERSION == "v3rc01", reason=AAS_VERSION)
-def test_PUT_thing_bad_identifier(test_client):
+def test_PUT_thing_bad_identifier(test_client):  # noqa: F811
     with open(DATA_PATH / "aas" / "aas_v3rc02.json") as fp:
         put_response = test_client.put(
             "/things/urn:test:coucou",
@@ -118,7 +120,7 @@ def test_PUT_thing_bad_identifier(test_client):
 
 
 @pytest.mark.skipif(AAS_VERSION == "v3rc02", reason=AAS_VERSION)
-def test_PUT_thing_bad_identifier_rc01(test_client):
+def test_PUT_thing_bad_identifier_rc01(test_client):  # noqa: F811
     with open(DATA_PATH / "aas" / "aas_v3rc01.json") as fp:
         put_response = test_client.put(
             "/things/urn:test:coucou",
@@ -128,7 +130,7 @@ def test_PUT_thing_bad_identifier_rc01(test_client):
         assert put_response.status_code == 400
 
 
-def test_PUT_aas_bad_content_type(test_client):
+def test_PUT_aas_bad_content_type(test_client):  # noqa: F811
     with open(DATA_PATH / "aas" / "aas_v3rc01.json") as fp:
         put_response = test_client.put(
             "/aas/urn:test:coucou",
@@ -139,7 +141,9 @@ def test_PUT_aas_bad_content_type(test_client):
         assert "Wrong MimeType" in put_response.json["title"]
 
 
-def test_PUT_aas_multilanguage_property(test_client, mock_sparql_empty_endpoint):
+def test_PUT_aas_multilanguage_property(
+    test_client, mock_sparql_empty_endpoint  # noqa: F811
+):
     with open(DATA_PATH / "aas" / "aas_multilanguage_property.json") as fp:
         aas_id = "urn:uuid:ea720bcd-bdd8-4fe8-9445-2d1cf6bc47d0"
         aas_data = json.load(fp)

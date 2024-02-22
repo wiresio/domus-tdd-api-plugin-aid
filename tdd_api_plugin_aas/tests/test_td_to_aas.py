@@ -6,7 +6,7 @@ from mock import patch
 from jsoncomparison import Compare
 
 from tdd import CONFIG
-from tdd.tests.conftest import (
+from tdd.tests.conftest import (  # noqa: F401,F811
     assert_only_on_known_errors,
     SparqlGraph,
     test_client,
@@ -34,7 +34,7 @@ def mock_sparql_aas_and_td(httpx_mock):
 
 
 @pytest.mark.skipif(AAS_VERSION == "v3rc01", reason=AAS_VERSION)
-def test_POST_td_v3rc02(test_client, mock_sparql_empty_endpoint):
+def test_POST_td_v3rc02(test_client, mock_sparql_empty_endpoint):  # noqa: F811
     """
     Trying: post a TD on /things
     Expecting:
@@ -67,7 +67,7 @@ def test_POST_td_v3rc02(test_client, mock_sparql_empty_endpoint):
 
 @pytest.mark.skipif(AAS_VERSION == "v3rc02", reason=AAS_VERSION)
 @patch("tdd.tests.conftests.mock_sparql_empty_endpoint")
-def test_POST_td_v3rc01(test_client, mock_sparql_empty_endpoint):
+def test_POST_td_v3rc01(test_client, mock_sparql_empty_endpoint):  # noqa: F811
     """
     Trying: post a TD on /things
     Expecting:
@@ -98,7 +98,7 @@ def test_POST_td_v3rc01(test_client, mock_sparql_empty_endpoint):
         assert diff == {}
 
 
-def test_DELETE_things(test_client, mock_sparql_aas_and_td):
+def test_DELETE_things(test_client, mock_sparql_aas_and_td):  # noqa: F811
     """
     Trying: Existing TD in both AAS and TD delete it with /things
     Expecting:
@@ -117,7 +117,7 @@ def test_DELETE_things(test_client, mock_sparql_aas_and_td):
     assert get_aas_response.status_code == 404
 
 
-def test_DELETE_aas(test_client, mock_sparql_aas_and_td):
+def test_DELETE_aas(test_client, mock_sparql_aas_and_td):  # noqa: F811
     """
     Trying: Existing TD in both AAS and TD delete it with /aas
     Expecting:

@@ -203,9 +203,9 @@ def id_short(node_id):
 
 
 def get_xsd_datatype(rdflib_object):
-    if type(rdflib_object) == URIRef:
+    if isinstance(rdflib_object, URIRef):
         return "xsd:anyURI"
-    elif type(rdflib_object) == Literal and rdflib_object.datatype:
+    elif isinstance(rdflib_object, Literal) and rdflib_object.datatype:
         return rdflib_object.datatype.n3()
     return "xsd:string"
 
