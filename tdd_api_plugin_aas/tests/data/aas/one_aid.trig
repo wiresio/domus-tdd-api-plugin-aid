@@ -1,0 +1,678 @@
+<aas:urn:uuid:014139c9-b267-4db5-9c61-cc2d2bfc217d> {
+    [ a       <https://admin-shell.io/aas/3/0/Submodel> ;
+      <https://admin-shell.io/aas/3/0/HasKind/kind>
+              <https://admin-shell.io/aas/3/0/ModellingKind/Instance> ;
+      <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+              [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                        [ <https://admin-shell.io/aas/3/0/Key/type>
+                                  <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                          <https://admin-shell.io/aas/3/0/Key/value>
+                                  "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/Submodel"
+                        ] ;
+                <https://admin-shell.io/aas/3/0/Reference/type>
+                        <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+              ] ;
+      <https://admin-shell.io/aas/3/0/Identifiable/id>
+              "urn:uuid:014139c9-b267-4db5-9c61-cc2d2bfc217d" ;
+      <https://admin-shell.io/aas/3/0/Referable/description>
+              [ <https://admin-shell.io/aas/3/0/AbstractLangString/language>
+                        "en" ;
+                <https://admin-shell.io/aas/3/0/AbstractLangString/text>
+                        "MyCameraThing"
+              ] ;
+      <https://admin-shell.io/aas/3/0/Referable/idShort>
+              "AssetInterfacesDescription" ;
+      <https://admin-shell.io/aas/3/0/Submodel/submodelElements>
+              [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                        [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                  [ <https://admin-shell.io/aas/3/0/Key/type>
+                                            <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                    <https://admin-shell.io/aas/3/0/Key/value>
+                                            "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/Interface"
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/Reference/type>
+                                  <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                        ] ;
+                <https://admin-shell.io/aas/3/0/HasSemantics/supplementalSemanticIds>
+                        [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                  [ <https://admin-shell.io/aas/3/0/Key/type>
+                                            <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                    <https://admin-shell.io/aas/3/0/Key/value>
+                                            "http://www.w3.org/2011/http"
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/Reference/type>
+                                  <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                        ] ;
+                <https://admin-shell.io/aas/3/0/HasSemantics/supplementalSemanticIds>
+                        [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                  [ <https://admin-shell.io/aas/3/0/Key/type>
+                                            <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                    <https://admin-shell.io/aas/3/0/Key/value>
+                                            "https://www.w3.org/2019/wot/td"
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/Reference/type>
+                                  <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                        ] ;
+                <https://admin-shell.io/aas/3/0/Referable/idShort>
+                        "InterfaceHTTPS" ;
+                <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                        [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                          <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                  [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                            [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                      <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                              <https://admin-shell.io/aas/3/0/Key/value>
+                                                      "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/EndpointMetadata"
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Reference/type>
+                                            <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                  "EndpointMetadata" ;
+                          <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                  [ a       <https://admin-shell.io/aas/3/0/Property> ;
+                                    <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                            [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                      [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                        <https://admin-shell.io/aas/3/0/Key/value>
+                                                                "https://www.w3.org/2019/wot/td#baseURI"
+                                                      ] ;
+                                              <https://admin-shell.io/aas/3/0/Reference/type>
+                                                      <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Property/value>
+                                            "NO_BASE" ;
+                                    <https://admin-shell.io/aas/3/0/Property/valueType>
+                                            <http://www.w3.org/2001/XMLSchema#anyURI> ;
+                                    <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                            "base"
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                  [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                                    <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                            [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                      [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                        <https://admin-shell.io/aas/3/0/Key/value>
+                                                                "https://www.w3.org/2019/wot/td#definesSecurityScheme"
+                                                      ] ;
+                                              <https://admin-shell.io/aas/3/0/Reference/type>
+                                                      <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                            "securityDefinitions" ;
+                                    <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                            [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                                              <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                                      "basic_sc" ;
+                                              <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                                      [ a       <https://admin-shell.io/aas/3/0/Property> ;
+                                                        <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                                                [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                          [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                                    <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                                            <https://admin-shell.io/aas/3/0/Key/value>
+                                                                                    "https://www.w3.org/2019/wot/security#SecurityScheme"
+                                                                          ] ;
+                                                                  <https://admin-shell.io/aas/3/0/Reference/type>
+                                                                          <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Property/value>
+                                                                "basic" ;
+                                                        <https://admin-shell.io/aas/3/0/Property/valueType>
+                                                                <http://www.w3.org/2001/XMLSchema#string> ;
+                                                        <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                                                "scheme"
+                                                      ] ;
+                                              <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                                      [ a       <https://admin-shell.io/aas/3/0/Property> ;
+                                                        <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                                                [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                          [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                                    <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                                            <https://admin-shell.io/aas/3/0/Key/value>
+                                                                                    "https://www.w3.org/2019/wot/security#in"
+                                                                          ] ;
+                                                                  <https://admin-shell.io/aas/3/0/Reference/type>
+                                                                          <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Property/value>
+                                                                "header" ;
+                                                        <https://admin-shell.io/aas/3/0/Property/valueType>
+                                                                <http://www.w3.org/2001/XMLSchema#string> ;
+                                                        <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                                                "in"
+                                                      ]
+                                            ]
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                  [ a       <https://admin-shell.io/aas/3/0/SubmodelElementList> ;
+                                    <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                            [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                      [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                        <https://admin-shell.io/aas/3/0/Key/value>
+                                                                "https://www.w3.org/2019/wot/td#hasSecurityConfiguration"
+                                                      ] ;
+                                              <https://admin-shell.io/aas/3/0/Reference/type>
+                                                      <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                            "security" ;
+                                    <https://admin-shell.io/aas/3/0/SubmodelElementList/typeValueListElement>
+                                            <https://admin-shell.io/aas/3/0/AasSubmodelElements/ReferenceElement> ;
+                                    <https://admin-shell.io/aas/3/0/SubmodelElementList/value>
+                                            [ a       <https://admin-shell.io/aas/3/0/ReferenceElement> ;
+                                              <https://admin-shell.io/aas/3/0/ReferenceElement/value>
+                                                      [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                          <https://admin-shell.io/aas/3/0/KeyTypes/SubmodelElementCollection> ;
+                                                                  <https://admin-shell.io/aas/3/0/Key/value>
+                                                                          "securityDefinitions"
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                          <https://admin-shell.io/aas/3/0/KeyTypes/SubmodelElementCollection> ;
+                                                                  <https://admin-shell.io/aas/3/0/Key/value>
+                                                                          "basic_sc"
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                          <https://admin-shell.io/aas/3/0/KeyTypes/Submodel> ;
+                                                                  <https://admin-shell.io/aas/3/0/Key/value>
+                                                                          "urn:uuid:014139c9-b267-4db5-9c61-cc2d2bfc217d"
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                          <https://admin-shell.io/aas/3/0/KeyTypes/SubmodelElementCollection> ;
+                                                                  <https://admin-shell.io/aas/3/0/Key/value>
+                                                                          "InterfaceHTTPS"
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                          <https://admin-shell.io/aas/3/0/KeyTypes/SubmodelElementCollection> ;
+                                                                  <https://admin-shell.io/aas/3/0/Key/value>
+                                                                          "EndpointMetadata"
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Reference/type>
+                                                                <https://admin-shell.io/aas/3/0/ReferenceTypes/ModelReference>
+                                                      ]
+                                            ]
+                                  ]
+                        ] ;
+                <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                        [ a       <https://admin-shell.io/aas/3/0/Property> ;
+                          <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                  [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                            [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                      <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                              <https://admin-shell.io/aas/3/0/Key/value>
+                                                      "https://www.w3.org/2019/wot/td#title"
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Reference/type>
+                                            <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/Property/value>
+                                  "MyCameraThing" ;
+                          <https://admin-shell.io/aas/3/0/Property/valueType>
+                                  <http://www.w3.org/2001/XMLSchema#string> ;
+                          <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                  "title"
+                        ] ;
+                <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                        [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                          <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                  [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                            [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                      <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                              <https://admin-shell.io/aas/3/0/Key/value>
+                                                      "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/InteractionMetadata"
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Reference/type>
+                                            <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/HasSemantics/supplementalSemanticIds>
+                                  [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                            [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                      <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                              <https://admin-shell.io/aas/3/0/Key/value>
+                                                      "https://www.w3.org/2019/wot/td#InteractionAffordance"
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Reference/type>
+                                            <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                  "InteractionMetadata" ;
+                          <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                  [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                                    <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                            [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                      [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                        <https://admin-shell.io/aas/3/0/Key/value>
+                                                                "https://www.w3.org/2019/wot/td#PropertyAffordance"
+                                                      ] ;
+                                              <https://admin-shell.io/aas/3/0/Reference/type>
+                                                      <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                            "properties"
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                  [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                                    <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                            "actions"
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                  [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                                    <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                            "events"
+                                  ]
+                        ]
+              ] ;
+      <https://admin-shell.io/aas/3/0/Submodel/submodelElements>
+              [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                        [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                  [ <https://admin-shell.io/aas/3/0/Key/type>
+                                            <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                    <https://admin-shell.io/aas/3/0/Key/value>
+                                            "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/Interface"
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/Reference/type>
+                                  <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                        ] ;
+                <https://admin-shell.io/aas/3/0/HasSemantics/supplementalSemanticIds>
+                        [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                  [ <https://admin-shell.io/aas/3/0/Key/type>
+                                            <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                    <https://admin-shell.io/aas/3/0/Key/value>
+                                            "https://www.w3.org/2019/wot/td"
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/Reference/type>
+                                  <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                        ] ;
+                <https://admin-shell.io/aas/3/0/HasSemantics/supplementalSemanticIds>
+                        [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                  [ <https://admin-shell.io/aas/3/0/Key/type>
+                                            <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                    <https://admin-shell.io/aas/3/0/Key/value>
+                                            "http://www.w3.org/2011/http"
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/Reference/type>
+                                  <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                        ] ;
+                <https://admin-shell.io/aas/3/0/Referable/idShort>
+                        "InterfaceHTTP" ;
+                <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                        [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                          <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                  [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                            [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                      <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                              <https://admin-shell.io/aas/3/0/Key/value>
+                                                      "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/EndpointMetadata"
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Reference/type>
+                                            <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                  "EndpointMetadata" ;
+                          <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                  [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                                    <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                            [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                      [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                        <https://admin-shell.io/aas/3/0/Key/value>
+                                                                "https://www.w3.org/2019/wot/td#definesSecurityScheme"
+                                                      ] ;
+                                              <https://admin-shell.io/aas/3/0/Reference/type>
+                                                      <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                            "securityDefinitions" ;
+                                    <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                            [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                                              <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                                      "basic_sc" ;
+                                              <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                                      [ a       <https://admin-shell.io/aas/3/0/Property> ;
+                                                        <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                                                [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                          [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                                    <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                                            <https://admin-shell.io/aas/3/0/Key/value>
+                                                                                    "https://www.w3.org/2019/wot/security#in"
+                                                                          ] ;
+                                                                  <https://admin-shell.io/aas/3/0/Reference/type>
+                                                                          <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Property/value>
+                                                                "header" ;
+                                                        <https://admin-shell.io/aas/3/0/Property/valueType>
+                                                                <http://www.w3.org/2001/XMLSchema#string> ;
+                                                        <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                                                "in"
+                                                      ] ;
+                                              <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                                      [ a       <https://admin-shell.io/aas/3/0/Property> ;
+                                                        <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                                                [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                          [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                                    <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                                            <https://admin-shell.io/aas/3/0/Key/value>
+                                                                                    "https://www.w3.org/2019/wot/security#SecurityScheme"
+                                                                          ] ;
+                                                                  <https://admin-shell.io/aas/3/0/Reference/type>
+                                                                          <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Property/value>
+                                                                "basic" ;
+                                                        <https://admin-shell.io/aas/3/0/Property/valueType>
+                                                                <http://www.w3.org/2001/XMLSchema#string> ;
+                                                        <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                                                "scheme"
+                                                      ]
+                                            ]
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                  [ a       <https://admin-shell.io/aas/3/0/Property> ;
+                                    <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                            [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                      [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                        <https://admin-shell.io/aas/3/0/Key/value>
+                                                                "https://www.w3.org/2019/wot/td#baseURI"
+                                                      ] ;
+                                              <https://admin-shell.io/aas/3/0/Reference/type>
+                                                      <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Property/value>
+                                            "http://camera.example.com" ;
+                                    <https://admin-shell.io/aas/3/0/Property/valueType>
+                                            <http://www.w3.org/2001/XMLSchema#anyURI> ;
+                                    <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                            "base"
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                  [ a       <https://admin-shell.io/aas/3/0/SubmodelElementList> ;
+                                    <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                            [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                      [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                        <https://admin-shell.io/aas/3/0/Key/value>
+                                                                "https://www.w3.org/2019/wot/td#hasSecurityConfiguration"
+                                                      ] ;
+                                              <https://admin-shell.io/aas/3/0/Reference/type>
+                                                      <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                            "security" ;
+                                    <https://admin-shell.io/aas/3/0/SubmodelElementList/typeValueListElement>
+                                            <https://admin-shell.io/aas/3/0/AasSubmodelElements/ReferenceElement> ;
+                                    <https://admin-shell.io/aas/3/0/SubmodelElementList/value>
+                                            [ a       <https://admin-shell.io/aas/3/0/ReferenceElement> ;
+                                              <https://admin-shell.io/aas/3/0/ReferenceElement/value>
+                                                      [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                          <https://admin-shell.io/aas/3/0/KeyTypes/SubmodelElementCollection> ;
+                                                                  <https://admin-shell.io/aas/3/0/Key/value>
+                                                                          "InterfaceHTTP"
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                          <https://admin-shell.io/aas/3/0/KeyTypes/SubmodelElementCollection> ;
+                                                                  <https://admin-shell.io/aas/3/0/Key/value>
+                                                                          "securityDefinitions"
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                          <https://admin-shell.io/aas/3/0/KeyTypes/SubmodelElementCollection> ;
+                                                                  <https://admin-shell.io/aas/3/0/Key/value>
+                                                                          "EndpointMetadata"
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                          <https://admin-shell.io/aas/3/0/KeyTypes/Submodel> ;
+                                                                  <https://admin-shell.io/aas/3/0/Key/value>
+                                                                          "urn:uuid:014139c9-b267-4db5-9c61-cc2d2bfc217d"
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                          <https://admin-shell.io/aas/3/0/KeyTypes/SubmodelElementCollection> ;
+                                                                  <https://admin-shell.io/aas/3/0/Key/value>
+                                                                          "basic_sc"
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Reference/type>
+                                                                <https://admin-shell.io/aas/3/0/ReferenceTypes/ModelReference>
+                                                      ]
+                                            ]
+                                  ]
+                        ] ;
+                <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                        [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                          <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                  [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                            [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                      <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                              <https://admin-shell.io/aas/3/0/Key/value>
+                                                      "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/InteractionMetadata"
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Reference/type>
+                                            <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/HasSemantics/supplementalSemanticIds>
+                                  [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                            [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                      <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                              <https://admin-shell.io/aas/3/0/Key/value>
+                                                      "https://www.w3.org/2019/wot/td#InteractionAffordance"
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Reference/type>
+                                            <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                  "InteractionMetadata" ;
+                          <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                  [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                                    <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                            "actions"
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                  [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                                    <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                            [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                      [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                        <https://admin-shell.io/aas/3/0/Key/value>
+                                                                "https://www.w3.org/2019/wot/td#PropertyAffordance"
+                                                      ] ;
+                                              <https://admin-shell.io/aas/3/0/Reference/type>
+                                                      <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                            "properties" ;
+                                    <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                            [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                                              <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                                      [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                          <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                                  <https://admin-shell.io/aas/3/0/Key/value>
+                                                                          "https://admin-shell.io/idta/AssetInterfaceDescription/1/0/PropertyDefinition"
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Reference/type>
+                                                                <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                                      ] ;
+                                              <https://admin-shell.io/aas/3/0/HasSemantics/supplementalSemanticIds>
+                                                      [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                          <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                                  <https://admin-shell.io/aas/3/0/Key/value>
+                                                                          "https://www.w3.org/2019/wot/td#name"
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Reference/type>
+                                                                <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                                      ] ;
+                                              <https://admin-shell.io/aas/3/0/Referable/description>
+                                                      [ <https://admin-shell.io/aas/3/0/AbstractLangString/language>
+                                                                "en" ;
+                                                        <https://admin-shell.io/aas/3/0/AbstractLangString/text>
+                                                                "Provides latest image"
+                                                      ] ;
+                                              <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                                      "image" ;
+                                              <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                                      [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                                                        <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                                                [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                          [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                                    <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                                            <https://admin-shell.io/aas/3/0/Key/value>
+                                                                                    "https://www.w3.org/2019/wot/td#hasForm"
+                                                                          ] ;
+                                                                  <https://admin-shell.io/aas/3/0/Reference/type>
+                                                                          <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                                                "forms" ;
+                                                        <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                                                [ a       <https://admin-shell.io/aas/3/0/Property> ;
+                                                                  <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                                                          [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                                    [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                                              <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                                                      <https://admin-shell.io/aas/3/0/Key/value>
+                                                                                              "https://www.w3.org/2019/wot/hypermedia#hasTarget"
+                                                                                    ] ;
+                                                                            <https://admin-shell.io/aas/3/0/Reference/type>
+                                                                                    <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                                                          ] ;
+                                                                  <https://admin-shell.io/aas/3/0/Property/value>
+                                                                          "http://camera.example.com/lastPicture" ;
+                                                                  <https://admin-shell.io/aas/3/0/Property/valueType>
+                                                                          <http://www.w3.org/2001/XMLSchema#string> ;
+                                                                  <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                                                          "href"
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                                                [ a       <https://admin-shell.io/aas/3/0/Property> ;
+                                                                  <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                                                          [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                                    [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                                              <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                                                      <https://admin-shell.io/aas/3/0/Key/value>
+                                                                                              "https://www.w3.org/2019/wot/hypermedia#forContentType"
+                                                                                    ] ;
+                                                                            <https://admin-shell.io/aas/3/0/Reference/type>
+                                                                                    <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                                                          ] ;
+                                                                  <https://admin-shell.io/aas/3/0/Property/value>
+                                                                          "application/json" ;
+                                                                  <https://admin-shell.io/aas/3/0/Property/valueType>
+                                                                          <http://www.w3.org/2001/XMLSchema#string> ;
+                                                                  <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                                                          "contentType"
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                                                [ a       <https://admin-shell.io/aas/3/0/Property> ;
+                                                                  <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                                                          [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                                    [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                                              <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                                                      <https://admin-shell.io/aas/3/0/Key/value>
+                                                                                              "https://www.w3.org/2011/http#methodName"
+                                                                                    ] ;
+                                                                            <https://admin-shell.io/aas/3/0/Reference/type>
+                                                                                    <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                                                          ] ;
+                                                                  <https://admin-shell.io/aas/3/0/Property/value>
+                                                                          "GET" ;
+                                                                  <https://admin-shell.io/aas/3/0/Property/valueType>
+                                                                          <http://www.w3.org/2001/XMLSchema#string> ;
+                                                                  <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                                                          "htv_methodName"
+                                                                ]
+                                                      ] ;
+                                              <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                                      [ a       <https://admin-shell.io/aas/3/0/Property> ;
+                                                        <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                                                [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                          [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                                    <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                                            <https://admin-shell.io/aas/3/0/Key/value>
+                                                                                    "https://www.w3.org/2019/wot/json-schema#contentMediaType"
+                                                                          ] ;
+                                                                  <https://admin-shell.io/aas/3/0/Reference/type>
+                                                                          <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Property/value>
+                                                                "image/png" ;
+                                                        <https://admin-shell.io/aas/3/0/Property/valueType>
+                                                                <http://www.w3.org/2001/XMLSchema#string> ;
+                                                        <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                                                "contentMediaType"
+                                                      ] ;
+                                              <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                                      [ a       <https://admin-shell.io/aas/3/0/Property> ;
+                                                        <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                                                [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                                                          [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                                                    <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                                                            <https://admin-shell.io/aas/3/0/Key/value>
+                                                                                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                                                                          ] ;
+                                                                  <https://admin-shell.io/aas/3/0/Reference/type>
+                                                                          <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                                                ] ;
+                                                        <https://admin-shell.io/aas/3/0/Property/value>
+                                                                "string" ;
+                                                        <https://admin-shell.io/aas/3/0/Property/valueType>
+                                                                <http://www.w3.org/2001/XMLSchema#string> ;
+                                                        <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                                                "type"
+                                                      ]
+                                            ]
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                                  [ a       <https://admin-shell.io/aas/3/0/SubmodelElementCollection> ;
+                                    <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                            "events"
+                                  ]
+                        ] ;
+                <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value>
+                        [ a       <https://admin-shell.io/aas/3/0/Property> ;
+                          <https://admin-shell.io/aas/3/0/HasSemantics/semanticId>
+                                  [ <https://admin-shell.io/aas/3/0/Reference/keys>
+                                            [ <https://admin-shell.io/aas/3/0/Key/type>
+                                                      <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+                                              <https://admin-shell.io/aas/3/0/Key/value>
+                                                      "https://www.w3.org/2019/wot/td#title"
+                                            ] ;
+                                    <https://admin-shell.io/aas/3/0/Reference/type>
+                                            <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference>
+                                  ] ;
+                          <https://admin-shell.io/aas/3/0/Property/value>
+                                  "MyCameraThing" ;
+                          <https://admin-shell.io/aas/3/0/Property/valueType>
+                                  <http://www.w3.org/2001/XMLSchema#string> ;
+                          <https://admin-shell.io/aas/3/0/Referable/idShort>
+                                  "title"
+                        ]
+              ]
+    ] .
+}
+
+<urn:tdd:metadata> {
+    <aas:urn:uuid:014139c9-b267-4db5-9c61-cc2d2bfc217d>
+            <urn:tdd:describes>             <urn:uuid:014139c9-b267-4db5-9c61-cc2d2bfc217d> ;
+            <urn:tdd:expressedIn>           <https://admin-shell.io/aas/3/0/> ;
+            <urn:wot:relation:has_context>  <urn:wot:context:W10=> .
+    
+    <urn:wot:context:W10=>
+            <urn:wot:relation:context_content>
+                    "[]" .
+}

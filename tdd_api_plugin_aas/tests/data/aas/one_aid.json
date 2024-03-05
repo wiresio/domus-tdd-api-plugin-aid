@@ -1,0 +1,596 @@
+{
+  "idShort": "AssetInterfacesDescription",
+  "id": "urn:uuid:014139c9-b267-4db5-9c61-cc2d2bfc217d",
+  "kind": "Instance",
+  "semanticId": {
+    "type": "ExternalReference",
+    "keys": [
+      {
+        "type": "GlobalReference",
+        "value": "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/Submodel"
+      }
+    ]
+  },
+  "description": [
+    {
+      "language": "en",
+      "text": "MyCameraThing"
+    }
+  ],
+  "submodelElements": [
+    {
+      "idShort": "InterfaceHTTP",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/Interface"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.w3.org/2019/wot/td"
+            }
+          ]
+        },
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "http://www.w3.org/2011/http"
+            }
+          ]
+        }
+      ],
+      "value": [
+        {
+          "idShort": "title",
+          "valueType": "xs:string",
+          "value": "MyCameraThing",
+          "modelType": "Property",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://www.w3.org/2019/wot/td#title"
+              }
+            ]
+          }
+        },
+        {
+          "idShort": "EndpointMetadata",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/EndpointMetadata"
+              }
+            ]
+          },
+          "value": [
+            {
+              "idShort": "base",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.w3.org/2019/wot/td#baseURI"
+                  }
+                ]
+              },
+              "valueType": "xs:anyURI",
+              "value": "http://camera.example.com",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "security",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.w3.org/2019/wot/td#hasSecurityConfiguration"
+                  }
+                ]
+              },
+              "typeValueListElement": "ReferenceElement",
+              "value": [
+                {
+                  "value": {
+                    "type": "ModelReference",
+                    "keys": [
+                      {
+                        "type": "Submodel",
+                        "value": "urn:uuid:014139c9-b267-4db5-9c61-cc2d2bfc217d"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "InterfaceHTTP"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "EndpointMetadata"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "securityDefinitions"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "basic_sc"
+                      }
+                    ]
+                  },
+                  "modelType": "ReferenceElement"
+                }
+              ],
+              "modelType": "SubmodelElementList"
+            },
+            {
+              "idShort": "securityDefinitions",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.w3.org/2019/wot/td#definesSecurityScheme"
+                  }
+                ]
+              },
+              "value": [
+                {
+                  "idShort": "basic_sc",
+                  "value": [
+                    {
+                      "idShort": "scheme",
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://www.w3.org/2019/wot/security#SecurityScheme"
+                          }
+                        ]
+                      },
+                      "valueType": "xs:string",
+                      "value": "basic",
+                      "modelType": "Property"
+                    },
+                    {
+                      "idShort": "in",
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://www.w3.org/2019/wot/security#in"
+                          }
+                        ]
+                      },
+                      "valueType": "xs:string",
+                      "value": "header",
+                      "modelType": "Property"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                }
+              ],
+              "modelType": "SubmodelElementCollection"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "InteractionMetadata",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/InteractionMetadata"
+              }
+            ]
+          },
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "https://www.w3.org/2019/wot/td#InteractionAffordance"
+                }
+              ]
+            }
+          ],
+          "value": [
+            {
+              "idShort": "properties",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.w3.org/2019/wot/td#PropertyAffordance"
+                  }
+                ]
+              },
+              "value": [
+                {
+                  "idShort": "image",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Provides latest image"
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/AssetInterfaceDescription/1/0/PropertyDefinition"
+                      }
+                    ]
+                  },
+                  "supplementalSemanticIds": [
+                    {
+                      "type": "ExternalReference",
+                      "keys": [
+                        {
+                          "type": "GlobalReference",
+                          "value": "https://www.w3.org/2019/wot/td#name"
+                        }
+                      ]
+                    }
+                  ],
+                  "value": [
+                    {
+                      "idShort": "type",
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                          }
+                        ]
+                      },
+                      "valueType": "xs:string",
+                      "value": "string",
+                      "modelType": "Property"
+                    },
+                    {
+                      "idShort": "contentMediaType",
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://www.w3.org/2019/wot/json-schema#contentMediaType"
+                          }
+                        ]
+                      },
+                      "valueType": "xs:string",
+                      "value": "image/png",
+                      "modelType": "Property"
+                    },
+                    {
+                      "idShort": "forms",
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://www.w3.org/2019/wot/td#hasForm"
+                          }
+                        ]
+                      },
+                      "value": [
+                        {
+                          "idShort": "href",
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://www.w3.org/2019/wot/hypermedia#hasTarget"
+                              }
+                            ]
+                          },
+                          "valueType": "xs:string",
+                          "value": "http://camera.example.com/lastPicture",
+                          "modelType": "Property"
+                        },
+                        {
+                          "idShort": "contentType",
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://www.w3.org/2019/wot/hypermedia#forContentType"
+                              }
+                            ]
+                          },
+                          "valueType": "xs:string",
+                          "value": "application/json",
+                          "modelType": "Property"
+                        },
+                        {
+                          "idShort": "htv_methodName",
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://www.w3.org/2011/http#methodName"
+                              }
+                            ]
+                          },
+                          "valueType": "xs:string",
+                          "value": "GET",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                }
+              ],
+              "modelType": "SubmodelElementCollection"
+            },
+            {
+              "idShort": "actions",
+              "value": [],
+              "modelType": "SubmodelElementCollection"
+            },
+            {
+              "idShort": "events",
+              "value": [],
+              "modelType": "SubmodelElementCollection"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "idShort": "InterfaceHTTPS",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/Interface"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.w3.org/2019/wot/td"
+            }
+          ]
+        },
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "http://www.w3.org/2011/http"
+            }
+          ]
+        }
+      ],
+      "value": [
+        {
+          "idShort": "title",
+          "valueType": "xs:string",
+          "value": "MyCameraThing",
+          "modelType": "Property",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://www.w3.org/2019/wot/td#title"
+              }
+            ]
+          }
+        },
+        {
+          "idShort": "EndpointMetadata",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/EndpointMetadata"
+              }
+            ]
+          },
+          "value": [
+            {
+              "idShort": "base",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.w3.org/2019/wot/td#baseURI"
+                  }
+                ]
+              },
+              "valueType": "xs:anyURI",
+              "value": "NO_BASE",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "security",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.w3.org/2019/wot/td#hasSecurityConfiguration"
+                  }
+                ]
+              },
+              "typeValueListElement": "ReferenceElement",
+              "value": [
+                {
+                  "value": {
+                    "type": "ModelReference",
+                    "keys": [
+                      {
+                        "type": "Submodel",
+                        "value": "urn:uuid:014139c9-b267-4db5-9c61-cc2d2bfc217d"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "InterfaceHTTPS"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "EndpointMetadata"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "securityDefinitions"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "basic_sc"
+                      }
+                    ]
+                  },
+                  "modelType": "ReferenceElement"
+                }
+              ],
+              "modelType": "SubmodelElementList"
+            },
+            {
+              "idShort": "securityDefinitions",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.w3.org/2019/wot/td#definesSecurityScheme"
+                  }
+                ]
+              },
+              "value": [
+                {
+                  "idShort": "basic_sc",
+                  "value": [
+                    {
+                      "idShort": "scheme",
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://www.w3.org/2019/wot/security#SecurityScheme"
+                          }
+                        ]
+                      },
+                      "valueType": "xs:string",
+                      "value": "basic",
+                      "modelType": "Property"
+                    },
+                    {
+                      "idShort": "in",
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://www.w3.org/2019/wot/security#in"
+                          }
+                        ]
+                      },
+                      "valueType": "xs:string",
+                      "value": "header",
+                      "modelType": "Property"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                }
+              ],
+              "modelType": "SubmodelElementCollection"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "InteractionMetadata",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/InteractionMetadata"
+              }
+            ]
+          },
+          "supplementalSemanticIds": [
+            {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "https://www.w3.org/2019/wot/td#InteractionAffordance"
+                }
+              ]
+            }
+          ],
+          "value": [
+            {
+              "idShort": "properties",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.w3.org/2019/wot/td#PropertyAffordance"
+                  }
+                ]
+              },
+              "value": [],
+              "modelType": "SubmodelElementCollection"
+            },
+            {
+              "idShort": "actions",
+              "value": [],
+              "modelType": "SubmodelElementCollection"
+            },
+            {
+              "idShort": "events",
+              "value": [],
+              "modelType": "SubmodelElementCollection"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    }
+  ],
+  "modelType": "Submodel"
+}
