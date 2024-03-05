@@ -122,6 +122,7 @@ PROPERTIES_NOT_EXPORTED = [
     "https://www.w3.org/2019/wot/td#hasActionAffordance",
     "https://www.w3.org/2019/wot/td#hasPropertyAffordance",
     "https://www.w3.org/2019/wot/td#description",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
 ]
 
 PROPERTIES_ON_PROTOCOL_INTERFACE = [
@@ -137,15 +138,6 @@ SELECT ?type WHERE {{
 }}
 """
 
-OBJECT_QUERY = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-SELECT ?predicate ?object WHERE {{
-    {NODE} ?predicate ?object.
-    FILTER(?predicate != rdf:type).
-    FILTER(?predicate not in ({SKIPPED_PROPERTIES}))
-}}
-"""
-
 
 GET_PROTOCOLS_QUERY = """
 PREFIX td: <https://www.w3.org/2019/wot/td#>
@@ -158,6 +150,22 @@ WHERE {
   ?Form hctl:hasTarget ?URL.
   BIND (STRBEFORE(str(?URL), "://") AS ?protocol)
 }
+"""
+
+GET_PROPERTIES_ROOT_NODE = """
+PREFIX td: <https://www.w3.org/2019/wot/td#>
+PREFIX hctl: <https://www.w3.org/2019/wot/hypermedia#>
+
+SELECT DISTINCT ?Prop ?name
+WHERE {{
+  ?Thing td:hasPropertyAffordance ?Prop.
+  ?Prop td:hasForm ?Form.
+  ?Form hctl:hasTarget ?URL.
+  FILTER (STRSTARTS(str(?URL), "{protocol}"))
+  OPTIONAL {{
+   ?Prop td:name ?name
+  }}
+}}
 """
 
 THING_QUERY = """
@@ -197,7 +205,7 @@ def get_xsd_datatype(rdflib_object):
     return "xsd:string"
 
 
-def dfs(root_nodes_pair, g):
+def dfs(root_nodes_pair, g, skipped_properties=[]):
     """
     root_nodes: (td_node (in RDF Form: BNode, URIRef, etc.), aid_node: str)
 
@@ -211,10 +219,7 @@ def dfs(root_nodes_pair, g):
             triples = [
                 (p, o)
                 for (s, p, o) in g.triples((node_td, None, None))
-                if str(p)
-                not in PROPERTIES_NOT_EXPORTED
-                + PROPERTIES_ON_PROTOCOL_INTERFACE
-                + ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"]
+                if str(p) not in skipped_properties
             ]
             for p, o in triples:
                 object_triples = [x for x in g.triples((o, None, None))]
@@ -229,7 +234,7 @@ def dfs(root_nodes_pair, g):
                 else:
                     submodel_element_collection_bnode = BNode().n3()
                     stack.put((o, submodel_element_collection_bnode))
-                    res += f"{node_aid}  <https://admin-shell.io/aas/3/0/RC02/SubmodelElementCollection/value> {submodel_element_collection_bnode}.\n"
+                    res += f"{node_aid}  <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> {submodel_element_collection_bnode}.\n"
 
                     res += TEMPLATE_ENV.get_template(
                         "submodel_element_collection.jinja2"
@@ -243,7 +248,7 @@ def dfs(root_nodes_pair, g):
     return res
 
 
-def interface_protocol_duplicated_rdf(interface_protocol_uri, root_node_uri, g):
+def interface_protocol_rdf(interface_protocol_uri, root_node_uri, g, protocol):
     """
     Retrieves data on the TD root node
     exports it as submodel for the interfaceXXX
@@ -275,13 +280,51 @@ def interface_protocol_duplicated_rdf(interface_protocol_uri, root_node_uri, g):
     # EndpointMetadata
     # Every property except those in PROPERTIES_NOT_EXPORTED and PROPERTIES_ON_PROTOCOL_INTERFACE
     endpoint_metadata_bnode = BNode().n3()
+    res += f"{interface_protocol_uri}  <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> {endpoint_metadata_bnode}.\n"
     res += TEMPLATE_ENV.get_template("submodel_element_collection.jinja2").render(
-        parent_element=interface_protocol_uri,
         id_short="EndpointMetadata",
         submodelelement_uri=endpoint_metadata_bnode,
         predicate="https://admin-shell.io/idta/AssetInterfacesDescription/1/0/EndpointMetadata",
     )
-    res += dfs((root_node_uri, endpoint_metadata_bnode), env, g)
+    res += dfs(
+        (root_node_uri, endpoint_metadata_bnode),
+        g,
+        skipped_properties=PROPERTIES_NOT_EXPORTED + PROPERTIES_ON_PROTOCOL_INTERFACE,
+    )
+
+    # InteractionMetadata
+    interaction_metadata_bnode = BNode().n3()
+    res += f"{interface_protocol_uri}  <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> {interaction_metadata_bnode}.\n"
+    res += TEMPLATE_ENV.get_template("submodel_element_collection.jinja2").render(
+        id_short="InteractionMetadata",
+        submodelelement_uri=interaction_metadata_bnode,
+        predicate="https://admin-shell.io/idta/AssetInterfacesDescription/1/0/InteractionMetadata",
+    )
+    # Get properties Node
+    properties_bnode = BNode().n3()
+    res += f"{interaction_metadata_bnode}  <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> {properties_bnode}.\n"
+    res += TEMPLATE_ENV.get_template("submodel_element_collection.jinja2").render(
+        id_short="properties",
+        submodelelement_uri=properties_bnode,
+        predicate="https://www.w3.org/2019/wot/td#PropertyAffordance",
+    )
+
+    for property_node, property_name in g.query(
+        GET_PROPERTIES_ROOT_NODE.format(protocol=protocol)
+    ):
+        property_bnode = BNode().n3()
+        res += f"{properties_bnode}  <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> {property_bnode}.\n"
+        res += TEMPLATE_ENV.get_template("submodel_element_collection.jinja2").render(
+            id_short=property_name,
+            submodelelement_uri=property_bnode,
+            predicate="https://admin-shell.io/idta/AssetInterfaceDescription/1/0/PropertyDefinition",
+        )
+        res += dfs(
+            (property_node, property_bnode),
+            g,
+            skipped_properties=["https://www.w3.org/2019/wot/td#name"],
+        )
+    # XXX Futur: get Actions and events RDF
     return res
 
 
@@ -296,6 +339,7 @@ def td_to_aas(uri):
 
     res += TEMPLATE_ENV.get_template("aid.jinja2").render(
         submodel=root_node,
+        aid_id=uri,
         id_short=id_short(root_node_uri),
     )
     res += TEMPLATE_ENV.get_template("semantic_id.jinja2").render(
@@ -317,8 +361,8 @@ def td_to_aas(uri):
             submodelelement_uri=interface_protocol_uri,
             predicate="https://admin-shell.io/idta/AssetInterfacesDescription/1/0/Interface",
         )
-        res += interface_protocol_duplicated_rdf(
-            interface_protocol_uri, root_node_uri, g
+        res += interface_protocol_rdf(
+            interface_protocol_uri, root_node_uri, g, protocol
         )
 
     # print(res)
