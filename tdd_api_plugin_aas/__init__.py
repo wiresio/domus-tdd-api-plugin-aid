@@ -35,7 +35,7 @@ def describe_aas(id):
     mime_type_negociated = negociate_mime_type(
         request, default_mimetype="application/aas+json"
     )
-    description = get_aas_description(id, mime_type_negociated)
+    description = get_aas_description(id, content_type=mime_type_negociated)
     if mime_type_negociated == "application/aas+json":
         description = json.dumps(description)
     return Response(description, content_type=mime_type_negociated)
@@ -60,7 +60,7 @@ def create_aas(id):
     return Response(status=201 if not updated else 204, headers={"Location": uri})
 
 
-@blueprint.route("/", methods=["POST"])
+@blueprint.route("", methods=["POST"])
 def create_anonymous_aas():
     mimetype = request.content_type
     if mimetype == "application/json":
