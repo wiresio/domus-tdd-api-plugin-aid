@@ -378,7 +378,30 @@ def interface_protocol_rdf(interface_protocol_uri, root_node_uri, g, protocol):
             skipped_properties=["https://www.w3.org/2019/wot/td#name"]
             + PROPERTIES_NOT_EXPORTED,
         )
-    # XXX Futur: get Actions and events RDF
+    # Actions
+    actions_bnode = BNode().n3()
+    res += (
+        f"{interaction_metadata_bnode} "
+        "<https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> "
+        f"{actions_bnode}.\n"
+    )
+    res += TEMPLATE_ENV.get_template("submodel_element_collection.jinja2").render(
+        id_short="actions",
+        submodelelement_uri=actions_bnode,
+        predicate="https://www.w3.org/2019/wot/td#ActionAffordance",
+    )
+    # Events
+    events_bnode = BNode().n3()
+    res += (
+        f"{interaction_metadata_bnode} "
+        "<https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> "
+        f"{events_bnode}.\n"
+    )
+    res += TEMPLATE_ENV.get_template("submodel_element_collection.jinja2").render(
+        id_short="events",
+        submodelelement_uri=events_bnode,
+        predicate="https://www.w3.org/2019/wot/td#EventAffordance",
+    )
     return res
 
 
