@@ -26,8 +26,10 @@ ONTOLOGY = {"prefix": "aas", "base": "https://admin-shell.io/aas/3/0/"}
 
 DATA_DIR = Path(__file__).parent / "data"
 
-with open(DATA_DIR / f"context.v3.json") as fp:
+with open(DATA_DIR / "context.v3.json") as fp:
     CONTEXT = json.load(fp)
+
+TD_CONTEXT_GRAPH = Graph().parse(DATA_DIR / "td-context.ttl", format="ttl")
 
 TEMPLATE_ENV = Environment(loader=FileSystemLoader(str(DATA_DIR / "aid")))
 
@@ -184,6 +186,14 @@ SELECT ?value WHERE {{
 }}
 """
 
+GET_SHORT_ID = """
+PREFIX jsonld: <http://www.w3.org/ns/json-ld#>
+SELECT DISTINCT ?idShort WHERE {{
+ ?x jsonld:term ?idShort .
+ ?x jsonld:iri <{full_uri}>.
+}}
+"""
+
 
 PREFIX_HEADER = """
 @prefix aas: <https://admin-shell.io/aas/3/0/>.
@@ -193,6 +203,12 @@ PREFIX_HEADER = """
 
 
 def id_short(node_id):
+    id_shorts = [
+        x[0] for x in TD_CONTEXT_GRAPH.query(GET_SHORT_ID.format(full_uri=node_id))
+    ]
+    if id_shorts:
+        return id_shorts[0]
+
     return re.findall(r"(\w+)$", node_id)[0]
 
 
