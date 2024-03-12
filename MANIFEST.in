@@ -9,11 +9,7 @@ exclude .gitlab-ci.yml
 exclude .gitlab-ci-extended.yml
 
 exclude pytest.ini
-recursive-exclude tdd_api_plugin_aas/tests *.json
-recursive-exclude tdd_api_plugin_aas/tests *.py
-recursive-exclude tdd_api_plugin_aas/tests *.jsonld
-recursive-exclude tdd_api_plugin_aas/tests *.ttl
-recursive-exclude tdd_api_plugin_aas/tests *.nquads
+prune tdd_api_plugin_aas/tests
 recursive-include tdd_api_plugin_aas *.jinja2
 recursive-include tdd_api_plugin_aas *.json
 recursive-include tdd_api_plugin_aas *.n3

@@ -1,7 +1,5 @@
 import json
 import pytest
-import re
-from mock import patch
 
 from jsoncomparison import Compare
 

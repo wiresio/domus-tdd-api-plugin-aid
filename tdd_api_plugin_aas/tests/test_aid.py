@@ -35,9 +35,8 @@ def test_GET_AAS_OK(test_client, mock_sparql_with_one_aid):  # noqa: F811
     assert get_response.status_code == 200
     aas = get_response.json
     diff = Compare().check(already_present_aas, aas)
-    assert (
-        len(diff) == 1
-    )  # XXX For now, we allow one difference: "value" are not exported because empty in rdf in the framed AID
+    assert len(diff) == 1  # XXX For now, we allow one difference:
+    # "value" are not exported because empty in rdf in the framed AID
 
 
 def test_GET_aas_content_negociation(
@@ -79,7 +78,7 @@ def test_POST_aas_ok(test_client, mock_sparql_empty_endpoint):  # noqa: F811
     with open(DATA_PATH / "aas" / "one_aid.json") as fp:
         aas_id = "urn:uuid:014139c9-b267-4db5-9c61-cc2d2bfc217d"
         post_response = test_client.post(
-            f"/aas",
+            "/aas",
             data=fp.read(),
             content_type="application/json",
         )

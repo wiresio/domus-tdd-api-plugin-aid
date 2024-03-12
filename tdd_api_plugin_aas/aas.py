@@ -230,9 +230,9 @@ def get_description(aid_node, td_node, g):
 
 
 def get_xsd_datatype(rdflib_object):
-    if type(rdflib_object) == URIRef:
+    if isinstance(rdflib_object, URIRef):
         return "xsd:anyURI"
-    elif type(rdflib_object) == Literal and rdflib_object.datatype:
+    elif isinstance(rdflib_object, Literal) and rdflib_object.datatype:
         return rdflib_object.datatype.n3()
     return "xsd:string"
 
@@ -266,7 +266,11 @@ def dfs(root_nodes_pair, g, skipped_properties=[]):
                 else:
                     submodel_element_collection_bnode = BNode().n3()
                     stack.put((o, submodel_element_collection_bnode))
-                    res += f"{node_aid}  <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> {submodel_element_collection_bnode}.\n"
+                    res += (
+                        f"{node_aid} "
+                        "<https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> "
+                        f"{submodel_element_collection_bnode}.\n"
+                    )
 
                     res += TEMPLATE_ENV.get_template(
                         "submodel_element_collection.jinja2"
@@ -312,7 +316,11 @@ def interface_protocol_rdf(interface_protocol_uri, root_node_uri, g, protocol):
     # EndpointMetadata
     # Every property except those in PROPERTIES_NOT_EXPORTED and PROPERTIES_ON_PROTOCOL_INTERFACE
     endpoint_metadata_bnode = BNode().n3()
-    res += f"{interface_protocol_uri}  <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> {endpoint_metadata_bnode}.\n"
+    res += (
+        f"{interface_protocol_uri} "
+        "<https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> "
+        f"{endpoint_metadata_bnode}.\n"
+    )
     res += TEMPLATE_ENV.get_template("submodel_element_collection.jinja2").render(
         id_short="EndpointMetadata",
         submodelelement_uri=endpoint_metadata_bnode,
@@ -326,7 +334,11 @@ def interface_protocol_rdf(interface_protocol_uri, root_node_uri, g, protocol):
 
     # InteractionMetadata
     interaction_metadata_bnode = BNode().n3()
-    res += f"{interface_protocol_uri}  <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> {interaction_metadata_bnode}.\n"
+    res += (
+        f"{interface_protocol_uri} "
+        "<https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> "
+        f"{interaction_metadata_bnode}.\n"
+    )
     res += TEMPLATE_ENV.get_template("submodel_element_collection.jinja2").render(
         id_short="InteractionMetadata",
         submodelelement_uri=interaction_metadata_bnode,
@@ -334,7 +346,11 @@ def interface_protocol_rdf(interface_protocol_uri, root_node_uri, g, protocol):
     )
     # Get properties Node
     properties_bnode = BNode().n3()
-    res += f"{interaction_metadata_bnode}  <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> {properties_bnode}.\n"
+    res += (
+        f"{interaction_metadata_bnode} "
+        "<https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> "
+        f"{properties_bnode}.\n"
+    )
     res += TEMPLATE_ENV.get_template("submodel_element_collection.jinja2").render(
         id_short="properties",
         submodelelement_uri=properties_bnode,
@@ -345,12 +361,16 @@ def interface_protocol_rdf(interface_protocol_uri, root_node_uri, g, protocol):
         GET_PROPERTIES_ROOT_NODE.format(protocol=protocol)
     ):
         property_bnode = BNode().n3()
-        res += f"{properties_bnode}  <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> {property_bnode}.\n"
+        res += (
+            f"{properties_bnode} "
+            "<https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> "
+            f"{property_bnode}.\n"
+        )
         res += get_description(property_bnode, property_node, g)
         res += TEMPLATE_ENV.get_template("submodel_element_collection.jinja2").render(
             id_short=property_name,
             submodelelement_uri=property_bnode,
-            predicate="https://admin-shell.io/idta/AssetInterfaceDescription/1/0/PropertyDefinition",
+            predicate="https://admin-shell.io/idta/AssetInterfaceDescription/1/0/PropertyDefinition",  # noqa
         )
         res += dfs(
             (property_node, property_bnode),
