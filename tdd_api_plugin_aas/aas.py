@@ -8,7 +8,7 @@ from queue import LifoQueue, Empty
 
 from jinja2 import Environment, FileSystemLoader
 
-from rdflib import Graph, Literal, URIRef, BNode, RDF
+from rdflib import Graph, Literal, URIRef, BNode
 from rdflib.exceptions import ParserError
 
 from tdd.common import (
@@ -21,7 +21,6 @@ from tdd.context import convert_context_to_array, get_context
 from tdd.errors import IDMismatchError, JSONDecodeError, RDFValidationError
 from tdd.registration import delete_registration_information
 from tdd.utils import uri_to_base
-from tdd.config import CONFIG
 
 ONTOLOGY = {"prefix": "aas", "base": "https://admin-shell.io/aas/3/0/"}
 
@@ -197,6 +196,23 @@ def id_short(node_id):
     return re.findall(r"(\w+)$", node_id)[0]
 
 
+def get_description(aid_node, td_node, g):
+    descriptions_values = [
+        v
+        for (_s, _p, v) in g.triples(
+            (td_node, URIRef("https://www.w3.org/2019/wot/td#description"), None)
+        )
+    ]
+    if not descriptions_values:
+        return ""
+
+    return TEMPLATE_ENV.get_template("description.jinja2").render(
+        aid_uri=aid_node,
+        language=descriptions_values[0].language,
+        text=descriptions_values[0].value,
+    )
+
+
 def get_xsd_datatype(rdflib_object):
     if type(rdflib_object) == URIRef:
         return "xsd:anyURI"
@@ -314,6 +330,7 @@ def interface_protocol_rdf(interface_protocol_uri, root_node_uri, g, protocol):
     ):
         property_bnode = BNode().n3()
         res += f"{properties_bnode}  <https://admin-shell.io/aas/3/0/SubmodelElementCollection/value> {property_bnode}.\n"
+        res += get_description(property_bnode, property_node, g)
         res += TEMPLATE_ENV.get_template("submodel_element_collection.jinja2").render(
             id_short=property_name,
             submodelelement_uri=property_bnode,
@@ -322,7 +339,8 @@ def interface_protocol_rdf(interface_protocol_uri, root_node_uri, g, protocol):
         res += dfs(
             (property_node, property_bnode),
             g,
-            skipped_properties=["https://www.w3.org/2019/wot/td#name"],
+            skipped_properties=["https://www.w3.org/2019/wot/td#name"]
+            + PROPERTIES_NOT_EXPORTED,
         )
     # XXX Futur: get Actions and events RDF
     return res
@@ -346,6 +364,7 @@ def td_to_aas(uri):
         element=root_node,
         uri="https://admin-shell.io/idta/AssetInterfacesDescription/1/0/Submodel",
     )
+    res += get_description(root_node, root_node_uri, g)
 
     protocols = [x[0] for x in g.query(GET_PROTOCOLS_QUERY)]
 
