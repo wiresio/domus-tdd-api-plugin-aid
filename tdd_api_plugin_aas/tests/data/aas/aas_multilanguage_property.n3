@@ -1,0 +1,3 @@
+<urn:uuid:ea720bcd-bdd8-4fe8-9445-2d1cf6bc47d0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://admin-shell.io/aas/3/0/RC02/MultiLanguageProperty> .
+<urn:uuid:ea720bcd-bdd8-4fe8-9445-2d1cf6bc47d0> <https://admin-shell.io/aas/3/0/RC02/MultiLanguageProperty/value> "Erster Zyklus"@de .
+<urn:uuid:ea720bcd-bdd8-4fe8-9445-2d1cf6bc47d0> <https://admin-shell.io/aas/3/0/RC02/MultiLanguageProperty/value> "Prvý cyklus"@sk .

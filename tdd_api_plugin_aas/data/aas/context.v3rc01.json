@@ -1,0 +1,180 @@
+{
+  "@vocab": "https://admin-shell.io/aas/3/0/RC01/",
+  "aas": "https://admin-shell.io/aas/3/0/RC01/",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "conceptDescriptions": {
+    "@container": "@set",
+    "@id": "aas:AssetAdministrationShellEnvironment/conceptDescriptions"
+  },
+  "defaultThumbnail": "aas:AssetInformation/defaultThumbnail",
+  "submodels": {
+    "@id": "aas:AssetAdministrationShell/submodels",
+    "@container": "@set"
+  },
+  "id": "@id",
+  "idShort": "aas:Referable/idShort",
+  "Instance": "aas:ModelingKind/Instance",
+  "Template": "aas:ModelingKind/Template",
+  "kind": {
+    "@id": "aas:HasKind/kind",
+    "@type": "@vocab"
+  },
+  "category": {
+    "@id": "aas:Referable/category"
+  },
+  "modelType": "@type",
+  "descriptions": {
+    "@id": "aas:Referable/description",
+    "@container": "@set",
+    "@context": {
+      "language": "@language",
+      "text": "@value"
+    }
+  },
+  "qualifiers": {
+    "@id": "aas:Qualifiable/qualifiers",
+    "@container": "@set",
+    "@context": {
+      "type": "aas:Qualifier/type",
+      "value": "aas:Qualifier/value",
+      "valueType": {
+        "@id": "aas:Qualifier/valueType",
+        "@type": "@id"
+      },
+      "valueId": {
+        "@id": "aas:Qualifier/valueId",
+        "@type": "@id"
+      }
+    }
+  },
+  "keys": {
+    "@id": "aas:Reference/keys",
+    "@container": "@set",
+    "@context": {
+      "type": {
+        "@context": {
+          "@vocab": "https://admin-shell.io/aas/3/0/RC01/KeyElements/"
+        },
+        "@id": "aas:Key/type",
+        "@type": "@vocab"
+      },
+      "value": "aas:Key/value",
+      "idType": {
+        "@context": {
+          "@vocab": "https://admin-shell.io/aas/3/0/RC01/KeyType/"
+        },
+        "@id": "aas:Key/idType",
+        "@type": "@vocab"
+      }
+    }
+  },
+  "semanticId": {
+    "@id": "aas:HasSemantics/semanticId",
+    "@type": "@id"
+  },
+  "blobCertificate": {
+    "@id": "aas:BlobCertificate/blobCertificate",
+    "@context": {
+      "value": "aas:Blob/value",
+      "mimeType": "aas:Blob/mimeType"
+    }
+  },
+  "Blob": {
+    "@id": "aas:Blob",
+    "@context": {
+      "value": "aas:Blob/value",
+      "mimeType": "aas:Blob/mimeType"
+    }
+  },
+  "File": {
+    "@id": "aas:File",
+    "@context": {
+      "value": "aas:File/value",
+      "mimeType": "aas:File/mimeType"
+    }
+  },
+  "Property": {
+    "@id": "aas:Property",
+    "@context": {
+      "value": "aas:Property/value",
+      "valueId": {
+        "@id": "aas:Property/valueId",
+        "@type": "@id"
+      },
+      "valueType": {
+        "@id": "aas:Property/valueType",
+        "@type": "@id"
+      }
+    }
+  },
+  "MultiLanguageProperty": {
+    "@id": "aas:MultiLanguageProperty",
+    "@context": {
+      "value": "aas:MultiLanguageProperty/value",
+      "valueId": {
+        "@id": "aas:MultiLanguageProperty/valueId",
+        "@type": "@id"
+      }
+    }
+  },
+  "inoutputVariables": {
+    "@id": "aas:Operation/inoutputVariables",
+    "@container": "@set",
+    "@context": {
+      "value": "aas:OperationVariable/value"
+    }
+  },
+  "inputVariables": {
+    "@id": "aas:Operation/inputVariables",
+    "@container": "@set",
+    "@context": {
+      "value": "aas:OperationVariable/value"
+    }
+  },
+  "outputVariables": {
+    "@id": "aas:Operation/outputVariables",
+    "@container": "@set",
+    "@context": {
+      "value": "aas:OperationVariable/value"
+    }
+  },
+  "SubmodelElementCollection": {
+    "@id": "aas:SubmodelElementCollection",
+    "@context": {
+      "value": {
+        "@id": "aas:SubmodelElementCollection/value",
+        "@type": "@id",
+        "@container": "@set"
+      }
+    }
+  },
+  "ordered": {
+    "@id": "aas:SubmodelElementCollection/ordered"
+  },
+  "allowDuplicates": {
+    "@id": "aas:SubmodelElementCollection/allowDuplicates"
+  },
+  "submodelElements": {
+    "@id": "aas:Submodel/submodelElements",
+    "@type": "@id",
+    "@container": "@set",
+    "@context": {
+      "constraints": {
+        "@id": "aas:qualifiers",
+        "@container": "@set",
+        "@context": {
+          "type": "aas:Qualifier/type",
+          "value": "aas:Qualifier/value",
+          "valueType": {
+            "@id": "aas:Qualifier/valueType",
+            "@type": "@id"
+          },
+          "valueId": {
+            "@id": "aas:Qualifier/valueId",
+            "@type": "@id"
+          }
+        }
+      }
+    }
+  }
+}

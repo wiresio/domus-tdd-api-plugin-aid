@@ -1,0 +1,90 @@
+<urn:uuid:7c83cce5-7b1f-43b2-8397-e0371a823b35>
+        <https://admin-shell.io/aas/3/0/RC02/AssetAdministrationShell/submodels>
+                <http://localhost:5000/urn:7c83cce5-7b1f-43b2-8397-e0371a823b35/something_random_b0c234ba> .
+
+<http://localhost:5000/urn:7c83cce5-7b1f-43b2-8397-e0371a823b35/something_random_b0c234ba>
+        a       <https://admin-shell.io/aas/3/0/RC02/Submodel> ;
+        <https://admin-shell.io/aas/3/0/RC02/HasDataSpecification/embeddedDataSpecifications>
+                [ <https://admin-shell.io/aas/3/0/RC02/dataSpecification>
+                          [ <https://admin-shell.io/aas/3/0/RC02/Reference/keys>
+                                    [ <https://admin-shell.io/aas/3/0/RC02/Key/type>
+                                              <https://admin-shell.io/aas/3/0/RC02/KeyTypes/GlobalReference> ;
+                                      <https://admin-shell.io/aas/3/0/RC02/Key/value>
+                                              "something_random_27587fef"
+                                    ] ;
+                            <https://admin-shell.io/aas/3/0/RC02/type>
+                                    "GlobalReference"
+                          ] ;
+                  <https://admin-shell.io/aas/3/0/RC02/dataSpecificationContent>
+                          [ a       <https://admin-shell.io/aas/3/0/RC02/DataSpecificationIEC61360> ;
+                            <https://admin-shell.io/aas/3/0/RC02/DataSpecificationIEC61360/preferredName>
+                                    [ <https://admin-shell.io/aas/3/0/RC02/LangString/language>
+                                              "en" ;
+                                      <https://admin-shell.io/aas/3/0/RC02/LangString/text>
+                                              "something_random_0796a3b4"
+                                    ] ;
+                            <https://admin-shell.io/aas/3/0/RC02/value>
+                                    "something_random_09a283e0"
+                          ]
+                ] ;
+        <https://admin-shell.io/aas/3/0/RC02/HasExtensions/extensions>
+                [ <https://admin-shell.io/aas/3/0/RC02/name>
+                          "something_random_74cc9e9b" ;
+                  <https://admin-shell.io/aas/3/0/RC02/valueType>
+                          "xs:boolean"
+                ] ;
+        <https://admin-shell.io/aas/3/0/RC02/HasKind/kind>
+                <https://admin-shell.io/aas/3/0/RC02/ModelingKind/Instance> ;
+        <https://admin-shell.io/aas/3/0/RC02/HasSemantics/semanticId>
+                [ <https://admin-shell.io/aas/3/0/RC02/Reference/keys>
+                          [ <https://admin-shell.io/aas/3/0/RC02/Key/type>
+                                    <https://admin-shell.io/aas/3/0/RC02/KeyTypes/GlobalReference> ;
+                            <https://admin-shell.io/aas/3/0/RC02/Key/value>
+                                    "something_random_920ea681"
+                          ] ;
+                  <https://admin-shell.io/aas/3/0/RC02/type>
+                          "GlobalReference"
+                ] ;
+        <https://admin-shell.io/aas/3/0/RC02/HasSemantics/supplementalSemanticIds>
+                [ <https://admin-shell.io/aas/3/0/RC02/Reference/keys>
+                          [ <https://admin-shell.io/aas/3/0/RC02/Key/type>
+                                    <https://admin-shell.io/aas/3/0/RC02/KeyTypes/GlobalReference> ;
+                            <https://admin-shell.io/aas/3/0/RC02/Key/value>
+                                    "something_random_c2c84a40"
+                          ] ;
+                  <https://admin-shell.io/aas/3/0/RC02/type>
+                          "GlobalReference"
+                ] ;
+        <https://admin-shell.io/aas/3/0/RC02/Qualifiable/qualifiers>
+                [ <https://admin-shell.io/aas/3/0/RC02/Qualifier/type>
+                          "something_random_cfd39ba4" ;
+                  <https://admin-shell.io/aas/3/0/RC02/Qualifier/valueType>
+                          <http://www.w3.org/2001/XMLSchema#boolean>
+                ] ;
+        <https://admin-shell.io/aas/3/0/RC02/Referable/category>
+                "something_random_6c273750" ;
+        <https://admin-shell.io/aas/3/0/RC02/Referable/checksum>
+                "something_random_bb3da9d4" ;
+        <https://admin-shell.io/aas/3/0/RC02/Referable/description>
+                [ <https://admin-shell.io/aas/3/0/RC02/LangString/language>
+                          "en" ;
+                  <https://admin-shell.io/aas/3/0/RC02/LangString/text>
+                          "something_random_0bcec5eb"
+                ] ;
+        <https://admin-shell.io/aas/3/0/RC02/Referable/displayName>
+                [ <https://admin-shell.io/aas/3/0/RC02/LangString/language>
+                          "en" ;
+                  <https://admin-shell.io/aas/3/0/RC02/LangString/text>
+                          "something_random_18705330"
+                ] ;
+        <https://admin-shell.io/aas/3/0/RC02/Referable/idShort>
+                "Z0" ;
+        <https://admin-shell.io/aas/3/0/RC02/Submodel/submodelElements>
+                [ a       <https://admin-shell.io/aas/3/0/RC02/Blob> ;
+                  <https://admin-shell.io/aas/3/0/RC02/Blob/contentType>
+                          "application/something-random" ;
+                  <https://admin-shell.io/aas/3/0/RC02/Referable/idShort>
+                          "some_id_short_10b21b1b"
+                ] ;
+        <https://admin-shell.io/aas/3/0/RC02/administration>
+                []  .

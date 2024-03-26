@@ -1,0 +1,102 @@
+{
+  "id": "urn:illuminance:sensor",
+  "modelType": "Submodel",
+  "kind": "Instance",
+  "semanticId": {
+    "modelType": "Reference",
+    "keys": [
+      {
+        "type": "GlobalReference",
+        "value": "https://www.w3.org/2019/wot/td#Thing"
+      }
+    ],
+    "type": "GlobalReference"
+  },
+  "qualifiers": [
+    {
+      "modelType": "Qualifier",
+      "semanticId": {
+        "modelType": "Reference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://www.w3.org/2019/wot/td#hasSecurityConfiguration"
+          }
+        ],
+        "type": "GlobalReference"
+      },
+      "type": "A qualifier (this field is mandatory)",
+      "value": "http://localhost:5000/urn:illuminance:sensor/nosec_sc",
+      "valueType": "xs:anyURI"
+    },
+    {
+      "modelType": "Qualifier",
+      "semanticId": {
+        "modelType": "Reference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://www.w3.org/2019/wot/td#title"
+          }
+        ],
+        "type": "GlobalReference"
+      },
+      "type": "A qualifier (this field is mandatory)",
+      "value": "MyIlluminanceSensor",
+      "valueType": "xs:string"
+    }
+  ],
+  "idShort": "sensor",
+  "submodelElements": [
+    {
+      "modelType": "SubmodelElementCollection",
+      "kind": "Instance",
+      "semanticId": {
+        "modelType": "Reference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://www.w3.org/2019/wot/td#definesSecurityScheme"
+          }
+        ],
+        "type": "GlobalReference"
+      },
+      "idShort": "definesSecurityScheme",
+      "value": [
+        {
+          "id": "https://rdflib.github.io/.well-known/genid/rdflib/N780d224dc6454d188258a78ad3ef63cb",
+          "modelType": "SubmodelElementCollection",
+          "semanticId": {
+            "modelType": "Reference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://www.w3.org/2019/wot/security#NoSecurityScheme"
+              }
+            ],
+            "type": "GlobalReference"
+          },
+          "qualifiers": [
+            {
+              "modelType": "Qualifier",
+              "semanticId": {
+                "modelType": "Reference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://www.w3.org/2019/wot/td#hasInstanceConfiguration"
+                  }
+                ],
+                "type": "GlobalReference"
+              },
+              "type": "A qualifier (this field is mandatory)",
+              "value": "http://localhost:5000/urn:illuminance:sensor/nosec_sc",
+              "valueType": "xs:anyURI"
+            }
+          ],
+          "idShort": "N780d224dc6454d188258a78ad3ef63cb"
+        }
+      ]
+    }
+  ]
+}

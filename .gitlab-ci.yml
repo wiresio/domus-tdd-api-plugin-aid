@@ -1,0 +1,17 @@
+---
+variables:
+  CI_RUNNER_TAG: dedibox
+
+include:
+  - project: "open-source/gitlab-ci-templates"
+    ref: "branch/default"
+    file:
+      - "templates/no-duplicated-ci-pipelines.yml"
+      - "templates/lint/flake8.yml"
+      - "templates/lint/black.yml"
+      - "templates/lint/check-manifest.yml"
+      - "templates/lint/yamllint.yml"
+
+stages:
+  - deps
+  - lint
