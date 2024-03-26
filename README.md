@@ -8,7 +8,34 @@ It can also translate a Thing Description into an AID.
 
 ## Plugin installation
 
-XXXX
+To install the plugin, create a Python 3 [virtualenv](https://virtualenv.pypa.io/en/latest/user_guide.html).
+
+```bash
+virtualenv env_name
+```
+
+Then activate the venv
+
+```bash
+source env_name/bin/activate
+```
+
+Then install the [domus-tdd-api](https://github.com/eclipse-thingweb/domus-tdd-api).
+Finally install this plugin.
+
+You can install from source by cloning this repository
+
+```bash
+git clone git@github.com:wiresio/domus-tdd-api-plugin-aid.git
+cd domus-tdd-api-plugin-aid
+pip install -e .
+```
+
+Or you can pip install it from pypi.
+
+```bash
+pip install domus-tdd-api-plugin-aid
+```
 
 ## New routes
 
