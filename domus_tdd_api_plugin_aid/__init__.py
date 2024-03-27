@@ -12,14 +12,14 @@ from tdd.utils import (
 from tdd.errors import WrongMimeType
 
 
-from tdd_api_plugin_aas.aas import (
+from domus_tdd_api_plugin_aid.aas import (
     get_aas_description,
     put_aas_json_in_sparql,
     put_aas_rdf_in_sparql,
     validate_aas,
 )
 
-blueprint = Blueprint("tdd_api_plugin_aas", __name__, url_prefix="/aas")
+blueprint = Blueprint("domus_tdd_api_plugin_aid", __name__, url_prefix="/aas")
 
 
 @blueprint.route("/<id>", methods=["DELETE"])

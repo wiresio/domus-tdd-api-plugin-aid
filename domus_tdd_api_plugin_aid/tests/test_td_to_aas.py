@@ -11,7 +11,7 @@ from tdd.tests.conftest import (  # noqa: F401,F811
     mock_sparql_empty_endpoint,
 )
 
-from tdd_api_plugin_aas.tests.test_aid import DATA_PATH
+from domus_tdd_api_plugin_aid.tests.test_aid import DATA_PATH
 
 CONFIG["LIMIT_BATCH_TDS"] = 15
 CONFIG["CHECK_SCHEMA"] = True
