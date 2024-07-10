@@ -53,10 +53,9 @@ def test_POST_td(test_client, mock_sparql_empty_endpoint):  # noqa: F811
         aas = aas_response.json
         target_aas = json.load(fp)
         diff = Compare().check(target_aas, aas)
-        import pdb
-
-        pdb.set_trace()
-        assert diff == {}  # XX WIP
+        assert (
+            diff == {}
+        )  # FIXME: some fine-tuning to do. Must look at what fields are mandatory to express
 
 
 def test_DELETE_things(test_client, mock_sparql_aas_and_td):  # noqa: F811
