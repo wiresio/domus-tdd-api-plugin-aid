@@ -443,8 +443,6 @@ def td_to_aas(uri):
             interface_protocol_uri, root_node_uri, g, protocol
         )
 
-    # print(res)
-    # return Graph().parse(data=res, format="ttl").serialize(format="nt")
     aas_ntriples = Graph().parse(data=res, format="ttl").serialize(format="nt")
     return put_aas_rdf_in_sparql(
         aas_ntriples, "application/n-triples", uri=uri, delete_if_exists=False
