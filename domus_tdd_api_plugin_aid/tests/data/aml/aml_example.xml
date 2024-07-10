@@ -1,0 +1,415 @@
+﻿<CAEXFile SchemaVersion="3.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.dke.de/CAEX" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd" FileName="AAS Beispiel.aml">
+  <AdditionalInformation DocumentVersions="Recommendations" />
+  <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
+  <SourceDocumentInformation OriginName="AutomationML Editor" OriginID="916578CA-FE0D-474E-A4FC-9E1719892369" OriginVersion="6.1.7.0" LastWritingDateTime="2024-03-18T11:14:50.2399582+01:00" OriginProjectID="unspecified" OriginProjectTitle="unspecified" OriginRelease="6.1.7.0" OriginVendor="AutomationML e.V." OriginVendorURL="www.AutomationML.org" />
+  <InstanceHierarchy Name="InstanceHierarchy">
+    <Version>0</Version>
+    <InternalElement Name="Project" ID="0d143fae-66bc-488b-92fa-c8d31d91a1ee">
+      <InternalElement Name="Device 1" ID="5b3e24bb-d86c-453e-9a03-e7eb7dd3b3f2" RefBaseSystemUnitPath="DiamantSystemUnitClassLib/Gerät">
+        <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/Name">
+          <Value>Device 1</Value>
+        </Attribute>
+        <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/ID">
+          <Value>001</Value>
+        </Attribute>
+        <Attribute Name="ManufacturerName" AttributeDataType="xs:string">
+          <Value>ACME</Value>
+        </Attribute>
+        <InternalElement Name="Blau" ID="29a25b2b-1fe6-4002-b751-8b8bf90affdf" RefBaseSystemUnitPath="BlauSystemUnitClassLib/Gerät">
+          <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/Name">
+            <Value>Device 1</Value>
+          </Attribute>
+          <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/ID">
+            <Value>001</Value>
+          </Attribute>
+          <Attribute Name="BlauesGeräteAttribut" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/BlauesGeräteAttributAttributeType">
+            <Value>Wert</Value>
+          </Attribute>
+          <ExternalInterface Name="VerbindungInterface" ID="e83a4f17-e16c-4b9e-ba0a-918eb40d9fac" RefBaseClassPath="BlauInterfaceClassLib/VerbindungInterfaceClass">
+            <Attribute Name="refURI" AttributeDataType="xs:anyURI" RefAttributeType="AutomationMLBaseAttributeTypeLib/refURI">
+              <Value>/PLCOpenFiles/bauerBehaviour.xml#globalID</Value>
+            </Attribute>
+          </ExternalInterface>
+          <RoleRequirements RefBaseRoleClassPath="BlauRoleClassLib/GerätRoleClass" />
+        </InternalElement>
+        <InternalElement Name="Grün" ID="e191c203-79fc-4393-91c2-a3403b5d543d" RefBaseSystemUnitPath="GrünSystemUnitClassLib/Gerät">
+          <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/Name">
+            <Value>Device 1</Value>
+          </Attribute>
+          <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/ID">
+            <Value>001</Value>
+          </Attribute>
+          <RoleRequirements RefBaseRoleClassPath="GrünRoleClassLib/GerätRoleClass" />
+        </InternalElement>
+        <InternalElement Name="Rot" ID="c92d62eb-0e82-4be9-bf95-e1033c8f71e6" RefBaseSystemUnitPath="RotSystemUnitClassLib/Gerät">
+          <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="RotAttributeTypeLib/Name">
+            <Value>Device 1</Value>
+          </Attribute>
+          <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="RotAttributeTypeLib/ID">
+            <Value>001</Value>
+          </Attribute>
+          <ExternalInterface Name="ControlValue" ID="96ea7853-591a-4913-a25b-6a00cac050b5" RefBaseClassPath="RotInterfaceClassLib/SteuerungssignalInterfaceClass" />
+          <RoleRequirements RefBaseRoleClassPath="RotRoleClassLib/GerätRoleClass" />
+        </InternalElement>
+        <RoleRequirements RefBaseRoleClassPath="BlauRoleClassLib/GerätRoleClass" />
+        <RoleRequirements RefBaseRoleClassPath="GrünRoleClassLib/GerätRoleClass" />
+        <RoleRequirements RefBaseRoleClassPath="RotRoleClassLib/GerätRoleClass" />
+      </InternalElement>
+      <InternalElement Name="Device 2" ID="1570f45d-5ad5-4d14-a384-9b11ced599b5" RefBaseSystemUnitPath="DiamantSystemUnitClassLib/Gerät">
+        <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/Name">
+          <Value>Device 2</Value>
+        </Attribute>
+        <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/ID">
+          <Value>002</Value>
+        </Attribute>
+        <InternalElement Name="Blau" ID="85467aa9-1f59-486d-8d74-b5995e7a71c1" RefBaseSystemUnitPath="BlauSystemUnitClassLib/Gerät">
+          <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/Name">
+            <Value>Device 2</Value>
+          </Attribute>
+          <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/ID">
+            <Value>002</Value>
+          </Attribute>
+          <Attribute Name="BlauesGeräteAttribut" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/BlauesGeräteAttributAttributeType">
+            <Value>anderer Wert</Value>
+          </Attribute>
+          <ExternalInterface Name="VerbindungInterface" ID="c0c5f6e2-ebf8-4a92-ac0a-f43add13446a" RefBaseClassPath="BlauInterfaceClassLib/VerbindungInterfaceClass" />
+          <RoleRequirements RefBaseRoleClassPath="BlauRoleClassLib/GerätRoleClass" />
+        </InternalElement>
+        <InternalElement Name="Grün" ID="e90f3b09-4b6f-46d7-905e-120bc58c99db" RefBaseSystemUnitPath="GrünSystemUnitClassLib/Gerät">
+          <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/Name">
+            <Value>Device 2</Value>
+          </Attribute>
+          <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/ID">
+            <Value>002</Value>
+          </Attribute>
+          <RoleRequirements RefBaseRoleClassPath="GrünRoleClassLib/GerätRoleClass" />
+        </InternalElement>
+        <InternalElement Name="Rot" ID="0b1c0b16-7600-4c77-beaf-6db629a8813d" RefBaseSystemUnitPath="RotSystemUnitClassLib/Gerät">
+          <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="RotAttributeTypeLib/Name">
+            <Value>Device 2</Value>
+          </Attribute>
+          <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="RotAttributeTypeLib/ID">
+            <Value>002</Value>
+          </Attribute>
+          <ExternalInterface Name="ControlValue" ID="430980ce-f89b-4b0d-a7fe-a3ca787f619c" RefBaseClassPath="RotInterfaceClassLib/SteuerungssignalInterfaceClass" />
+          <RoleRequirements RefBaseRoleClassPath="RotRoleClassLib/GerätRoleClass" />
+        </InternalElement>
+        <RoleRequirements RefBaseRoleClassPath="BlauRoleClassLib/GerätRoleClass" />
+        <RoleRequirements RefBaseRoleClassPath="GrünRoleClassLib/GerätRoleClass" />
+        <RoleRequirements RefBaseRoleClassPath="RotRoleClassLib/GerätRoleClass" />
+      </InternalElement>
+      <InternalElement Name="Wire" ID="06c2818e-3170-49c7-a5ad-b5e40b5b4162" RefBaseSystemUnitPath="DiamantSystemUnitClassLib/Kabel">
+        <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/Name">
+          <Value>Kabelchen</Value>
+        </Attribute>
+        <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/ID">
+          <Value>003</Value>
+        </Attribute>
+        <InternalElement Name="Grün" ID="a16001c7-97e9-4925-92cb-3dce38af3cee" RefBaseSystemUnitPath="GrünSystemUnitClassLib/Kabel">
+          <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/Name">
+            <Value>Kabelchen</Value>
+          </Attribute>
+          <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/ID">
+            <Value>003</Value>
+          </Attribute>
+          <Attribute Name="GrünesKabelAttribut" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/GrünesKabelAttributAttributeType">
+            <Value>nocheinWert</Value>
+          </Attribute>
+          <ExternalInterface Name="SteckerInterface" ID="7de9cdbc-0975-4337-baea-c7c05cc54f43" RefBaseClassPath="GrünInterfaceClassLib/SteckerInterfaceClass" />
+          <RoleRequirements RefBaseRoleClassPath="GrünRoleClassLib/KabelRoleClass" />
+        </InternalElement>
+        <InternalElement Name="Blau" ID="f406e12d-d7b6-4fa5-9e3b-c2b55645900e" RefBaseSystemUnitPath="BlauSystemUnitClassLib/Struktur">
+          <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/Name">
+            <Value>Kabelchen</Value>
+          </Attribute>
+          <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/ID">
+            <Value>003</Value>
+          </Attribute>
+          <Attribute Name="BlauesStrukturAttribut" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/BlauesStrukturAttributAttributeType">
+            <Value>noch ein anderer Wert</Value>
+          </Attribute>
+          <ExternalInterface Name="VerbindungInterface" ID="236e3ffb-a790-47ac-81de-7c512c27608f" RefBaseClassPath="BlauInterfaceClassLib/VerbindungInterfaceClass" />
+          <ExternalInterface Name="VerbindungInterface1" ID="30ccc8a8-4a94-425d-bef5-e2e9338eb8fc" RefBaseClassPath="BlauInterfaceClassLib/VerbindungInterfaceClass" />
+          <RoleRequirements RefBaseRoleClassPath="BlauRoleClassLib/StrukturRoleClass" />
+        </InternalElement>
+        <RoleRequirements RefBaseRoleClassPath="GrünRoleClassLib/KabelRoleClass" />
+        <RoleRequirements RefBaseRoleClassPath="BlauRoleClassLib/StrukturRoleClass" />
+      </InternalElement>
+      <InternalLink RefPartnerSideA="e83a4f17-e16c-4b9e-ba0a-918eb40d9fac" RefPartnerSideB="236e3ffb-a790-47ac-81de-7c512c27608f" Name="Link" />
+      <InternalLink RefPartnerSideA="c0c5f6e2-ebf8-4a92-ac0a-f43add13446a" RefPartnerSideB="30ccc8a8-4a94-425d-bef5-e2e9338eb8fc" Name="InternalLink" />
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" />
+    </InternalElement>
+  </InstanceHierarchy>
+  <InterfaceClassLib Name="AutomationMLInterfaceClassLib">
+    <Description>Standard Automation Markup Language Interface Class Library</Description>
+    <Version>2.10.0</Version>
+    <InterfaceClass Name="AutomationMLBaseInterface">
+      <InterfaceClass Name="Order" RefBaseClassPath="AutomationMLBaseInterface">
+        <Attribute Name="Direction" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/Direction" />
+      </InterfaceClass>
+      <InterfaceClass Name="Port" RefBaseClassPath="AutomationMLBaseInterface">
+        <Attribute Name="Direction" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/Direction">
+          <Constraint Name="AllowedValues">
+            <NominalScaledType>
+              <RequiredValue>In</RequiredValue>
+              <RequiredValue>Out</RequiredValue>
+              <RequiredValue>InOut</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
+        <Attribute Name="Cardinality" RefAttributeType="AutomationMLBaseAttributeTypeLib/Cardinality">
+          <Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" />
+          <Attribute Name="MaxOccur" AttributeDataType="xs:unsignedInt" />
+        </Attribute>
+        <Attribute Name="Category" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/Category" />
+      </InterfaceClass>
+      <InterfaceClass Name="PPRConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+      <InterfaceClass Name="ExternalDataConnector" RefBaseClassPath="AutomationMLBaseInterface">
+        <Attribute Name="refURI" AttributeDataType="xs:anyURI" RefAttributeType="AutomationMLBaseAttributeTypeLib/refURI" />
+        <InterfaceClass Name="COLLADAInterface" RefBaseClassPath="ExternalDataConnector" />
+        <InterfaceClass Name="PLCopenXMLInterface" RefBaseClassPath="ExternalDataConnector" />
+        <InterfaceClass Name="ExternalDataReference" RefBaseClassPath="ExternalDataConnector">
+          <Attribute Name="MIMEType" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/MIMEType" />
+        </InterfaceClass>
+      </InterfaceClass>
+      <InterfaceClass Name="Communication" RefBaseClassPath="AutomationMLBaseInterface">
+        <InterfaceClass Name="SignalInterface" RefBaseClassPath="Communication" />
+      </InterfaceClass>
+    </InterfaceClass>
+  </InterfaceClassLib>
+  <InterfaceClassLib Name="BlauInterfaceClassLib">
+    <Version>0</Version>
+    <InterfaceClass Name="VerbindungInterfaceClass" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+  </InterfaceClassLib>
+  <InterfaceClassLib Name="GrünInterfaceClassLib">
+    <Version>0</Version>
+    <InterfaceClass Name="SteckerInterfaceClass" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Port" />
+  </InterfaceClassLib>
+  <InterfaceClassLib Name="RotInterfaceClassLib">
+    <Version>0</Version>
+    <InterfaceClass Name="SteuerungssignalInterfaceClass" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface" />
+  </InterfaceClassLib>
+  <RoleClassLib Name="RotRoleClassLib">
+    <Version>0</Version>
+    <RoleClass Name="GerätRoleClass" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+      <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="RotAttributeTypeLib/Name" />
+      <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="RotAttributeTypeLib/ID" />
+    </RoleClass>
+  </RoleClassLib>
+  <RoleClassLib Name="GrünRoleClassLib">
+    <Version>0</Version>
+    <RoleClass Name="GerätRoleClass" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+      <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/Name" />
+      <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/ID" />
+    </RoleClass>
+    <RoleClass Name="KabelRoleClass" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure">
+      <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/Name" />
+      <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/ID" />
+      <Attribute Name="GrünesKabelAttributAttributeType" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/GrünesKabelAttributAttributeType" />
+      <ExternalInterface Name="SteckerInterface" ID="054cb355-5ecf-4caa-81f0-b79df79c46e5" RefBaseClassPath="GrünInterfaceClassLib/SteckerInterfaceClass" />
+    </RoleClass>
+  </RoleClassLib>
+  <RoleClassLib Name="AutomationMLBaseRoleClassLib">
+    <Description>Automation Markup Language base role class library</Description>
+    <Version>2.10.0</Version>
+    <RoleClass Name="AutomationMLBaseRole">
+      <RoleClass Name="Group" RefBaseClassPath="AutomationMLBaseRole">
+        <Attribute Name="AssociatedFacet" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/AssociatedFacet" />
+      </RoleClass>
+      <RoleClass Name="Facet" RefBaseClassPath="AutomationMLBaseRole" />
+      <RoleClass Name="Resource" RefBaseClassPath="AutomationMLBaseRole" />
+      <RoleClass Name="Product" RefBaseClassPath="AutomationMLBaseRole" />
+      <RoleClass Name="Process" RefBaseClassPath="AutomationMLBaseRole" />
+      <RoleClass Name="Structure" RefBaseClassPath="AutomationMLBaseRole">
+        <RoleClass Name="ProductStructure" RefBaseClassPath="Structure" />
+        <RoleClass Name="ProcessStructure" RefBaseClassPath="Structure" />
+        <RoleClass Name="ResourceStructure" RefBaseClassPath="Structure" />
+      </RoleClass>
+      <RoleClass Name="ExternalData" RefBaseClassPath="AutomationMLBaseRole" />
+    </RoleClass>
+  </RoleClassLib>
+  <RoleClassLib Name="BlauRoleClassLib">
+    <Version>0</Version>
+    <RoleClass Name="GerätRoleClass" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+      <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/Name" />
+      <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/ID" />
+      <Attribute Name="BlauesGeräteAttributAttributeType" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/BlauesGeräteAttributAttributeType" />
+      <ExternalInterface Name="VerbindungInterface" ID="602c558b-a004-446b-92a8-31e515f515a3" RefBaseClassPath="BlauInterfaceClassLib/VerbindungInterfaceClass" />
+    </RoleClass>
+    <RoleClass Name="StrukturRoleClass" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure">
+      <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/Name" />
+      <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/ID" />
+      <Attribute Name="BlauesStrukturAttributAttributeType" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/BlauesStrukturAttributAttributeType" />
+      <ExternalInterface Name="VerbindungInterface" ID="5a1851f1-74b1-4bdb-bdd6-e5fc9f641f57" RefBaseClassPath="BlauInterfaceClassLib/VerbindungInterfaceClass" />
+    </RoleClass>
+  </RoleClassLib>
+  <SystemUnitClassLib Name="DiamantSystemUnitClassLib">
+    <Version>0</Version>
+    <SystemUnitClass Name="Gerät" ID="c834e5c1-4b68-47f3-a0c0-4f9d55b511a0">
+      <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/Name" />
+      <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/ID" />
+      <InternalElement Name="Blau" ID="4ac15a01-e48c-42ba-ada6-0266f0005fba" RefBaseSystemUnitPath="BlauSystemUnitClassLib/Gerät">
+        <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/Name" />
+        <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/ID" />
+        <Attribute Name="BlauesGeräteAttribut" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/BlauesGeräteAttributAttributeType">
+          <Value>Wert</Value>
+        </Attribute>
+        <ExternalInterface Name="VerbindungInterface" ID="81fa01c4-6613-4bed-863e-fcfd6071a72c" RefBaseClassPath="BlauInterfaceClassLib/VerbindungInterfaceClass">
+          <Attribute Name="refURI" AttributeDataType="xs:anyURI" RefAttributeType="AutomationMLBaseAttributeTypeLib/refURI">
+            <Value>/PLCOpenFiles/bauerBehaviour.xml#globalID</Value>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="BlauRoleClassLib/GerätRoleClass" />
+      </InternalElement>
+      <InternalElement Name="Grün" ID="6d2a9b75-c6bd-49fa-b133-5a9764e50501" RefBaseSystemUnitPath="GrünSystemUnitClassLib/Gerät">
+        <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/Name" />
+        <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/ID" />
+        <RoleRequirements RefBaseRoleClassPath="GrünRoleClassLib/GerätRoleClass" />
+      </InternalElement>
+      <InternalElement Name="Rot" ID="84df7e3e-74b9-4372-b469-276d444476eb" RefBaseSystemUnitPath="RotSystemUnitClassLib/Gerät">
+        <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="RotAttributeTypeLib/Name" />
+        <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="RotAttributeTypeLib/ID" />
+        <ExternalInterface Name="ControlValue" ID="1d6b03ed-e0a6-4c26-8f01-129974929821" RefBaseClassPath="RotInterfaceClassLib/SteuerungssignalInterfaceClass" />
+        <RoleRequirements RefBaseRoleClassPath="RotRoleClassLib/GerätRoleClass" />
+      </InternalElement>
+      <SupportedRoleClass RefRoleClassPath="RotRoleClassLib/GerätRoleClass" />
+      <SupportedRoleClass RefRoleClassPath="BlauRoleClassLib/GerätRoleClass" />
+      <SupportedRoleClass RefRoleClassPath="GrünRoleClassLib/GerätRoleClass" />
+    </SystemUnitClass>
+    <SystemUnitClass Name="Struktur" ID="09b62455-cfc5-442f-81b3-8e6023489907">
+      <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/Name" />
+      <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/ID" />
+      <InternalElement Name="Blau" ID="7eb208a1-2735-4606-a803-998934c1809f" RefBaseSystemUnitPath="BlauSystemUnitClassLib/Struktur">
+        <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/Name" />
+        <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/ID" />
+        <Attribute Name="BlauesStrukturAttribut" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/BlauesStrukturAttributAttributeType" />
+        <ExternalInterface Name="VerbindungInterface" ID="9e5fbbc1-ccce-4a51-993e-e6213f43f3a1" RefBaseClassPath="BlauInterfaceClassLib/VerbindungInterfaceClass" />
+        <RoleRequirements RefBaseRoleClassPath="BlauRoleClassLib/StrukturRoleClass" />
+      </InternalElement>
+      <SupportedRoleClass RefRoleClassPath="BlauRoleClassLib/StrukturRoleClass" />
+    </SystemUnitClass>
+    <SystemUnitClass Name="Kabel" ID="1d647e14-c996-4353-81b9-067592581b51">
+      <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/Name" />
+      <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/ID" />
+      <InternalElement Name="Grün" ID="c990eaff-8d06-4381-bdb2-d43486e84d9d" RefBaseSystemUnitPath="GrünSystemUnitClassLib/Kabel">
+        <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/Name" />
+        <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/ID" />
+        <Attribute Name="GrünesKabelAttribut" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/GrünesKabelAttributAttributeType" />
+        <ExternalInterface Name="SteckerInterface" ID="e80e8b55-ba9d-4e47-995f-9747786c8c1d" RefBaseClassPath="GrünInterfaceClassLib/SteckerInterfaceClass" />
+        <RoleRequirements RefBaseRoleClassPath="GrünRoleClassLib/KabelRoleClass" />
+      </InternalElement>
+      <InternalElement Name="Blau" ID="d4c49261-32c0-4d38-82de-ee7cc27a9636" RefBaseSystemUnitPath="BlauSystemUnitClassLib/Struktur">
+        <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/Name" />
+        <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/ID" />
+        <Attribute Name="BlauesStrukturAttribut" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/BlauesStrukturAttributAttributeType" />
+        <ExternalInterface Name="VerbindungInterface" ID="98a20598-54c9-4448-a1c7-af62959b63a2" RefBaseClassPath="BlauInterfaceClassLib/VerbindungInterfaceClass" />
+        <RoleRequirements RefBaseRoleClassPath="BlauRoleClassLib/StrukturRoleClass" />
+      </InternalElement>
+      <SupportedRoleClass RefRoleClassPath="GrünRoleClassLib/KabelRoleClass" />
+      <SupportedRoleClass RefRoleClassPath="BlauRoleClassLib/StrukturRoleClass" />
+    </SystemUnitClass>
+  </SystemUnitClassLib>
+  <SystemUnitClassLib Name="BlauSystemUnitClassLib">
+    <Version>0</Version>
+    <SystemUnitClass Name="Gerät" ID="bd89d9f8-b1be-4f10-a0b8-091c0d15655e">
+      <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/Name" />
+      <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/ID" />
+      <Attribute Name="BlauesGeräteAttribut" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/BlauesGeräteAttributAttributeType" />
+      <ExternalInterface Name="VerbindungInterface" ID="677facba-bf7e-4991-a236-da365864291b" RefBaseClassPath="BlauInterfaceClassLib/VerbindungInterfaceClass" />
+      <SupportedRoleClass RefRoleClassPath="BlauRoleClassLib/GerätRoleClass" />
+    </SystemUnitClass>
+    <SystemUnitClass Name="Struktur" ID="10fccca4-5822-4548-a78a-4b23c483b9ec">
+      <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/Name" />
+      <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/ID" />
+      <Attribute Name="BlauesStrukturAttribut" AttributeDataType="xs:string" RefAttributeType="BlauAttributeTypeLib/BlauesStrukturAttributAttributeType" />
+      <ExternalInterface Name="VerbindungInterface" ID="0cea96e4-cf3c-45ae-8627-1c7ccca8959d" RefBaseClassPath="BlauInterfaceClassLib/VerbindungInterfaceClass" />
+      <SupportedRoleClass RefRoleClassPath="BlauRoleClassLib/StrukturRoleClass" />
+    </SystemUnitClass>
+  </SystemUnitClassLib>
+  <SystemUnitClassLib Name="GrünSystemUnitClassLib">
+    <Version>0</Version>
+    <SystemUnitClass Name="Gerät" ID="{CBD49CB2-A5D5-48cd-BEF9-9EBF91F00580}">
+      <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/Name" />
+      <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/ID" />
+      <SupportedRoleClass RefRoleClassPath="GrünRoleClassLib/GerätRoleClass" />
+    </SystemUnitClass>
+    <SystemUnitClass Name="Kabel" ID="f8914dab-6241-49ad-8c2b-5af1d658e7cc">
+      <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/Name" />
+      <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/ID" />
+      <Attribute Name="GrünesKabelAttribut" AttributeDataType="xs:string" RefAttributeType="GrünAttributeTypeLib/GrünesKabelAttributAttributeType" />
+      <ExternalInterface Name="SteckerInterface" ID="fc77a69b-9398-4182-959f-3c05db2a3422" RefBaseClassPath="GrünInterfaceClassLib/SteckerInterfaceClass" />
+      <SupportedRoleClass RefRoleClassPath="GrünRoleClassLib/KabelRoleClass" />
+    </SystemUnitClass>
+  </SystemUnitClassLib>
+  <SystemUnitClassLib Name="RotSystemUnitClassLib">
+    <Version>0</Version>
+    <SystemUnitClass Name="Gerät" ID="{6ABC1036-19C6-4e49-AC78-0A0B6A5DE841}">
+      <Attribute Name="Name" AttributeDataType="xs:string" RefAttributeType="RotAttributeTypeLib/Name" />
+      <Attribute Name="ID" AttributeDataType="xs:string" RefAttributeType="RotAttributeTypeLib/ID" />
+      <SupportedRoleClass RefRoleClassPath="RotRoleClassLib/GerätRoleClass" />
+    </SystemUnitClass>
+  </SystemUnitClassLib>
+  <AttributeTypeLib Name="AutomationMLBaseAttributeTypeLib">
+    <Description>Standard Automation Markup Language Attribute Type Library</Description>
+    <Version>2.10.0</Version>
+    <AttributeType Name="Direction" AttributeDataType="xs:string">
+      <Constraint Name="AllowedValues">
+        <NominalScaledType>
+          <RequiredValue>In</RequiredValue>
+          <RequiredValue>Out</RequiredValue>
+          <RequiredValue>InOut</RequiredValue>
+        </NominalScaledType>
+      </Constraint>
+    </AttributeType>
+    <AttributeType Name="Cardinality">
+      <Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" />
+      <Attribute Name="MaxOccur" AttributeDataType="xs:unsignedInt" />
+    </AttributeType>
+    <AttributeType Name="Category" AttributeDataType="xs:string" />
+    <AttributeType Name="refURI" AttributeDataType="xs:anyURI" />
+    <AttributeType Name="AssociatedFacet" AttributeDataType="xs:string" />
+    <AttributeType Name="ListType" />
+    <AttributeType Name="OrderedListType" />
+    <AttributeType Name="LocalizedAttribute" AttributeDataType="xs:string" />
+    <AttributeType Name="AssociatedExternalValue">
+      <Attribute Name="refCAEXAttribute" />
+      <Attribute Name="refURI" RefAttributeType="AutomationMLBaseAttributeTypeLib/refURI" />
+      <Attribute Name="Direction" RefAttributeType="AutomationMLBaseAttributeTypeLib/Direction" />
+    </AttributeType>
+    <AttributeType Name="MIMEType" AttributeDataType="xs:string" />
+    <AttributeType Name="DocLang" AttributeDataType="xs:string" />
+  </AttributeTypeLib>
+  <AttributeTypeLib Name="BlauAttributeTypeLib">
+    <Version>0</Version>
+    <AttributeType Name="Name" AttributeDataType="xs:string" />
+    <AttributeType Name="ID" AttributeDataType="xs:string" />
+    <AttributeType Name="BlauesGeräteAttributAttributeType" AttributeDataType="xs:string" />
+    <AttributeType Name="BlauesStrukturAttributAttributeType" AttributeDataType="xs:string" />
+  </AttributeTypeLib>
+  <AttributeTypeLib Name="GrünAttributeTypeLib">
+    <Version>0</Version>
+    <AttributeType Name="Name" AttributeDataType="xs:string" />
+    <AttributeType Name="ID" AttributeDataType="xs:string" />
+    <AttributeType Name="GrünesAktorAttributAttributeType" AttributeDataType="xs:string" />
+    <AttributeType Name="GrünesControllerAttributAttributeType" AttributeDataType="xs:string" />
+    <AttributeType Name="GrünesGeräteAttributAttributeType" AttributeDataType="xs:string" />
+    <AttributeType Name="GrünesKabelAttributAttributeType" AttributeDataType="xs:string" />
+    <AttributeType Name="GrünesSensorAttributAttributeType" AttributeDataType="xs:string" />
+  </AttributeTypeLib>
+  <AttributeTypeLib Name="RotAttributeTypeLib">
+    <Version>0</Version>
+    <AttributeType Name="Name" AttributeDataType="xs:string" />
+    <AttributeType Name="ID" AttributeDataType="xs:string" />
+    <AttributeType Name="AktorC_AttributAttributeType" AttributeDataType="xs:string" />
+    <AttributeType Name="AktorD_AttributAttributeType" AttributeDataType="xs:string" />
+    <AttributeType Name="ATG_AttributAttributeType" AttributeDataType="xs:string" />
+    <AttributeType Name="RotesAktorAttributAttributeType" AttributeDataType="xs:string" />
+    <AttributeType Name="RotesControllerAttributAttributeType" AttributeDataType="xs:string" />
+    <AttributeType Name="RotesGeräteAttributAttributeType" AttributeDataType="xs:string" />
+    <AttributeType Name="RotesSensorAttributAttributeType" AttributeDataType="xs:string" />
+    <AttributeType Name="SensorA_AttributAttributeType" AttributeDataType="xs:string" />
+    <AttributeType Name="SensorB_AttributAttributeType" AttributeDataType="xs:string" />
+  </AttributeTypeLib>
+</CAEXFile>

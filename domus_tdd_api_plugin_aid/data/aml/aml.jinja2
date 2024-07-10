@@ -1,0 +1,39 @@
+<{{identifier}}> <https://admin-shell.io/aas/3/0/Referable/idShort> "AmlBasedSubmodel" ;
+  a <https://admin-shell.io/aas/3/0/Submodel> ;
+  <https://admin-shell.io/aas/3/0/HasKind/kind> <https://admin-shell.io/aas/3/0/ModellingKind/Instance> ;
+  <https://admin-shell.io/aas/3/0/Identifiable/id> "{{identifier}}";
+  <https://admin-shell.io/aas/3/0/HasSemantics/semanticId> [
+    <https://admin-shell.io/aas/3/0/Reference/type> <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference> ;
+    <https://admin-shell.io/aas/3/0/Reference/keys> [
+        <https://admin-shell.io/aas/3/0/Key/type>  <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+    <https://admin-shell.io/aas/3/0/Key/value> "https://www.automationml.org/AutomationML_AAS_SemanticIDs/Submodel/Generic"
+    ]
+  ];
+  <https://admin-shell.io/aas/3/0/Submodel/submodelElements> _:bFileReference, _:bVersion.
+
+
+_:bFileReference  <https://admin-shell.io/aas/3/0/Referable/idShort> "AutomationMLData" ;
+  a <https://admin-shell.io/aas/3/0/File> ;
+  <https://admin-shell.io/aas/3/0/File/contentType> "text/plain";
+  <https://admin-shell.io/aas/3/0/File/value> "{{file_name}}";
+  <https://admin-shell.io/aas/3/0/HasSemantics/semanticId> [
+    <https://admin-shell.io/aas/3/0/Reference/type> <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference> ;
+    <https://admin-shell.io/aas/3/0/Reference/keys> [
+        <https://admin-shell.io/aas/3/0/Key/type>  <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+    <https://admin-shell.io/aas/3/0/Key/value> "https://www.automationml.org/AutomationML_AAS_SemanticIDs/General/FileReference"
+    ]
+  ].
+
+_:bFileReference  <https://admin-shell.io/aas/3/0/Referable/idShort> "AutomationMLVersion" ;
+  <https://admin-shell.io/aas/3/0/Referable/category> "PARAMETER";
+  a <https://admin-shell.io/aas/3/0/Property> ;
+    <https://admin-shell.io/aas/3/0/Property/value> "{{version}}" ;
+    <https://admin-shell.io/aas/3/0/Property/valueType> xsd:positiveInteger;
+
+  <https://admin-shell.io/aas/3/0/HasSemantics/semanticId> [
+    <https://admin-shell.io/aas/3/0/Reference/type> <https://admin-shell.io/aas/3/0/ReferenceTypes/ExternalReference> ;
+    <https://admin-shell.io/aas/3/0/Reference/keys> [
+        <https://admin-shell.io/aas/3/0/Key/type>  <https://admin-shell.io/aas/3/0/KeyTypes/GlobalReference> ;
+    <https://admin-shell.io/aas/3/0/Key/value> "https://www.automationml.org/AutomationML_AAS_SemanticIDs/General/VersionNumber"
+    ]
+  ].

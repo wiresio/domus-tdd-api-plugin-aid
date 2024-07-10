@@ -53,11 +53,13 @@ def create_aas(id):
         updated, uri = put_aas_json_in_sparql(content, uri=id)
     elif mimetype == "application/aml+xml":
         aml_data = request.get_data()
-        rdf_aas_data = translate_aml_to_aas(aml_data)
-        updated, uri = put_aas_rdf_in_sparql(rdf_aas_data, "application/n-triples")
+        uri, rdf_aas_data = translate_aml_to_aas(aml_data, uri=id)
+        updated, uri = put_aas_rdf_in_sparql(
+            rdf_aas_data, "application/n-triples", uri=uri
+        )
     elif mimetype in POSSIBLE_MIMETYPES:
         rdf_content = request.get_data()
-        updated, uri = put_aas_rdf_in_sparql(rdf_content, mimetype)
+        updated, uri = put_aas_rdf_in_sparql(rdf_content, mimetype, uri=id)
     else:
         raise WrongMimeType(mimetype)
 
@@ -76,8 +78,10 @@ def create_anonymous_aas():
         updated, uri = put_aas_json_in_sparql(content, delete_if_exists=False)
     elif mimetype == "application/aml+xml":
         aml_data = request.get_data()
-        rdf_aas_data = translate_aml_to_aas(aml_data)
-        updated, uri = put_aas_rdf_in_sparql(rdf_aas_data, "application/n-triples")
+        uri, rdf_aas_data = translate_aml_to_aas(aml_data)
+        updated, uri = put_aas_rdf_in_sparql(
+            rdf_aas_data, "application/n-triples", uri=uri
+        )
     elif mimetype in POSSIBLE_MIMETYPES:
         content = request.get_data()
         updated, uri = put_aas_rdf_in_sparql(content, mimetype, delete_if_exists=False)
