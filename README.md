@@ -39,8 +39,14 @@ pip install domus-tdd-api-plugin-aid
 
 ## New routes
 
-- `/aas` : POST an anonymous TD
+- `/aas` : POST to create an anonymous Asset Administration Shell Object
 - `/aas/<ID>` : PUT, DELETE, GET
+
+Accepted mime-types:
+
+- `application/aml+xml`: for AML xml files. They will be translated into AAS objects (AmlBasedSubmodel)
+- `application/aas+json` or `application/json`: a JSON AAS file
+- RDF mimetypes (`application/rdf+xml`, `text/turtle`, `text/n3`, `application/n-quads`, `application/n-triples`,`application/trig`, `application/ld+json`): a RDF representation in the format corresponding to the mimetype of the AAS object. Using the AAS ontology.
 
 ## Data sources
 
