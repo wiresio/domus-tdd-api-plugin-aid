@@ -56,6 +56,7 @@ def frame_aas_nt_content(uri, nt_content, original_context):
     result = json.loads(str_json_framed)
     try:
         del result["@context"]
+        del result["@id"]
     except KeyError:
         pass
     return result
