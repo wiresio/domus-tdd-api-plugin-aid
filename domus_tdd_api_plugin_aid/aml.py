@@ -29,7 +29,7 @@ def translate_aml_to_aas(aml_data, uri=None):
     file_name = root.attrib["FileName"]
 
     # Create a AAS object
-    project = root.find("./InstanceHierarchy/InternalElement[@Name='Project']", xmlns)
+    project = root.find("./InstanceHierarchy/InternalElement", xmlns)
     project_id = project.attrib.get("ID", None)
     if uri is not None:
         if project_id is not None:
