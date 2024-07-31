@@ -30,7 +30,7 @@ def translate_aml_to_aas(aml_data, uri=None):
 
     # Create a AAS object
     project = root.find("./InstanceHierarchy/InternalElement[@Name='Project']", xmlns)
-    project_id = project.attrib["ID"]
+    project_id = project.attrib.get("ID", None)
     if uri is not None:
         if project_id is not None:
             if uri != f"urn:aml:{project_id}":
@@ -47,7 +47,7 @@ def translate_aml_to_aas(aml_data, uri=None):
     # get all devices
     for device in project.iterfind("InternalElement", xmlns):
         # each device will implement the aml.jinja2 template
-        aid_id = device.attrib["ID"]
+        aid_id = device.attrib.get("ID", str(uuid.uuid4()))
         res += TEMPLATE_ENV.get_template("aml.jinja2").render(
             identifier=aid_id,
             file_name=file_name,
@@ -59,7 +59,7 @@ def translate_aml_to_aas(aml_data, uri=None):
         for element in device.iterfind("InternalElement", xmlns):
 
             name = element.attrib["Name"]
-            element_id = element.attrib["ID"]
+            element_id = element.attrib.get("ID", str(uuid.uuid4()))
             # if element has ExternalInterface, then export it
             interface = element.find("ExternalInterface", xmlns)
             if interface is None:
