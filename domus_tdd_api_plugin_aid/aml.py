@@ -3,7 +3,8 @@ import xml.etree.ElementTree as ET
 from jinja2 import Environment, FileSystemLoader
 from rdflib import Graph
 
-from tdd.errors import IDMismatchError
+from tdd.errors import IDMismatchError, AppException
+
 
 from domus_tdd_api_plugin_aid.aas import DATA_DIR
 from domus_tdd_api_plugin_aid.errors import AMLDecodeError
@@ -30,6 +31,10 @@ def translate_aml_to_aas(aml_data, uri=None):
 
     # Create a AAS object
     project = root.find("./InstanceHierarchy/InternalElement", xmlns)
+    if project is None:
+        raise AppException(
+            'No project found, make sure you have the correct xmlns="http://www.dke.de/CAEX" in your XML root element'
+        )
     project_id = project.attrib.get("ID", None)
     if uri is not None:
         if project_id is not None:
