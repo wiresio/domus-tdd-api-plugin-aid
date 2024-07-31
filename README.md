@@ -37,6 +37,25 @@ Or you can pip install it from pypi.
 pip install domus-tdd-api-plugin-aid
 ```
 
+## Testing with example data
+
+Have a fuseki running (and the config.toml/environment variables) set to the SPARQL endpoint route
+
+Install the plugin (see above), then
+
+```
+cd domus-tdd-api-plugin-aid
+source env_name/bin/activate
+domus-tdd-api run
+```
+
+In another terminal in the `domus-tdd-api-plugin-aid` folder
+
+```
+curl -XPOST  -iH "Content-Type: application/aml+xml" -d@"./domus_tdd_api_plugin_aid/tests/data/aml/aml_example.xml" http://localhost:5000/aas
+
+```
+
 ## New routes
 
 - `/aas` : POST to create an anonymous Asset Administration Shell Object
