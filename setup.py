@@ -29,12 +29,13 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        "tdd-api",
+        "domus-tdd-api >=1.0.2",
     ],
     extras_require={
         "dev": [
             "pytest",
             "mock",
+            "domus-tdd-api[dev]",
         ]
     },
     entry_points={
@@ -42,7 +43,7 @@ setup(
             "aas=domus_tdd_api_plugin_aid:blueprint",
         ],
         "tdd_api.plugins.transformers": [
-            "aas=domus_tdd_api_plugin_aid.aas:td_to_aas",
+            "aas=domus_tdd_api_plugin_aid.aid:td_to_aas",
         ],
     },
 )
