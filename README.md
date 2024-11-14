@@ -58,7 +58,7 @@ domus-tdd-api run -p 5050
 In another terminal in the `domus-tdd-api-plugin-aid` folder
 
 ```
-curl -XPOST  -iH "Content-Type: application/aml+xml" -d@"./domus_tdd_api_plugin_aid/tests/data/aml/aml_example.xml" http://localhost:5000/aas
+curl -XPOST  -iH "Content-Type: application/aml+xml" -d@"./domus_tdd_api_plugin_aid/tests/data/aml/aml_example.xml" http://localhost:5050/aas
 
 ```
 
