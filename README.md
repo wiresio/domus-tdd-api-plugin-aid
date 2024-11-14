@@ -20,7 +20,7 @@ Then activate the venv:
 source domus/bin/activate
 ```
 
-Then install the [domus-tdd-api](https://github.com/eclipse-thingweb/domus-tdd-api):
+Next install the [domus-tdd-api](https://github.com/eclipse-thingweb/domus-tdd-api):
 
 ```bash
 git clone https://github.com/eclipse-thingweb/domus-tdd-api.git
@@ -29,7 +29,7 @@ pip install -e ".[prod]"
 cd ..
 ```
 
-Finally install this plugin. You can install from source by cloning this repository:
+Then install this plugin. You can install from source by cloning this repository:
 
 ```bash
 git clone https://github.com/wiresio/domus-tdd-api-plugin-aid.git
