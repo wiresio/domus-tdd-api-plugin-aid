@@ -38,7 +38,7 @@ pip install -e .
 cd ..
 ```
 
-Or you can pip install it from pypi:
+Or you can `pip install` it from pypi:
 
 ```bash
 pip install domus-tdd-api-plugin-aid
