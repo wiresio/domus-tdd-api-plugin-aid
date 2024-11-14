@@ -44,22 +44,14 @@ Or you can `pip install` it from pypi:
 pip install domus-tdd-api-plugin-aid
 ```
 
-And finally run the TDD API along with the API extension from the installed plugin:
+## Testing with example data
+
+Have a fuseki running (and the config.toml/environment variables) set to the SPARQL endpoint route.
+
+Install the plugin (see above), then run the TDD API along with the API extension from the installed plugin:
 
 ```bash
 domus-tdd-api run -p 5050
-```
-
-## Testing with example data
-
-Have a fuseki running (and the config.toml/environment variables) set to the SPARQL endpoint route
-
-Install the plugin (see above), then
-
-```
-cd domus-tdd-api-plugin-aid
-source env_name/bin/activate
-domus-tdd-api run
 ```
 
 In another terminal in the `domus-tdd-api-plugin-aid` folder
