@@ -1,6 +1,0 @@
-domus-tdd-api>=1.0.2
-
-[dev]
-pytest
-mock
-domus-tdd-api[dev]
