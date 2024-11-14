@@ -8,33 +8,46 @@ It can also translate a Thing Description into an AID.
 
 ## Plugin installation
 
-To install the plugin, create a Python 3 [virtualenv](https://virtualenv.pypa.io/en/latest/user_guide.html).
+To install the plugin, create a Python 3 [virtualenv](https://virtualenv.pypa.io/en/latest/user_guide.html):
 
 ```bash
 virtualenv domus
 ```
 
-Then activate the venv
+Then activate the venv:
 
 ```bash
 source domus/bin/activate
 ```
 
-Then install the [domus-tdd-api](https://github.com/eclipse-thingweb/domus-tdd-api).
-Finally install this plugin.
-
-You can install from source by cloning this repository
+Then install the [domus-tdd-api](https://github.com/eclipse-thingweb/domus-tdd-api):
 
 ```bash
-git clone git@github.com:wiresio/domus-tdd-api-plugin-aid.git
-cd domus-tdd-api-plugin-aid
-pip install -e .
+git clone https://github.com/eclipse-thingweb/domus-tdd-api.git
+cd domus-tdd-api
+pip install -e ".[prod]"
+cd ..
 ```
 
-Or you can pip install it from pypi.
+Finally install this plugin. You can install from source by cloning this repository:
+
+```bash
+git clone https://github.com/wiresio/domus-tdd-api-plugin-aid.git
+cd domus-tdd-api-plugin-aid
+pip install -e .
+cd ..
+```
+
+Or you can pip install it from pypi:
 
 ```bash
 pip install domus-tdd-api-plugin-aid
+```
+
+And finally run the TDD API along with the API extension from the installed plugin:
+
+```bash
+domus-tdd-api run -p 5050
 ```
 
 ## Testing with example data
