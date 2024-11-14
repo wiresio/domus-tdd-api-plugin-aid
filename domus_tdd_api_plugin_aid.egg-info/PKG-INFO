@@ -1,3 +1,21 @@
+Metadata-Version: 2.1
+Name: domus-tdd-api-plugin-aid
+Version: 1.0.0
+Summary: A TDD-API Plugin to add AID related routes
+Home-page: https://github.com/wiresio/domus-tdd-api-plugin-aid
+Author: Siemens & Logilab
+Maintainer: Christian Glomb
+Maintainer-email: christian.glomb@siemens.com
+Keywords: web of things,thing description directory,wot,tdd,asset interfaces description
+Classifier: Programming Language :: Python
+Classifier: Framework :: Flask
+Description-Content-Type: text/markdown
+Requires-Dist: domus-tdd-api>=1.0.2
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: mock; extra == "dev"
+Requires-Dist: domus-tdd-api[dev]; extra == "dev"
+
 # domus-tdd-api-plugin-aid
 
 TDD API AAS Plugin
@@ -11,13 +29,13 @@ It can also translate a Thing Description into an AID.
 To install the plugin, create a Python 3 [virtualenv](https://virtualenv.pypa.io/en/latest/user_guide.html).
 
 ```bash
-virtualenv domus
+virtualenv env_name
 ```
 
 Then activate the venv
 
 ```bash
-source domus/bin/activate
+source env_name/bin/activate
 ```
 
 Then install the [domus-tdd-api](https://github.com/eclipse-thingweb/domus-tdd-api).

@@ -1,0 +1,5 @@
+[tdd_api.plugins.blueprints]
+aas = domus_tdd_api_plugin_aid:blueprint
+
+[tdd_api.plugins.transformers]
+aas = domus_tdd_api_plugin_aid.aid:td_to_aas
