@@ -26,7 +26,7 @@ Next install the [domus-tdd-api](https://github.com/eclipse-thingweb/domus-tdd-a
 git clone https://github.com/eclipse-thingweb/domus-tdd-api.git
 cd domus-tdd-api
 pip install -e ".[prod]"
-npm ci
+npm ci && npm run build
 cd ..
 ```
 
