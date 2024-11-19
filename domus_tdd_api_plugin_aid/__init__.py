@@ -20,7 +20,7 @@ from domus_tdd_api_plugin_aid.aas import (
 )
 from domus_tdd_api_plugin_aid.aml import translate_aml_to_aas
 
-blueprint = Blueprint("domus_tdd_api_plugin_aid", __name__, url_prefix="/aas")
+blueprint = Blueprint("domus_tdd_api_plugin_aid", __name__, url_prefix="/submodels")
 
 
 @blueprint.route("/<id>", methods=["DELETE"])
