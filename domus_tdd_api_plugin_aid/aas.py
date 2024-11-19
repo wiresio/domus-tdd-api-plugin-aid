@@ -51,7 +51,7 @@ def frame_aas_nt_content(uri, nt_content, original_context):
         "id": uri,
     }
 
-    str_json_framed = frame_nt_content(uri, nt_content, frame).decode("utf-8")
+    str_json_framed = frame_nt_content(nt_content, frame)
 
     result = json.loads(str_json_framed)
     try:
