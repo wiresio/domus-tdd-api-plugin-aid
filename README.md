@@ -47,7 +47,7 @@ pip install domus-tdd-api-plugin-aid
 
 ## Testing with example data
 
-Have a fuseki running (and the config.toml/environment variables) set to the SPARQL endpoint route.
+Have a fuseki running (and the config.toml/environment variables set to the corresponding SPARQL endpoint).
 
 Install the plugin (see above), then run the TDD API along with the API extension from the installed plugin:
 
