@@ -303,6 +303,7 @@ def interface_protocol_rdf(interface_protocol_uri, root_node_uri, g, protocol):
 
 def td_to_aas(uri):
     content = get_id_description(uri, "application/n-triples", {"prefix": "td"})
+    content = content.replace(r"\n", "###LINEBREAK###")
     g = Graph().parse(data=content, format="nt").skolemize()
     delete_registration_information(uri, g)
 
@@ -338,7 +339,8 @@ def td_to_aas(uri):
         res += interface_protocol_rdf(
             interface_protocol_uri, root_node_uri, g, protocol
         )
-
+    
+    res = res.replace("###LINEBREAK###", "\\n")
     aas_ntriples = Graph().parse(data=res, format="ttl").serialize(format="nt")
     return put_aas_rdf_in_sparql(
         aas_ntriples, "application/n-triples", uri=uri, delete_if_exists=False
