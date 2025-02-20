@@ -58,14 +58,14 @@ domus-tdd-api run -p 5050
 In another terminal in the `domus-tdd-api-plugin-aid` folder
 
 ```
-curl -XPOST  -iH "Content-Type: application/aml+xml" -d@"./domus_tdd_api_plugin_aid/tests/data/aml/aml_example.xml" http://localhost:5050/aas
+curl -XPOST  -iH "Content-Type: application/aml+xml" -d@"./domus_tdd_api_plugin_aid/tests/data/aml/aml_example.xml" http://localhost:5050/submodels
 
 ```
 
 ## New routes
 
-- `/aas` : POST to create an anonymous Asset Administration Shell Object
-- `/aas/<ID>` : PUT, DELETE, GET
+- `/submodels` : POST to create an anonymous Asset Administration Shell Submodel
+- `/submodels/<ID>` : PUT, DELETE, GET
 
 Accepted mime-types:
 
